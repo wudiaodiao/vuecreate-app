@@ -1,0 +1,52 @@
+.Knowledge {
+    .Knowledge_center {
+        margin: 24px;
+
+        .Knowledge_center_top {
+            .Knowledge_center_top_button {
+                text-align: right;
+
+                button {
+                    width: 60px;
+                    height: 26px;
+                    background: #007EDD;
+                    border-radius: 2px;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .Knowledge_center_center {
+            .Knowledge_list {
+                width: 100%;
+                overflow-y: scroll;
+                height: 61vh;
+
+                .EditingingEquipment_yellew {
+                    color: rgba(246, 255, 0, 1);
+                    cursor: pointer;
+                }
+
+                .Editinging_green {
+                    color: rgba(95, 255, 0, 1);
+                    cursor: pointer;
+                }
+
+                .del_red {
+                    color: rgba(255, 59, 0, 1);
+                    cursor: pointer;
+                }
+
+
+            }
+        }
+
+        .Knowledge_center_botom {
+            .fenye {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

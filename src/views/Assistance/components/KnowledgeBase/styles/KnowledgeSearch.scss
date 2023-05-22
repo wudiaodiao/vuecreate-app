@@ -1,0 +1,63 @@
+.KnowledgeSearch {
+    .KnowledgeSearch_ceneter {
+        margin: 24px;
+
+        .KnowledgeSearch_top {
+            opacity: 0.8;
+
+            ul {
+                display: flex;
+                justify-content: flex-start;
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 20px;
+
+                    .span_width {
+                        width: 75px;
+                    }
+
+                    .keyword {
+                        width: 200px;
+                        margin-right: 10px;
+                    }
+
+                    .div_button {
+                        margin-left: 40px;
+
+                        button {
+                            width: 60px;
+                            height: 26px;
+                            background: #007edd;
+                            border-radius: 2px;
+                            color: #fff;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        .KnowledgeSearch_list {
+            width: 100%;
+            overflow-y: scroll;
+            height: 61vh;
+
+            .editing_green {
+                color: rgba(95, 255, 0, 1);
+                cursor: pointer;
+            }
+        }
+    }
+    .editingEquipment_green {
+        cursor: pointer;
+    }
+
+    .KnowledgeSearch_foot {
+        .fenye {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

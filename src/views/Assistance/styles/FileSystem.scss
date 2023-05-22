@@ -1,0 +1,131 @@
+.craftingassistance {
+    user-select: none;
+
+    .craftingassistance_cneter {
+        color: #fff;
+
+        .systemFile {
+          
+
+            .systemFile_center {
+                margin: 3.95vh 1.95vw;
+
+                .systemFile_center_top {
+                    ul {
+                        display: flex;
+
+                        li {
+                            margin-right: 0.52vw;
+
+                            .filefont {
+                                opacity: 0.6;
+                                display: inline-block;
+                                height: 30px;
+                                line-height: 30px;
+                            }
+
+                            .filrInput {
+                                opacity: 0.6;
+                                height: 30px;
+                                line-height: 30px;
+                                background-color: rgba(0, 0, 0, 0);
+                                background: rgba(255, 255, 255, 0.3);
+                                border: 1px solid #ffffff;
+                                color: #fff;
+                                font-size: 14px;
+                                font-family: MicrosoftYaHei;
+                                font-weight: 400;
+
+
+                            }
+
+                            button {
+                                cursor: pointer;
+                                height: 30px;
+                                min-width: 100px;
+                                color: #fff;
+                                background: #47d235;
+                                border-radius: 2px;
+                                font-size: 14px;
+                                font-family: MicrosoftYaHei;
+                                font-weight: 400;
+                                color: #FFFFFF;
+                            }
+
+                            .blue_button {
+                                background: rgba(0, 126, 221, 1);
+                                min-width: 80px;
+                            }
+                        }
+                    }
+                }
+
+                .systemFile_center_push {
+                    margin: 1vh 0;
+                    opacity: 0.6;
+                }
+
+                .systemFile_center_list {
+                    height: 56vh;
+                    overflow: auto;
+
+                    .green {
+                        color: #60ff00;
+                        cursor: pointer;
+                    }
+
+                    .red {
+                        color: #ff3c00;
+                        cursor: pointer;
+                    }
+
+                    .changkan {
+                        color: rgba(245, 255, 0, 1);
+                        cursor: pointer;
+                    }
+
+                    .yidong {
+                        color: #00ffea;
+                        cursor: pointer;
+                    }
+
+                    .originalFileName_a {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+
+                    .file_icon {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        a {
+                            color: #fff;
+                        }
+
+                        img {
+                            width: 16px;
+                            height: 16px;
+                        }
+
+                        input {
+                            opacity: 0.8;
+                            height: 2.5vh;
+                            line-height: 3vh;
+                            background-color: rgba(0, 0, 0, 1);
+                            // background: rgba(255, 255, 255, 0.3);
+                            border: 1px solid #ffffff;
+                            padding-left: 10px;
+                            font-size: 14px;
+                            font-family: MicrosoftYaHei;
+                            font-weight: 400;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}

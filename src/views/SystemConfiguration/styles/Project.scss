@@ -1,0 +1,108 @@
+.UserSelf {
+    user-select: none;
+
+    .UserSelf_center {
+      
+
+        .Self {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 54.38%;
+            height: 68.42%;
+            background: rgba(54, 54, 54, 0.8);
+            box-shadow: 0px 0px 49px 0px rgba(0, 0, 0, 0.76);
+            border-radius: 20px;
+
+            .Self_top {
+                margin-top: 2vh;
+                width: 100%;
+                text-align: center;
+
+                span {
+                    width: 81px;
+                    height: 20px;
+                    font-size: 20px;
+                    font-family: MicrosoftYaHei;
+                    font-weight: bold;
+                    color: #00b4ed;
+                    line-height: 42px;
+                }
+            }
+
+            .Self_center {
+                display: flex;
+                margin: 23px 0;
+                height: 29vh;
+
+                .center_left {
+                    flex: 0.9;
+
+                    ul {
+                        margin-left: 58px;
+
+                        li {
+                            height: 30px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            width: 380px !important;
+
+                            .one {
+                                display: inline-block;
+                                // width: 69px;
+                                font-size: 14px;
+                                font-family: MicrosoftYaHei;
+                                font-weight: 400;
+                                color: #ffffff;
+                            }
+                           
+                            
+                        }
+                    }
+                }
+
+                .center_right {
+                    flex: 1;
+                    position: relative;
+                    width: 100%;
+
+                    .center_right_ptot {
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+
+                        img {
+                            width: 168px;
+                            height: 198px;
+                        }
+                    }
+                }
+            }
+
+            .Self_bottom {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .bottom_butt {
+                    span {
+                        display: inline-block;
+                        text-align: center;
+                        margin: 0 15px;
+                        padding: 4px 16px;
+                        cursor: pointer;
+                        background: #007edd;
+                        border-radius: 2px;
+
+                        font-size: 14px;
+                        font-family: MicrosoftYaHei;
+                        font-weight: 400;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}

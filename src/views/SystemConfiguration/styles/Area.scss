@@ -1,0 +1,79 @@
+.PartType {
+    user-select: none;
+
+    .Equipment_cneter {
+        color: #fff;
+
+        .EquipmentType {
+      
+            .content {
+                margin: 24px;
+
+                .EquipmentType_top {
+                    ul {
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+
+                        li {
+                            background: #47d235;
+                            border-radius: 2px;
+                            text-align: center;
+                            margin-right: 20px;
+                            cursor: pointer;
+                            min-width: 76px;
+                            height: 26px;
+                            line-height: 26px;
+
+                            span {
+                                font-size: 14px;
+                                font-family: MicrosoftYaHei;
+                                font-weight: 400;
+                                color: #ffffff;
+                            }
+                        }
+
+                        .del_red {
+                            background: #ff4545;
+                        }
+
+                        .gen {
+                            min-width: 100px;
+                            height: 30px;
+                            line-height: 30px;
+                        }
+
+                        .blue {
+                            min-width: 58px;
+                            height: 30px;
+                            line-height: 30px;
+                            background: rgba(0, 126, 221, 1);
+                        }
+                    }
+                }
+
+                .EquipmentType_center {
+                    margin-top: 20px;
+                    width: 100%;
+
+                    .EquipmentType_center_list {
+                        height: 61vh;
+                        overflow-y: scroll;
+
+
+
+                        .aqua {
+                            color: #00f0ff;
+                        }
+
+
+                    }
+                }
+               
+              
+
+            }
+        }
+    }
+}
+

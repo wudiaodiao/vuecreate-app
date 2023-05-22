@@ -1,0 +1,127 @@
+
+
+
+
+
+
+.craftingassistance {
+    user-select: none;
+
+    .craftingassistance_cneter {
+        color: #fff;
+
+        //公告
+        .announcement {
+
+
+            .WorkOrderQuery_main_top {
+                .WorkOrderQuery_center_top,.baojin_center_top {
+                    height: 30px;
+        
+                    ul {
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+        
+                        li {
+                            margin-right: 20px;
+                            display: flex;
+                            align-items: center;
+        
+                            span {
+                                font-size: 14px;
+                                font-family: MicrosoftYaHei;
+                                font-weight: 400;
+                                color: #ffffff;
+                                // opacity: 0.8;
+                            }
+        
+                            .chaxun {
+                                float: right;
+                                text-align: center;
+                                font-size: 14px;
+                                font-family: MicrosoftYaHei;
+                                font-weight: 400;
+                                width: 100px;
+                                height: 30px;
+                                line-height: 30px;
+                                background: #47d235;
+                                border-radius: 2px;
+                                cursor: pointer;
+                            }
+        
+                            .shunline {
+                                padding: 0px 5px;
+                            }
+        
+                            .vertical {
+                                vertical-align: -webkit-baseline-middle;
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+      
+            .announcement_center {
+                margin: 3.95vh 1.95vw;
+
+                .WorkOrderQuery_main_daochu {
+                    height: 30px;
+                    margin-top: 10px;
+                    padding-right: 28px;
+            
+                    .daochu_right {
+                        float: right;
+            
+                        .chu {
+                            display: block;
+                            cursor: pointer;
+            
+                            padding: 6px 10px;
+                            font-size: 14px;
+                            font-family: MicrosoftYaHei;
+                            font-weight: 400;
+                            background: #007edd;
+                            border-radius: 2px;
+                        }
+                    }
+                }
+            
+
+             
+            
+                .announcement_list {
+                    height: 58.4vh;
+                    overflow: auto;
+
+                    a {
+                        color: #fff;
+                    }
+
+                    .green {
+                        color: #60ff00;
+                        cursor: pointer;
+                    }
+
+                    .red {
+                        color: #ff3c00;
+                        cursor: pointer;
+                    }
+
+                    .changkan {
+                        color: rgba(245, 255, 0, 1);
+                        cursor: pointer;
+                    }
+                }
+
+                .fenye {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+
+
+    }
+}

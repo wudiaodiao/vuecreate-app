@@ -1,0 +1,117 @@
+.promise8 {
+    left: 56% !important;
+}
+
+.promise6 {
+    left: 57.8% !important;
+}
+
+.promise4 {
+    left: 61% !important;
+}
+
+.promise50 {}
+
+.promise {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -100%);
+
+    element.style {
+        position: absolute;
+        left: 50%;
+        bottom: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #boxes {
+        counter-reset: number;
+        display: flex;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 320px) {
+        #boxes {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    #boxes div {
+        counter-increment: number;
+
+        width: 60px;
+        height: 60px;
+        // min-width: 3em;
+        // min-height: 3em;
+        -webkit-transition: 0.5s all ease;
+        transition: 0.5s all ease;
+        background: var(--color, #ddd);
+        border: 0 solid transparent;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border-radius: 50%;
+        margin: 0.5em 1em;
+        opacity: 0.7;
+        --dx: calc(var(--size) - var(--x));
+        --dy: calc(var(--size) - var(--y));
+    }
+
+    #container:not([style]) #boxes div:first-child {
+        --x: 84;
+        --y: 75;
+        --size: 128;
+    }
+
+    #container:not([style]) #boxes div:first-child,
+    #boxes div:hover {
+        opacity: 1;
+        cursor: pointer;
+        border: calc(2px + 0.25vw) solid rgba(255, 255, 255, 0.4);
+        -webkit-transition: 0.5s background-color ease, 0.2s border ease;
+        transition: 0.5s background-color ease, 0.2s border ease;
+
+        border-radius: calc(var(--x) / var(--size) * 100%) calc(var(--dx) / var(--size) * 100%) calc(var(--dx) / var(--size) * 100%) calc(var(--x) / var(--size) * 100%) / calc(var(--y) / var(--size) * 100%) calc(var(--y) / var(--size) * 100%) calc(var(--dy) / var(--size) * 100%) calc(var(--dy) / var(--size) * 100%);
+    }
+
+    #container:not([style]) #boxes div:first-child:after,
+    #boxes div:after {
+        /* content: counter(number); */
+        color: rgba(255, 255, 255, 0.1);
+        font-size: calc(1vw + 1.2em);
+        font-weight: 200;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        -webkit-transition-delay: 0.1s;
+        transition-delay: 0.1s;
+        -webkit-transform: translate3d(0, -0.5em, 0);
+        transform: translate3d(0, -0.5em, 0);
+    }
+
+    #container:not([style]) #boxes div:first-child:after,
+    #boxes div:hover:after {
+        color: rgba(255, 255, 255, 0.8);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    // .border_bootemn {
+    //     // border: 0.1px solid #0CECEA !important;
+    // }
+
+    // .border_none {
+    //     // border: unset;
+    // }
+
+    #boxxx {
+        // border: 1px solid transparent !important;
+        // margin: 0 auto;
+        opacity: 1 !important;
+
+        color: #fff !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // font-size: 0.8vw;
+    }
+}

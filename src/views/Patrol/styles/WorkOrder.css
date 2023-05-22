@@ -1,0 +1,143 @@
+.public_body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.public_body .Part_cneter {
+  color: #fff;
+}
+.public_body .Part_cneter .Partlist_left {
+  position: absolute;
+  top: 20.19vh;
+  left: 7vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+}
+.public_body .Part_cneter .Partlist_left ul li {
+  position: relative;
+  width: 80px;
+  height: 45px;
+  padding: 14px 12px;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+.public_body .Part_cneter .Partlist_left ul li .active {
+  color: #00ffff;
+}
+.public_body .Part_cneter .Partlist_left ul li .line1 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 44px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5));
+}
+.public_body .Part_cneter .public_page .Partlist_main {
+  margin: 24px;
+}
+.public_body .Part_cneter .public_page .Partlist_main .filtertable {
+  border: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+.public_body .Part_cneter .public_page .Partlist_main .filtertable .el-input {
+  width: 140px;
+}
+.public_body .Part_cneter .public_page .Partlist_main .filtertable .el-input ::v-deep .el-input__inner {
+  height: 30px;
+  background: transparent;
+  color: #fff;
+  border-radius: 0px;
+}
+.public_body .Part_cneter .public_page .Partlist_main .filtertable .button {
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  background: #47d235;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.public_body .Part_cneter .public_page .Partlist_main .filtertable td {
+  padding: 6px 0;
+}
+.public_body .Part_cneter .public_page .Partlist_main .filtertable .title2 {
+  width: 50px;
+}
+.public_body .Part_cneter .public_page .Partlist_main .filtertable .title3 {
+  width: 60px;
+}
+.public_body .Part_cneter .public_page .Partlist_main .filtertable .title4 {
+  width: 80px;
+}
+.public_body .Part_cneter .public_page .Partlist_main .filtertable .title5 {
+  width: 90px;
+}
+.public_body .Part_cneter .public_page .Partlist_main .filtertable .content {
+  width: 170px;
+}
+.public_body .Part_cneter .public_page .Partlist_main .filtertable .content2 {
+  width: 330px;
+}
+.public_body .Part_cneter .public_page .Partlist_main .filtertable .tool {
+  width: 70px;
+}
+.public_body .Part_cneter .public_page .Partlist_main .filtertable .tool button {
+  padding: 6px 8px;
+  background: #007EDD;
+  border-radius: 2px;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.public_body .Part_cneter .public_page .Partlist_main .WorkOrder_add {
+  text-align: right;
+  opacity: 1;
+}
+.public_body .Part_cneter .public_page .Partlist_main .WorkOrder_add button {
+  padding: 6px 8px;
+  background: #007EDD;
+  border-radius: 2px;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.public_body .Part_cneter .public_page .Partlist_main .WorkOrder_list {
+  height: 61vh;
+  overflow: auto;
+}
+.public_body .Part_cneter .public_page .Partlist_main .WorkOrder_list a {
+  color: #fff;
+}
+.public_body .Part_cneter .public_page .Partlist_main .WorkOrder_list .green {
+  color: #60ff00;
+  cursor: pointer;
+}
+.public_body .Part_cneter .public_page .Partlist_main .WorkOrder_list .red {
+  color: #ff3c00;
+  cursor: pointer;
+}
+.public_body .Part_cneter .public_page .Partlist_main .WorkOrder_list .changkan {
+  color: rgb(245, 255, 0);
+  cursor: pointer;
+}
+.public_body .Part_cneter .public_page .Partlist_main .fenye {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=WorkOrder.css.map */

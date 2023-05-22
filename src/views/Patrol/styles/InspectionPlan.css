@@ -1,0 +1,49 @@
+.Part {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.Part .InspectionPlan_cneter {
+  color: #fff;
+}
+.Part .InspectionPlan_cneter .InspectionPlan .InspectionPlan_main {
+  opacity: 1;
+  margin: 24px;
+}
+.Part .InspectionPlan_cneter .InspectionPlan .InspectionPlan_main .InspectionPlan_main_top {
+  height: 30px;
+}
+.Part .InspectionPlan_cneter .InspectionPlan .InspectionPlan_main .InspectionPlan_main_top .WorkOrder_add {
+  text-align: right;
+}
+.Part .InspectionPlan_cneter .InspectionPlan .InspectionPlan_main .InspectionPlan_main_top .WorkOrder_add button {
+  padding: 6px 8px;
+  background: #007EDD;
+  border-radius: 2px;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.Part .InspectionPlan_cneter .InspectionPlan .InspectionPlan_main .InspectionPlan_main_center .InspectionPlan_main_list {
+  height: 60vh;
+  overflow: auto;
+}
+.Part .InspectionPlan_cneter .InspectionPlan .InspectionPlan_main .InspectionPlan_main_center .InspectionPlan_main_list a {
+  color: #fff;
+}
+.Part .InspectionPlan_cneter .InspectionPlan .InspectionPlan_main .InspectionPlan_main_center .InspectionPlan_main_list .green {
+  color: #60ff00;
+  cursor: pointer;
+}
+.Part .InspectionPlan_cneter .InspectionPlan .InspectionPlan_main .InspectionPlan_main_center .InspectionPlan_main_list .red {
+  color: #ff3c00;
+  cursor: pointer;
+}
+.Part .InspectionPlan_cneter .InspectionPlan .InspectionPlan_main .InspectionPlan_main_center .InspectionPlan_main_list .changkan {
+  color: rgb(245, 255, 0);
+  cursor: pointer;
+}/*# sourceMappingURL=InspectionPlan.css.map */

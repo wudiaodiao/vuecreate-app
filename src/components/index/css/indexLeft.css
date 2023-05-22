@@ -1,0 +1,180 @@
+@charset "UTF-8";
+.left_center {
+  width: 420px;
+  padding: 0 20px;
+  background: url("~@/assets/image/MMS/左侧底.png") no-repeat center;
+  background-size: 100% 100%;
+  height: 100%;
+}
+.left_center .left-main1 {
+  width: 100%;
+  height: 23%;
+}
+.left_center .left-main1 .left-main1-top {
+  width: 100%;
+  height: 23%;
+}
+.left_center .left-main1 .left-main1-bottom {
+  width: 100%;
+  height: 77%;
+  display: flex;
+}
+.left_center .left-main1 .left-main1-bottom .left-main1-bottom-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 25%;
+  position: relative;
+}
+.left_center .left-main1 .left-main1-bottom .left-main1-bottom-left p {
+  font-size: 26px;
+}
+.left_center .left-main1 .left-main1-bottom .left-main1-bottom-left h6 {
+  color: rgba(255, 255, 255, 0.6);
+}
+.left_center .left-main1 .left-main1-bottom .left-main1-bottom-center {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url("~@/assets/image/MMS/监控统计.png") no-repeat 20px 0px;
+  background-size: 80%;
+}
+.left_center .left-main1 .left-main1-bottom .left-main1-bottom-center p {
+  font-size: 26px;
+}
+.left_center .left-main1 .left-main1-bottom .left-main1-bottom-center h6 {
+  color: rgba(255, 255, 255, 0.6);
+}
+.left_center .left-main1 .left-main1-bottom .left-main1-bottom-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 25%;
+}
+.left_center .left-main1 .left-main1-bottom .left-main1-bottom-right p {
+  font-size: 26px;
+}
+.left_center .left-main1 .left-main1-bottom .left-main1-bottom-right h6 {
+  color: rgba(255, 255, 255, 0.6);
+}
+.left_center .left-main2 {
+  margin-top: 20px;
+  width: 100%;
+  height: 23%;
+}
+.left_center .left-main2 .left-main2-top {
+  width: 100%;
+  height: 20%;
+}
+.left_center .left-main2 .left-main2-bottom {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  background: url("~@/assets/image/MMS/设备完好率.png") no-repeat center;
+  background-position: center -5px;
+  background-size: 99% 95%;
+}
+.left_center .left-main2 .left-main2-bottom .left-main2-bottom-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 30%;
+  position: relative;
+  left: 8px;
+}
+.left_center .left-main2 .left-main2-bottom .left-main2-bottom-left p {
+  font-size: 26px;
+}
+.left_center .left-main2 .left-main2-bottom .left-main2-bottom-left h6 {
+  color: rgba(255, 255, 255, 0.6);
+}
+.left_center .left-main2 .left-main2-bottom .left-main2-bottom-center {
+  width: 40%;
+}
+.left_center .left-main2 .left-main2-bottom .left-main2-bottom-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 24%;
+  position: relative;
+  right: 10px;
+}
+.left_center .left-main2 .left-main2-bottom .left-main2-bottom-right p {
+  font-size: 26px;
+}
+.left_center .left-main2 .left-main2-bottom .left-main2-bottom-right h6 {
+  color: rgba(255, 255, 255, 0.6);
+}
+.left_center .left-main3 {
+  margin-top: 45px;
+  width: 100%;
+  height: 23%;
+  z-index: 999;
+}
+.left_center .main3-center {
+  position: relative;
+  top: -23%;
+  width: 100%;
+  height: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.left_center .main3-center .div {
+  width: 100%;
+  height: 23%;
+}
+.left_center .main3-center .div .top {
+  width: 95%;
+  position: relative;
+  left: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.left_center .main3-center .div .top .left {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left_center .main3-center .div .top .kuai {
+  width: 16px;
+  height: 15px;
+  margin-right: 10px;
+  text-align: center;
+  border: 1px solid yellow;
+  box-sizing: border-box;
+}
+.left_center .main3-center .div .top .kuai .xiaokuai {
+  width: 8px;
+  height: 8px;
+  margin: 3px auto;
+  background: red;
+}
+.left_center .main3-center .div .bar {
+  width: 95%;
+  position: relative;
+  left: 10px;
+  top: 2px;
+  height: 13%;
+  border: 0.1px solid rgba(255, 255, 255, 0.4);
+}
+.left_center .left-main4 {
+  position: relative;
+  top: -21%;
+  width: 100%;
+  height: 20%;
+}/*# sourceMappingURL=indexLeft.css.map */

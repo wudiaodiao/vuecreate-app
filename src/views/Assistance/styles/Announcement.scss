@@ -1,0 +1,50 @@
+.craftingassistance {
+    user-select: none;
+
+    .craftingassistance_cneter {
+        color: #fff;
+
+        //公告
+        .announcement {
+      
+            .announcement_center {
+                margin: 3.95vh 1.95vw;
+
+                .announcement_add {
+                    text-align: right;
+                }
+            
+                .announcement_list {
+                    height: 60vh;
+                    overflow: auto;
+
+                    a {
+                        color: #fff;
+                    }
+
+                    .green {
+                        color: #60ff00;
+                        cursor: pointer;
+                    }
+
+                    .red {
+                        color: #ff3c00;
+                        cursor: pointer;
+                    }
+
+                    .changkan {
+                        color: rgba(245, 255, 0, 1);
+                        cursor: pointer;
+                    }
+                }
+
+                .fenye {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+
+
+    }
+}

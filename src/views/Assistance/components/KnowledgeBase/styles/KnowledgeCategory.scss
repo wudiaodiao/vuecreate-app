@@ -1,0 +1,92 @@
+.knowledgeBase {
+  margin: 24px;
+
+  .knowledgeBase_top {
+    ul {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+
+      li {
+        background: #47d235;
+        border-radius: 2px;
+        text-align: center;
+        margin-right: 20px;
+        cursor: pointer;
+        min-width: 76px;
+        height: 26px;
+        line-height: 26px;
+
+        span {
+          font-size: 14px;
+          font-family: MicrosoftYaHei;
+          font-weight: 400;
+          color: #ffffff;
+        }
+      }
+      //导入颜色
+      .del_blue {
+        background: rgba(0, 126, 221, 1);
+      }
+
+      .del_red {
+        background: #ff4545;
+      }
+
+      .gen {
+        min-width: 100px;
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .knowledgeBase_center {
+    margin-top: 20px;
+    width: 100%;
+
+    .knowledgeBase_center_list {
+      height: 61vh;
+      overflow-y: scroll;
+
+      .list_top {
+        margin-top: 3px;
+        padding-left: 20px;
+        width: 100%;
+        height: 36px;
+        line-height: 36px;
+        background: linear-gradient(90deg, #0068b7, rgba(0, 104, 183, 0));
+        border-radius: 2px;
+        cursor: pointer;
+
+        > span {
+          font-size: 16px;
+          font-family: MicrosoftYaHei;
+          font-weight: 400;
+          color: #ffffff;
+          margin-left: 5px;
+        }
+      }
+
+      .aqua {
+        color: #00f0ff;
+      }
+
+      .list_center {
+        > ul {
+          color: #fff;
+
+          > li {
+            margin: 5px 0;
+            cursor: pointer;
+            padding-left: 40px;
+          }
+
+          .active {
+            background: rgba(0, 104, 183, 0.3);
+          }
+        }
+      }
+    }
+  }
+}

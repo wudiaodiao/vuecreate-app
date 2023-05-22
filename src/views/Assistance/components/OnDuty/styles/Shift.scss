@@ -1,0 +1,82 @@
+.craftingassistance {
+    user-select: none;
+
+    .shiftClass_right_margin {
+        margin: 20px 24px;
+        opacity: 1;
+
+
+        //排班管理
+        .scheduling {
+
+
+
+            .scheduling_top {
+                .scheduling_top_left {
+                    .scheduling_top_left_list {
+                        display: flex;
+                        justify-content: start;
+
+                        li {
+                            margin: 0 10px;
+                            // color: #00f0ff;
+                        }
+                    }
+                }
+
+                .scheduling_top_right {
+                    width: 100%;
+
+                    .scheduling_top_right_list {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-end;
+
+                        li {
+                            margin: 0 5px;
+
+
+                            button {
+                                cursor: pointer;
+
+                                width: 4.5vw;
+                                color: #fff;
+                                background: #47d235;
+                                border-radius: 2px;
+                                font-size: 16px;
+                                font-family: MicrosoftYaHei;
+                                font-weight: 400;
+                                color: #FFFFFF;
+                            }
+
+                            .blue_button {
+                                background: rgba(0, 126, 221, 1);
+                                // width: 4vw;
+                            }
+
+                            .oragen {
+                                background: #dc8700;
+                                // width: 4vw;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .scheduling_center {
+                width: 100%;
+                margin-top: 15px;
+                height: 60vh;
+                overflow: scroll;
+
+                table {
+
+                    text-align: center;
+                    border-color: rgba(0, 216, 255, 0.5) !important;
+                }
+            }
+        }
+    }
+
+
+}

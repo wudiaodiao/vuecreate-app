@@ -1,0 +1,45 @@
+.shiftClass_right_margin {
+    margin: 20px 24px;
+    opacity: 1;
+
+    .watchBook {
+        width: 100%;
+        text-align: center;
+
+        .watchBook_top {
+            text-align: right;
+
+            span {
+                text-align: center;
+                display: inline-block;
+                min-width: 52px;
+                height: 26px;
+                line-height: 26px;
+                background: #007edd;
+                border-radius: 2px;
+                font-size: 14px;
+                font-family: MicrosoftYaHei;
+                font-weight: 400;
+                color: #ffffff;
+                cursor: pointer;
+            }
+        }
+
+        .watchBook_center {
+            height: 60vh;
+            overflow: auto;
+
+            .green {
+                color: #60ff00;
+                cursor: pointer;
+            }
+
+            .red {
+                color: #ff3c00;
+                cursor: pointer;
+            }
+        }
+
+        .watchBook_bootom {}
+    }
+}

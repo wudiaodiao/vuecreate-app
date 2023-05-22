@@ -1,0 +1,300 @@
+.page {
+    margin: 24px;
+    width: calc(100% - 48px);
+    height: calc(100% - 48px);
+    overflow-y: auto;
+
+    .el-input {
+        width: 180px;
+
+        .el-input__inner {
+            height: 30px;
+            background: transparent;
+            color: #fff;
+            border-radius: 0px;
+        }
+    }
+
+    .el-date-editor {
+        width: 180px;
+
+        .el-input__inner {
+            height: 30px;
+            background: transparent;
+            color: #fff;
+            border-radius: 0px;
+        }
+    }
+
+    .el-select {
+        width: 180px;
+
+        .el-input__inner {
+            height: 30px;
+            background: transparent;
+            color: #fff;
+            border-radius: 0px;
+        }
+    }
+
+    .el-step {
+        .el-step__main {
+            height: 60px;
+            
+            .el-step__title {
+                font-size: 14px;
+            }
+        }
+
+        .el-step__icon {
+            background: black;
+            width: 22px;
+            height: 22px;
+
+            .el-step__icon-inner {
+                font-size: 14px;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .el-upload__tip {
+        color: white;
+    }
+    
+    .el-upload-list__item-name {
+        color: white;
+
+        .el-icon-document {
+            color: white;
+        }
+    }
+
+    .chart {
+        width: 100%;
+        height: 300px;
+    }
+
+    .button {
+        display: inline-block;
+        text-align: center;
+        font-size: 14px;
+        font-family: MicrosoftYaHei;
+        font-weight: 400;
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        background: #47d235;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    
+    .toolbutton {
+        display: inline-block;
+        text-align: center;
+        font-size: 12px;
+        font-family: MicrosoftYaHei;
+        font-weight: 400;
+        width: 50px;
+        height: 26px;
+        line-height: 26px;;
+        background: #007edd;
+        border-radius: 2px;
+        color: white;
+    }
+
+    .caption {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .filtertable {
+        border: 0;
+        border-collapse: collapse;
+        width: 100%;
+
+        td {
+            padding: 6px 0;
+        }
+
+        .title2 {
+            width: 50px;
+        }
+
+        .title3 {
+            width: 60px;
+        }
+
+        .title4 {
+            width: 80px;
+        }
+
+        .title5 {
+            width: 90px;
+        }
+
+        .content {
+            width:170px;
+        }
+        
+        .content2 {
+            width: 330px;
+        }
+
+        .tool {
+            width: 70px;
+        }
+    }
+
+    .greenbutton {
+        color: #60ff00;
+    }
+
+    .redbutton {
+        color: #ff3c00;
+    }
+    
+    .el-table {
+        background-color: transparent;
+
+        .cell {
+            width: 100%;
+            word-break: keep-all;
+            /* 不换行 */
+            white-space: nowrap;
+            /* 不换行 */
+            overflow: hidden;
+            /* 内容超出宽度时隐藏超出部分的内容 */
+            text-overflow: ellipsis;
+        }
+
+        td {
+            border-bottom: 1px solid transparent;
+            border: 1px solid transparent;
+            padding: 0.7vh 0;
+            font-size: 14px;
+        }
+
+        .odd-row {
+            background: transparent;
+            color: #fff;
+        }
+        .even-row {
+            background: #0069b7;
+            color: #fff;
+        }
+
+        th, tr {
+            color: #fff;
+            background: transparent;
+            opacity: 1;
+            text-align: center;
+        }
+    }
+
+    .el-table::before {
+        background-color: transparent;
+    }
+
+    //鼠标移入
+    .el-table--enable-row-hover .el-table__body tr:hover>td {
+        background-color: transparent;
+        //color: #00F0FF;
+    }
+
+    .el-table td,
+    .el-table th.is-leaf {
+        border-bottom: 1px solid transparent;
+        text-align: center;
+    }
+    
+    .dialog_container {
+        background: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99999;
+    
+        .dialog {
+            position: fixed;
+            left: calc(50% - 365.5px);
+            top: calc(50% - 312px);
+            width: 723px;
+            height: 580px;
+            background: url('~@/assets/image/index/dialog.png') no-repeat;
+            background-size: 100% 100%;
+
+            .title {
+                position: absolute;
+                left: 0;
+                top: 8px;
+                width: 100%;
+                font-size: 22px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                font-family: MicrosoftYaHei;
+                font-weight: bold;
+                color: #00f0ff;
+            }
+    
+            .close {
+                position: absolute;
+                left: calc(50% - 21px);
+                bottom: -48px;
+                width: 42px;
+                height: 42px;
+                background: url('~@/assets/image/index/close.png') no-repeat;
+                background-size: 100% 100%;
+            }
+    
+            .box {
+                position: absolute;
+                left: 30px;
+                top: 65px;
+                width: 671px;
+                height: 495px;
+                color: #00f0ff;
+                overflow-y: auto;
+            }
+        }
+    }
+}
+
+
+.image-dialog
+{
+  background: rgba(49, 93, 147, 0.5) !important;
+  width: 60vw !important;
+  margin-top: 10vh !important;
+  text-align: center;
+
+  img
+  {
+    max-width: 100%;
+    max-height: 60vh;
+  }
+}
+
+.public_body{
+    user-select: none;
+    width: 100vw;
+    height: 100vw;
+    box-sizing: border-box;
+    padding: 0px 13vw;
+    .public_page{
+            overflow: hidden;
+            transition: all ease-in-out 0.75s;
+            position: absolute;
+            top: 11.3vh;
+            width: 74vw;
+            height: 70.38vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            color: #fff;
+    }
+}

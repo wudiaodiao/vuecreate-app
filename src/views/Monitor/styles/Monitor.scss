@@ -1,0 +1,192 @@
+.monitor {
+    user-select: none;
+    margin-top: 2.78vh;
+
+    .monitor_left {
+        margin-left: 46px;
+
+
+        .monitor_left_top {
+            background: url('../../assets/image/index/search.png');
+            background-size: 100% 100%;
+            position: relative;
+            width: 21.35vw;
+
+
+            input {
+                width: 330px;
+                height: 4.26vh;
+                background-color: transparent;
+                padding-left: 50px;
+                color: #fff;
+                font-size: 16px;
+            }
+
+            .serch {
+                position: absolute;
+                height: 4.26vh;
+                width: 70px;
+                top: 0;
+                right: 0;
+                background-color: transparentize;
+            }
+        }
+
+        .monitor_left_top_bootom {
+            overflow: hidden;
+            margin-top: 10px;
+            display: flex;
+
+
+            .monitor_left_top_bootom_listLeft {
+                width: 10.42vw;
+                height: 82.22vh;
+                background-color: rgba(0, 0, 0, 0.5);
+                border-radius: 8px;
+                padding-top: 17px;
+
+                .bootom_listLeft_img {
+                    padding-left: 16px;
+
+                    >.img {
+                        vertical-align: baseline;
+                    }
+
+                    >span {
+                        font-size: 16px;
+                        font-family: MicrosoftYaHei;
+                        font-weight: 400;
+                        color: #1bdfec;
+                        margin-left: 8px;
+                    }
+                }
+            }
+
+            .monitor_left_top_bootom_right {
+                width: 10.42vw;
+                height: 82.22vh;
+                background-color: rgba(0, 0, 0, 0.5);
+                border-radius: 8px;
+                margin-left: 10px;
+                padding-top: 17px;
+
+                .bootom_listright_img {
+                    padding-left: 16px;
+
+                    >.img {
+                        vertical-align: baseline;
+                    }
+
+                    >span {
+                        font-size: 16px;
+                        font-family: MicrosoftYaHei;
+                        font-weight: 400;
+                        color: #1bdfec;
+                        margin-left: 8px;
+                    }
+                }
+
+                .my_tree {}
+            }
+        }
+    }
+
+    //中间
+    .monitor_center {
+        text-align: center;
+        position: absolute;
+        left: 25.1vw;
+        top: 8.89vh;
+        background: url('../../assets/image/index/modal_bg.png');
+        background-size: 100% 100%;
+        width: 54.64vw;
+        height: 70vh;
+
+        .monitor_center_title {
+
+            font-size: 18px;
+            font-family: MicrosoftYaHei;
+            font-weight: 400;
+            color: #00F0FF;
+            height: 5.2vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .monitor_shebei {
+            width: 100%;
+            height: 95%;
+            transform: scale(0.84, 0.85);
+
+            >img {
+                width: 100%;
+                height: 95%;
+                border-radius: 20px;
+            }
+        }
+
+        .oncel {
+            margin: auto;
+            background: url('../../assets/image/index/cancel.png');
+            background-size: 100% 100%;
+            width: 42px;
+            height: 42px;
+            cursor: pointer;
+        }
+    }
+
+    //右侧
+    .monitor_right {
+        position: absolute;
+        top: 2.78vh;
+        left: 81.15vw;
+        width: 16.46vw;
+        height: 40.19vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+
+        >.monitor_right_center {
+            padding-left: 1.35vw;
+            padding-top: 1.35vh;
+
+            p {
+                width: 72px;
+                height: 19px;
+                font-size: 18px;
+                font-family: MicrosoftYaHei;
+                font-weight: 400;
+                color: #00f0ff;
+                line-height: 36px;
+                margin-bottom: 1.94vh;
+            }
+
+            .informationShow {
+                li {
+                    height: 3vh;
+                    width: 100%;
+                    height: 3vh;
+
+                    span {
+                        font-size: 14px;
+                        font-family: MicrosoftYaHei;
+                        font-weight: 400;
+                        color: #e8e9e9;
+                    }
+
+                    :nth-child(1) {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .monitor_right_botton {
+        position: absolute;
+        bottom: 30vh;
+        left: 88vw;
+
+
+    }
+}

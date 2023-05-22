@@ -1,0 +1,318 @@
+.left_center {
+  width: 420px;
+  padding:0 20px;
+  background: url('~@/assets/image/MMS/左.png') no-repeat center;
+   background-size: 100% 100%;
+  // width: 100%;
+  height: 100%;
+.left-main1{
+  width: 100%;
+  height: 23%;
+
+  .left-main1-top{
+    width: 100%;
+    height: 23%;
+  }
+  .left-main1-bottom{
+    width: 100%;
+    height: 77%;
+    display: flex;
+    .left-main1-bottom-left{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 30%;
+      position: relative;
+      p{
+        font-size: 26px;
+      }
+      h6{
+        color: rgba($color: #FFF, $alpha: .8);
+      }
+    }
+    .left-main1-bottom-center{
+      width: 40%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      bottom: 25px;
+      background-size: 80%;
+       p{
+        font-size: 26px;
+      }
+      h6{
+        color: rgba($color: #FFF, $alpha: .8);
+      }
+    }
+    .left-main1-bottom-right{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 30%;
+      p{
+        font-size: 26px;
+      }
+      h6{
+        color: rgba($color: #FFF, $alpha: .8);
+      }
+    }
+  }
+}
+.left-main2{
+  // margin-top: 20px;
+  width: 100%;
+  height: 23%;
+   .left-main2-top{
+    width: 100%;
+    height: 10%;
+  }
+  .left-main2-bottom{
+    width: 100%;
+    height: 90%;
+    >div{
+       box-sizing: border-box;
+          padding: 5px 0;
+      width: 100%;
+      height: 50%;
+      display: flex;
+      box-sizing: border-box;
+       margin-top: 5px;
+      justify-content: center;
+      align-items: center;
+      >div{
+        height: 100%;
+        
+      }
+      .state_left{
+        flex: 4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .state_left_top{
+          font-size: 18px;
+        }
+        >div{
+         
+          width: 100%;
+          flex: 0.9;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        // background: red;
+        
+        .state_left_center{
+          flex: 1;
+         .blli{
+          position: relative;
+          box-sizing: border-box;
+         padding: 3px 5px;
+          border: 1px solid rgba($color: #FFF, $alpha: .4);
+          width: 100%;
+          height: 60%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          >div{
+            height: 100%;
+          }
+          .sanjiao{
+            position: absolute;
+            top: -13px;
+            left: 40%;
+            transform: translateX(-6px);
+            border-top: 8px solid #fff;
+            border-left: 6px solid transparent;
+             border-right: 6px solid transparent;
+          }
+          .bili_left{
+           
+            width: 40%;
+            background: #FEA172;
+          }
+          .bili_right{
+            background: rgba($color: #FFF, $alpha: .4);
+            flex-grow: 1;
+          }
+         }
+        }
+        .state_left_bottom{
+          .kuai{
+            
+            div{
+            
+              display: inline-block;
+              width: 10px;
+              height: 10px;
+              margin: 0 5px;
+              
+            }
+            .wanchengkuai{
+              background: #FEA172;
+            }
+            .weiwanchengkuai{
+              background:  rgba($color: #FFF, $alpha: .4);
+            }
+            .zhunshikuai{
+               background: #03D5F8;
+            }
+            .chaoshikuai{
+               background: #FE898B;
+            }
+          }
+        }
+      }
+      .state_right{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        
+        >div{
+          flex: 1;
+          line-height: 40px;
+        }
+        .state_right_top{
+          font-size: 21px;
+          color: #e59e8a;
+        }
+        .state_right_bottom{
+          line-height: 30px;
+          font-size: 18px;
+          color: rgba($color: #FFF, $alpha: .7);
+        }
+        // background: #fff;
+      }
+    }
+   
+    
+   
+  }
+}
+.left_main3{
+    margin-top: 45px;
+  width: 100%;
+  height: 23%;
+  z-index: 999;
+  position: relative;
+   .nyr{
+    text-align: center;
+    width: 130px;
+    // background: red;
+    position: absolute;
+    right: 0;
+    top: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    >div{
+      cursor: pointer;
+      border: 1px solid #347A98;
+      height: 100%;
+      width: 40px;
+      text-align: center;
+      background: #2A708F;
+    }
+    .active{
+      background: #00B9E1;
+    }
+  }
+  #left_main3{
+width: 100%;
+height: 100%;
+
+ 
+}
+}
+
+
+.left-main4{
+  margin-top: 50px;
+  // background: red;
+  width: 100%;
+  height: 18%;
+ display: flex;
+ >div{
+  height: 100%;
+
+ }
+ .left_main4_left{
+ 
+  flex: 1.5;
+ }
+ .left_main4_right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 2;
+  // background: red;
+  >div{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    >div{
+      height: 100%;
+      box-sizing: border-box;
+      padding-left: 20px;
+      padding-bottom: 10px;
+    }
+    .shuju_left{
+      height: 80%;
+      margin-top: 5px;
+      flex: 1;
+      // background: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .kuai{
+        width: 10px;
+        height: 10px;
+        background: red;
+      }
+      .line{
+        width: 2px;
+        height: 30px;
+        background: rgba($color: #FFF, $alpha: .4);
+      }
+      .tiao{
+        width: 5px;
+        height: 15px;
+        background: #ccc;
+      }
+    }
+    .shuju_right{
+      // background: #fff;
+      flex: 10;
+      box-sizing: border-box;
+      padding-left: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .shu{
+        font-size: 24px;
+        font-weight: 700;
+      }
+      span{
+        font-size: 16px;
+      }
+    }
+  }
+ }
+}
+}

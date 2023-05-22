@@ -1,0 +1,75 @@
+.Part {
+    user-select: none;
+
+    .InspectionPlan_cneter {
+        color: #fff;
+
+        .InspectionPlan {
+            .InspectionPlan_main {
+                opacity: 1;
+                margin: 24px;
+
+                // width: 100%;
+                // height: 100%;
+                .InspectionPlan_main_top {
+                    height: 30px;
+
+                    .WorkOrder_add {
+                        text-align: right;
+
+
+                        button {
+                            // width: 50px;
+                            // height: 26px;
+                            // line-height: 26px;
+                            padding: 6px 8px;
+                            background: #007EDD;
+                            border-radius: 2px;
+                            font-size: 14px;
+                            font-family: MicrosoftYaHei;
+                            font-weight: 400;
+                            color: #FFFFFF;
+                            cursor: pointer;
+                            margin-left: 20px;
+
+                        }
+                    }
+                }
+
+                .InspectionPlan_main_center {
+                    .InspectionPlan_main_list {
+                        height: 60vh;
+                        overflow: auto;
+
+                        a {
+                            color: #fff;
+                        }
+
+                        .green {
+                            color: #60ff00;
+                            cursor: pointer;
+                        }
+
+                        .red {
+                            color: #ff3c00;
+                            cursor: pointer;
+                        }
+
+                        .changkan {
+                            color: rgba(245, 255, 0, 1);
+                            cursor: pointer;
+                        }
+                    }
+
+                }
+
+
+
+
+            }
+
+
+
+        }
+    }
+}

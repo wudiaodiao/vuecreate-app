@@ -1,0 +1,141 @@
+.Part {
+    user-select: none;
+
+    .Part_cneter {
+        color: #fff;
+
+        .Partlist {
+     
+
+            .Partlist_main {
+                margin: 24px;
+                // width: 100%;
+                // height: 100%;
+
+                .Partlist_Serch {
+                    width: 100%;
+                    height: 100%;
+
+                    .Equipment_top {
+                        opacity: 1;
+
+                        ul {
+                            display: flex;
+
+                            li {
+                                display: flex;
+                                align-items: center;
+                                margin-right: 20px;
+
+                                .Equipment_input {
+                                    width: 150px;
+                                    height: 3vh;
+                                    background: rgba(0, 0, 0, 0);
+                                    border: 1px solid rgba(255, 255, 255, 1);
+                                    padding-left: 5px;
+                                    color: #fff;
+                                }
+
+                                .withd_ {
+                                    width: 120px;
+                                }
+
+                                .Equipment_chaxun {
+                                    button {
+                                        width: 100px;
+                                        height: 3vh;
+                                        background: #47D235;
+                                        border-radius: 2px;
+                                        font-size: 14px;
+                                        font-family: MicrosoftYaHei;
+                                        font-weight: 400;
+                                        color: #FFFFFF;
+                                        cursor: pointer;
+                                    }
+                                }
+
+
+
+                            }
+                        }
+                    }
+
+                }
+
+                .Partlist_add {
+                    width: 100%;
+                    height: 3vh;
+                    text-align: right;
+
+                    .Partlist_top_top {
+                        width: 100%;
+                        height: 3vh;
+
+
+                        ul {
+                            li {
+                                margin: 0 5px;
+                                display: inline-block;
+
+                                button {
+                                    width: 50px;
+                                    height: 26px;
+                                    background: #007EDD;
+                                    border-radius: 2px;
+                                    font-size: 14px;
+                                    font-family: MicrosoftYaHei;
+                                    font-weight: 400;
+                                    color: #FFFFFF;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .Partlist_list {
+
+                    width: 100%;
+                    overflow-y: scroll;
+                    height: 57.5vh;
+
+
+                    .editing_green {
+                        color: rgba(95, 255, 0, 1);
+                        cursor: pointer;
+                    }
+
+                    .red {
+                        color: #ff3c00;
+                        cursor: pointer;
+                    }
+
+                    .guanlian {
+                        color: rgba(0, 255, 234, 1);
+                        cursor: pointer;
+                    }
+
+                    .chakan {
+                        color: rgba(246, 255, 0, 1);
+                        cursor: pointer;
+                    }
+
+
+                }
+
+                .Partlist_foot {
+
+
+                    .fenye {
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                }
+            }
+
+
+
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.Part {
+    user-select: none;
+
+    .MaintainPlan_cneter {
+        color: #fff;
+
+        .MaintainPlan {
+            // position: absolute;
+            // top: 11.3vh;
+            // left: 17.92vw;
+            // background-color: rgba(0, 0, 0, 0.5);
+            // width: 64.16vw;
+            // height: 70.37vh;
+            // border-radius: 8px;
+
+            .MaintainPlan_main {
+                opacity: 1;
+                margin: 24px;
+                .MaintainPlan_main_top {
+                    height: 30px;
+
+                    .WorkOrder_add {
+                        text-align: right;
+
+
+                        button {
+                            // width: 50px;
+                            // height: 26px;
+                            // line-height: 26px;
+                            padding: 6px 8px;
+                            background: #007EDD;
+                            border-radius: 2px;
+                            font-size: 14px;
+                            font-family: MicrosoftYaHei;
+                            font-weight: 400;
+                            color: #FFFFFF;
+                            cursor: pointer;
+                            margin-left: 20px;
+
+                        }
+                    }
+                }
+
+                .MaintainPlan_main_center {
+                    .MaintainPlan_main_list {
+                        height: 60vh;
+                        overflow: auto;
+
+                        a {
+                            color: #fff;
+                        }
+
+                        .green {
+                            color: #60ff00;
+                            cursor: pointer;
+                        }
+
+                        .red {
+                            color: #ff3c00;
+                            cursor: pointer;
+                        }
+
+                        .changkan {
+                            color: rgba(245, 255, 0, 1);
+                            cursor: pointer;
+                        }
+                    }
+
+                }
+
+                .MaintainPlan_main_bottom {
+                    .fenye {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+
+
+            }
+
+
+
+        }
+    }
+}

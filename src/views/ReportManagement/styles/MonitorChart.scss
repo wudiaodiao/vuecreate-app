@@ -1,0 +1,96 @@
+.Part,.public_body {
+    user-select: none;
+
+    .WorkOrderQuery_cneter {
+        color: #fff;
+
+        .public_page {
+     
+
+            .WorkOrderQuery_main {
+                margin: 24px;
+
+                opacity: 1;
+
+                .WorkOrderQuery_main_top {
+                    .MonitorReport_center_top {
+                        height: 30px;
+
+                        ul {
+                            display: flex;
+                            justify-content: start;
+                            align-items: center;
+
+                            li {
+                                margin-right: 20px;
+                                display: flex;
+                                align-items: center;
+
+                                span {
+                                    font-size: 14px;
+                                    font-family: MicrosoftYaHei;
+                                    font-weight: 400;
+                                    color: #ffffff;
+                                  
+                                }
+
+                                .chaxun {
+                                    float: right;
+                                    text-align: center;
+                                    font-size: 14px;
+                                    font-family: MicrosoftYaHei;
+                                    font-weight: 400;
+                                    width: 100px;
+                                    height: 30px;
+                                    line-height: 30px;
+                                    background: #47d235;
+                                    border-radius: 2px;
+                                    cursor: pointer;
+                                }
+
+                                .shunline {
+                                    padding: 0px 5px;
+                                }
+
+                                .vertical {
+                                    vertical-align: -webkit-baseline-middle;
+                                    padding-left: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+
+                .WorkOrderQuery_main_zhon {
+                    .WorkOrderQuery_main_list {
+                        height: 56.5vh;
+                        overflow: auto;
+
+                        a {
+                            color: #fff;
+                        }
+
+                        .green {
+                            color: #60ff00;
+                            cursor: pointer;
+                        }
+
+                        .red {
+                            color: #ff3c00;
+                            cursor: pointer;
+                        }
+
+                        .changkan {
+                            color: rgba(245, 255, 0, 1);
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+}

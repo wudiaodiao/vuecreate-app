@@ -1,0 +1,92 @@
+.Part {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.Part .WorkOrderQuery_cneter {
+  color: #fff;
+}
+.Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main {
+  margin: 24px;
+  opacity: 1;
+}
+.Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main .WorkOrderQuery_main_top .WorkOrderQuery_center_top, .Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main .WorkOrderQuery_main_top .baojin_center_top {
+  height: 30px;
+}
+.Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main .WorkOrderQuery_main_top .WorkOrderQuery_center_top ul, .Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main .WorkOrderQuery_main_top .baojin_center_top ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main .WorkOrderQuery_main_top .WorkOrderQuery_center_top ul li, .Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main .WorkOrderQuery_main_top .baojin_center_top ul li {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main .WorkOrderQuery_main_top .WorkOrderQuery_center_top ul li span, .Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main .WorkOrderQuery_main_top .baojin_center_top ul li span {
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #ffffff;
+}
+.Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main .WorkOrderQuery_main_top .WorkOrderQuery_center_top ul li .chaxun, .Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main .WorkOrderQuery_main_top .baojin_center_top ul li .chaxun {
+  float: right;
+  text-align: center;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  background: #47d235;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main .WorkOrderQuery_main_top .WorkOrderQuery_center_top ul li .shunline, .Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main .WorkOrderQuery_main_top .baojin_center_top ul li .shunline {
+  padding: 0px 5px;
+}
+.Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main .WorkOrderQuery_main_top .WorkOrderQuery_center_top ul li .vertical, .Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main .WorkOrderQuery_main_top .baojin_center_top ul li .vertical {
+  vertical-align: -webkit-baseline-middle;
+  padding-left: 10px;
+}
+.Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main .WorkOrderQuery_main_daochu {
+  height: 30px;
+  margin-top: 10px;
+  padding-right: 28px;
+}
+.Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main .WorkOrderQuery_main_daochu .daochu_right {
+  float: right;
+}
+.Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main .WorkOrderQuery_main_daochu .daochu_right .chu {
+  display: block;
+  cursor: pointer;
+  padding: 6px 10px;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  background: #007edd;
+  border-radius: 2px;
+}
+.Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main .WorkOrderQuery_main_zhon .WorkOrderQuery_main_list {
+  overflow: auto;
+}
+.Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main .WorkOrderQuery_main_zhon .WorkOrderQuery_main_list a {
+  color: #fff;
+}
+.Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main .WorkOrderQuery_main_zhon .WorkOrderQuery_main_list .green {
+  color: #60ff00;
+  cursor: pointer;
+}
+.Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main .WorkOrderQuery_main_zhon .WorkOrderQuery_main_list .red {
+  color: #ff3c00;
+  cursor: pointer;
+}
+.Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main .WorkOrderQuery_main_zhon .WorkOrderQuery_main_list .changkan {
+  color: rgb(245, 255, 0);
+  cursor: pointer;
+}
+.Part .WorkOrderQuery_cneter .WorkOrderQuery .WorkOrderQuery_main .fenye {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=InspectionTask.css.map */
