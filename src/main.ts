@@ -12,7 +12,7 @@ const app = createApp(App)
 app.use(createPinia())
 app.use(router)
 app.use(ElementPlus)
-import htmlToPdf from '~@/js/htmlToPdf.js'
+import htmlToPdf from '~@/js/htmlToPdf'
 app.use(htmlToPdf)
 
 
