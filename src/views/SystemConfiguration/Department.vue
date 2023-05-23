@@ -64,7 +64,7 @@
           <div class="tanchuang_bg">
             <div class="tanchuang_top">
               <img
-                :src="require('@/assets/image/index/partial_left.png')"
+                :src="require('~@/assets/image/index/partial_left.png')"
                 alt
               />
               <span class="top_title margin_tc">{{nodeShowType=='addRootNode'?'添加根节点':nodeShowType=='addChildrenNode'?'添加子节点':nodeShowType=='edChildrenNode'?'编辑节点':''}}</span>

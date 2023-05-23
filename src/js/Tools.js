@@ -6,7 +6,7 @@
  * @Description: In User Settings Edit
  * @FilePath: \ibms\src\js\Tools.js
  */
-import { Message } from 'element-ui'
+import { ElMessage  } from 'element-plus'
 
 export default {
   //时间对象转字符串

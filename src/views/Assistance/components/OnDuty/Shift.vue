@@ -122,7 +122,7 @@
         <div class="tanchuang_bg">
           <div class="tanchuang_top">
             <img
-              :src="require('@/assets/image/index/partial_left.png')"
+              :src="require('~@/assets/image/index/partial_left.png')"
               alt
             />
             <span class="top_title">编辑排班</span>
@@ -242,7 +242,7 @@
           <div class="tanchuang_bg">
             <div class="tanchuang_top">
               <img
-                :src="require('@/assets/image/index/partial_left.png')"
+                :src="require('~@/assets/image/index/partial_left.png')"
                 alt
               />
               <span class="top_title">导入排班</span>

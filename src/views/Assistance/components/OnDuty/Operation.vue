@@ -124,7 +124,7 @@
               <div :class="['tanchuang_bg']">
                 <div class="tanchuang_top">
                   <img
-                    :src="require('@/assets/image/index/partial_left.png')"
+                    :src="require('~@/assets/image/index/partial_left.png')"
                     alt
                   />
                   <span class="top_title margin_tc">{{ operationAdd == 'add' ? '添加操作证' : '编辑操作证' }}</span>
@@ -313,7 +313,7 @@
             <div class="tanchuang">
                 <div class="tanchuang_bg">
                     <div class="tanchuang_top">
-                        <img :src="require('@/assets/image/index/partial_left.png')" alt />
+                        <img :src="require('~@/assets/image/index/partial_left.png')" alt />
                         <span class="top_title">{{ operationAdd == 'add' ? '添加操作证' : '编辑操作证' }}</span>
 
                         <img :src="require('@/assets/image/index/partial_right.png')" alt />

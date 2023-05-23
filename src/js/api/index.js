@@ -1,6 +1,9 @@
 import axios from 'axios'
-import store from '../../store'
 import Tools from '../Tools'
+import pinia from '../../stores/registerPina'
+import { useAuthStore } from '../../stores/index'
+const authStore = useAuthStore(pinia)
+// let { token, user } = storeToRefs(authStore)
 
 var url = window.location.href //获取url
 var start = window.location.href.indexOf('?') + 1
@@ -26,8 +29,8 @@ function seturlParameter(val) {
   axios
     .get(window.ApiBaseURL + 'api/Auth/LoginByTicket?ticket=' + val.Ticket)
     .then(function(response) {
-      store.state.token = response.data.data.token
-      store.state.user = response.data.data.user
+      authStore.token = response.data.data.token
+      authStore.user = response.data.data.user
       localStorage.setItem('IBMSToken', response.data.data.token)
       store.state.modelMode = '2D'
     })

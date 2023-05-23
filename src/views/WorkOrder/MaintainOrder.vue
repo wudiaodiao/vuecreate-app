@@ -216,7 +216,7 @@
             ]">
             <div class="tanchuang_top">
               <img
-                :src="require('@/assets/image/index/partial_left.png')"
+                :src="require('~@/assets/image/index/partial_left.png')"
                 alt
               />
               <span class="top_title margin_tc">{{

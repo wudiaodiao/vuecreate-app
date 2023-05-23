@@ -7,23 +7,17 @@
     ></div>
     <!-- <backgroundbg> -->
     <div class="index_box">
-      <div
-        :class="[
-          'index_left',
-          $store.state.indexItemShow ? 'index_left_l_de' : 'index_left_l'
-        ]"
+      <!-- <div
+        :class="['index_left',authStore.indexItemShow? 'index_left_l_de' : 'index_left_l']"
         v-if="$route.name == '2d'"
       >
         <indexLeft></indexLeft>
-      </div>
+      </div> -->
 
       <div
-        :class="[
-          'index_right',
-          $store.state.indexItemShow ? 'index_left_l_de' : 'index_left_l'
-        ]"
         v-if="$route.name == '2d'"
       >
+        {{ authStore.indexItemShow }}
         <div
           v-if="false && $route.name == '2d'"
           @click="IOTVisible = !IOTVisible"
@@ -94,8 +88,14 @@
     <!-- </backgroundbg> -->
   </div>
 </template>
+<script setup>
+import { storeToRefs } from 'pinia'
+import { useAuthStore } from '~@/stores/index'
+const authStore = useAuthStore()
+</script>
 <script>
 import noticeList from '../../components/index/noticeList.vue'
+const authStore = useAuthStore()
 // function resize() {
 //   var height1 = $(window).height()
 //   var h = $('.index_left').height()
@@ -152,7 +152,8 @@ export default {
   },
   computed: {
     monitorNo() {
-      return this.$store.state.monitorNo
+      const { monitorNo } = storeToRefs(authStore)
+      return authStore
     }
   },
   mounted() {

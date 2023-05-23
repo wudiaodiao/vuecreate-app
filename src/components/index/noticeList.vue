@@ -14,10 +14,10 @@
     <div class="tanchuang">
       <div class="tanchuang_bg">
         <div class="tanchuang_top">
-          <img :src="require('@/assets/image/index/partial_left.png')" alt />
+          <img src="~@/assets/image/index/partial_left.png" alt />
           <span class="top_title">通知列表</span>
 
-          <img :src="require('@/assets/image/index/partial_right.png')" alt />
+          <img src="@/assets/image/index/partial_right.png" alt />
         </div>
         <div class="tanchuang_center">
           <div class="tanchuang_center_cen">
@@ -72,7 +72,7 @@
       <div class="cancel">
         <img
           @click="tijiao"
-          :src="require('@/assets/image/index/cancel.png')"
+          src="@/assets/image/index/cancel.png"
           alt
         />
       </div>
@@ -145,7 +145,16 @@ export default {
   },
   mounted: function() {
   
-  }
+  },
+  // setup() {
+  //   const getImageUrl = (name) => {
+  //       return new URL(`../../lib/Carousel/assets/${name}`, import.meta.url).href
+  //   }
+  //   return {
+  //     carouselData,
+  //     getImageUrl
+  //   }
+  // }
 }
 </script>
 

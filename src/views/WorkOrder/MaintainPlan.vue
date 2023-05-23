@@ -145,7 +145,7 @@
           <div :class="[WorkOrderTcType=='selectEquipment'||WorkOrderTcType=='selectEquipmentEd'?'selectEq_bg': WorkOrderTcType=='chakanLog'?'gongd_tanchuang_bg':'','tanchuang_bg']">
             <div class="tanchuang_top">
               <img
-                :src="require('@/assets/image/index/partial_left.png')"
+                :src="require('~@/assets/image/index/partial_left.png')"
                 alt
               />
               <span class="top_title margin_tc">{{WorkOrderTcType=='Maint_add'?'添加保养计划':WorkOrderTcType=='Maint_ed'?'编辑保养计划':WorkOrderTcType=='editEquipment'?'编辑设备':WorkOrderTcType=='selectEquipmentEd'?'添加保养计划设备':WorkOrderTcType=='CheckTheMaintenance'?'查看保养计划':WorkOrderTcType=='chakan'?'查看设备':WorkOrderTcType=='chakanLog'?'查看工单':WorkOrderTcType=='clUser'?'查看处理人':WorkOrderTcType=='bdUser'?'查看报单人':''}}</span>

@@ -77,7 +77,7 @@
         <div class="tanchuang_bg">
           <div class="tanchuang_top">
             <img
-              :src="require('@/assets/image/index/partial_left.png')"
+              :src="require('~@/assets/image/index/partial_left.png')"
               alt
             />
             <span class="top_title margin_tc">{{PartTcType=='edPassWord'?'修改密码':PartTcType=='EditInformation'?'修改个人信息':PartTcType=='edselectFile'?'选择图片':PartTcType=='uploading'?'上传图片':''}}</span>
