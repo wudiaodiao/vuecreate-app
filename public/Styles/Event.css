@@ -1,0 +1,55 @@
+.public_body {
+  background: transparent !important;
+  zoom: 0.85;
+}
+
+.el-table--border::after, .el-table--group::after, .el-table::before {
+  content: "";
+  position: absolute;
+  background-color: transparent !important;
+  z-index: -999;
+}
+
+.el-table tr {
+  background: transparent;
+}
+
+.el-table {
+  background: transparent !important;
+}
+
+.el-table__header-wrapper {
+  background: transparent !important;
+}
+
+.el-table td.el-table__cell, .el-table th.el-table__cell.is-leaf {
+  border-bottom: none;
+}
+
+.el-table__header, .el-table__header-wrapper {
+  background: transparent !important;
+}
+
+.el-table .warning-row {
+  background: transparent !important;
+  color: #fff;
+  border: none;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.el-table .success-row {
+  background: #0069b7;
+  opacity: 1;
+  border: none;
+  color: #fff;
+  pointer-events: none;
+}
+
+.daochu {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  right: 0;
+  text-align: center;
+}/*# sourceMappingURL=Event.css.map */

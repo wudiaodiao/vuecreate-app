@@ -116,7 +116,7 @@
                   :width="index==0?'160':''"
                   show-overflow-tooltip
                 >
-                  <template slot-scope="scope">
+                  <template v-slot="scope">
                     <span>
                       {{scope.row[index]?$Tools.timeFormat(scope.row[index]+''):''}}
                     </span>

@@ -13,8 +13,10 @@
   },
   "dependencies": {
     "axios": "^1.4.0",
+    "echarts": "^5.4.2",
     "element-plus": "^2.3.4",
     "html2canvas": "^1.4.1",
+    "jquery": "^3.7.0",
     "jspdf": "^2.5.1",
     "pinia": "^2.0.36",
     "vue": "^3.3.2",
@@ -23,6 +25,7 @@
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",
     "@tsconfig/node18": "^2.0.1",
+    "@types/jquery": "^3.5.16",
     "@types/node": "^18.16.8",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vitejs/plugin-vue-jsx": "^3.0.1",

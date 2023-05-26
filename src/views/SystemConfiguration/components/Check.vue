@@ -36,7 +36,7 @@
               label="巡检项"
             ></el-table-column>
             <el-table-column label="编辑">
-              <template slot-scope="scope">
+              <template v-slot="scope">
                 <span
                   class="editing_yeelow"
                   @click="addTc('EditingSb_bj', scope.row)"
@@ -44,7 +44,7 @@
               </template>
             </el-table-column>
             <el-table-column label="删除">
-              <template slot-scope="scope">
+              <template v-slot="scope">
                 <el-popconfirm
                   title="确定删除吗"
                   @onConfirm="AreaDeleteInspection(scope.row.no)"

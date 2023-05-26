@@ -10,11 +10,12 @@
  
   </div>
 </template>
-<script>
-import left_main1 from '../echarts/left_main1'
-import left_main2 from '../echarts/left_main2'
-import left_main3 from '../echarts/left_main3'
-import left_main4 from '../echarts/left_main4'
+<script lang="ts">
+import left_main1 from '../echarts/left_main1.vue'
+import left_main2 from '../echarts/left_main2.vue'
+import left_main3 from '../echarts/left_main3.vue'
+import left_main4 from '../echarts/left_main4.vue'
+
 
 export default {
   components: {

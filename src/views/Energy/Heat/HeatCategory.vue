@@ -11,12 +11,12 @@
     <el-table :data="data" :row-class-name="onRowClassName">
       <el-table-column prop="name" label="名称" />
       <el-table-column label="编辑">
-        <template slot-scope="scope">
+        <template v-slot="scope">
           <a href="javascript:void(0)" class="greenbutton" @click="onEditClick(scope.row)">编辑</a>
         </template>
       </el-table-column>
       <el-table-column label="删除">
-        <template slot-scope="scope">
+        <template v-slot="scope">
           <a href="javascript:void(0)" class="redbutton" @click="onDeleteClick(scope.row.no)">删除</a>
         </template>
       </el-table-column>
@@ -63,7 +63,7 @@ export default {
   mounted() {
     this.queryData();
   },
-  destroyed() {},
+  unmounted() {},
   computed: {},
   methods: {
     onAddClick() {

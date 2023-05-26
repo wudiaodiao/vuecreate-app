@@ -25,7 +25,7 @@
             show-overflow-tooltip
             label="巡检项"
           >
-            <template slot-scope="scope">
+            <template v-slot="scope">
               <span
                 style="cursor: pointer;"
                 @click="addTc('chakanXJX', scope.row.patrolTaskTeamItems)"

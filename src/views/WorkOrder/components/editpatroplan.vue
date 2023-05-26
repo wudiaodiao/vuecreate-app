@@ -32,7 +32,7 @@
             prop="type"
             label="类型"
           >
-            <template slot-scope="scope">
+            <template v-slot="scope">
               <span slot="reference">{{scope.row.type==1?'地点':'设备'}}</span>
             </template>
           </el-table-column>
@@ -40,7 +40,7 @@
             label="编辑"
             width="60px"
           >
-           <template slot-scope="scope">
+           <template v-slot="scope">
                     <span
                       class="green"
                       @click="addTc('shezhiedit', scope.row)"
@@ -51,7 +51,7 @@
             label="删除"
             width="60px"
           >
-            <template slot-scope="scope">
+            <template v-slot="scope">
               <el-popconfirm
                 title="确定删除吗"
                 @onConfirm="InspectionPlanRemoveTime(scope.row.no)"

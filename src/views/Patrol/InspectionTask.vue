@@ -9,7 +9,7 @@
 <template>
   <div class="Part">
     <el-dialog
-      :visible.sync="imgdialogVisible"
+      v-model:visible="imgdialogVisible"
       append-to-body
     >
       <img
@@ -155,7 +155,7 @@
                     width="170px"
                     show-overflow-tooltip
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       {{ $Convert.getTime(scope.row.time)}}
                     </template>
                   </el-table-column>
@@ -176,7 +176,7 @@
                     show-overflow-tooltip
                     label="时间段"
                   >
-                    <template slot-scope="scope">
+                    <template v-slot="scope">
                       <span>
                         {{
                      DateTime.parse(scope.row.beginTime).format('hh:mm')
@@ -222,7 +222,7 @@
                     label="状态"
                     width="100px"
                   >
-                    <template slot-scope="scope">
+                    <template v-slot="scope">
                       <span :style="$Convert.InspectionTask.State(scope.row.state)=='未巡检'?'color:red':''">
                         {{ $Convert.InspectionTask.State(scope.row.state) }}
                       </span>
@@ -234,7 +234,7 @@
                       label="预警状态"
                       width="100px"
                     >
-                      <template slot-scope="scope">
+                      <template v-slot="scope">
                         <span :style="$Convert.InspectionTask2.State(scope.row.result) == '异常' ? 'color:red' : ''">
                           {{ $Convert.InspectionTask2.State(scope.row.result) }}
                         </span>
@@ -245,7 +245,7 @@
                     label="查看"
                     width="100px"
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       <span
                         class="changkan"
                         @click="addTc('chakanXQ', scope.row.no),currentid=scope.row.no"

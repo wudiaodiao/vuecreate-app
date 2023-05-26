@@ -180,7 +180,7 @@
                 prop="reportTime"
                 label="报单时间"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span>
                     {{ $Convert.getTime(scope.row.reportTime) }}
                   </span>
@@ -202,7 +202,7 @@
                 label="查看"
                 width="50px"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span
                     class="editing_green"
                     @click="addTc('chakanLog', scope.row.no)"
@@ -240,7 +240,7 @@
                 prop="reportTime"
                 label="报单时间"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span>
                     {{ $Convert.getTime(scope.row.reportTime) }}
                   </span>
@@ -258,7 +258,7 @@
                 width="120px"
                 label="工单状态"
               >
-                <template scope="scope">
+                <template v-slot="scope">
 
                   <span>
                     {{$Convert.WorkOrder.State(scope.row.state)}}
@@ -269,7 +269,7 @@
                 label="查看"
                 width="50px"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span
                     class="editing_green"
                     @click="addTc('chakanLog', scope.row.no)"
@@ -351,7 +351,7 @@ export default {
     this.getEquipmentGetModel()
     this.EquipmentRepairOrderList()
   },
-  destroyed() {
+  unmounted() {
     window.runTimer && clearInterval(window.runTimer)
   },
   methods: {

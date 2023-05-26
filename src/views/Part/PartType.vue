@@ -71,7 +71,7 @@
                 >
                   <template
                     class="custom-tree-node"
-                    slot-scope="{ node, data }"
+                    v-slot="{ node, data }"
                   >
                     <span :class="[
                         equipmentActiveId == data.model.id ? 'aqua' : ''

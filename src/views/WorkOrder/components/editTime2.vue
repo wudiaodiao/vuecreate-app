@@ -24,7 +24,7 @@
             prop="name"
             label="时间段"
           >
-            <template slot-scope="scope">
+            <template v-slot="scope">
               <span slot="reference">{{scope.row.beginTime+'-'+scope.row.endTime}}</span>
             </template>
           </el-table-column>
@@ -32,7 +32,7 @@
             label="删除"
             width="60px"
           >
-            <template slot-scope="scope">
+            <template v-slot="scope">
               <el-popconfirm
                 title="确定删除吗"
                 @onConfirm="InspectionPlanRemoveTime(scope.row.no)"

@@ -48,7 +48,7 @@
                   label="巡检周期"
                   show-overflow-tooltip
                 >
-                  <template scope="scope">
+                  <template v-slot="scope">
                     <span>{{ scope.row.period + '天' }}</span>
                   </template>
                 </el-table-column>
@@ -57,7 +57,7 @@
                   label="下一周期"
                   show-overflow-tooltip
                 >
-                  <template scope="scope">
+                  <template v-slot="scope">
                     <span>
                       {{
                         DateTime.parse(scope.row.nextDate).format('yyyy-MM-dd')
@@ -75,7 +75,7 @@
                     )
                   "
                 >
-                  <template scope="scope">
+                  <template v-slot="scope">
                     <span
                       class="changkan"
                       @click="addTc('editTime', scope.row.no)"
@@ -92,7 +92,7 @@
                     )
                   "
                 >
-                  <template slot-scope="scope">
+                  <template v-slot="scope">
                     <span
                       class="green"
                       @click="addTc('editTheCheck', scope.row.no)"
@@ -109,7 +109,7 @@
                     )
                   "
                 >
-                  <template slot-scope="scope">
+                  <template v-slot="scope">
                     <span
                       class="green"
                       @click="addTc('InspectionPlan_ed', scope.row)"
@@ -126,7 +126,7 @@
                     )
                   "
                 >
-                  <template slot-scope="scope">
+                  <template v-slot="scope">
                     <el-popconfirm
                       title="确定删除吗"
                       @onConfirm="InspectionPlanRemove(scope.row.no)"
@@ -224,7 +224,7 @@
                             "
                             :placeholder="formValidator.schedulingDepartment?formValidator.schedulingDepartment:'请选择'"
                           >
-                            <template slot-scope="{ node, data }">
+                            <template v-slot="{ node, data }">
                               <span disabled>{{ data.label }}</span>
                               <span v-if="!node.isLeaf">({{ data.children.length }})</span>
                             </template>
@@ -336,7 +336,7 @@
                           @change="floorlistChane(floorlistName)"
                           :placeholder="floorlistName"
                         >
-                          <template slot-scope="{ node, data }">
+                          <template v-slot="{ node, data }">
                             <span v-if="data.children.length==0">({{ data.model.code}})</span>
                             <span disabled>{{ data.model.name }}</span>
                             <span v-if="!node.isLeaf">({{ data.children.length }})</span>

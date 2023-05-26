@@ -44,7 +44,7 @@
                 label="恢复时间"
                 show-overflow-tooltip
               >
-                <template scope="scope">
+                <template v-slot="scope">
                   <span>
                     {{ $Convert.getTime(scope.row.createTime) }}
                   </span>
@@ -54,7 +54,7 @@
                 label="查看"
                 width="100px"
               >
-                <template scope="scope">
+                <template v-slot="scope">
                   <span
                     class="changkan"
                     @click="announcementChankan(scope.row)"
@@ -65,7 +65,7 @@
                 label="编辑"
                 width="100px"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span
                     class="green"
                     @click="Editing(scope.row)"
@@ -76,7 +76,7 @@
                 label="删除"
                 width="100px"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <el-popconfirm
                     title="确定删除吗"
                     @onConfirm="AnnouncementDelete(scope.row.no)"
@@ -372,7 +372,7 @@ export default {
   mounted() {
     this.AnnouncementGetList() //获取公告列表
   },
-  destroyed() {},
+  unmounted() {},
   computed: {
     headers() {
       return {

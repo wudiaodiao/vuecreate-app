@@ -40,7 +40,7 @@
     </table>
     <el-table :data="list" :row-class-name="onRowClassName">
       <el-table-column label="日期">
-        <template slot-scope="scope">
+        <template v-slot="scope">
           {{ $Convert.getDate(scope.row.day) }}
         </template>
       </el-table-column>
@@ -271,7 +271,7 @@ export default {
     this.chartDay = this.$echarts.init(document.getElementById('chartDay'));
     this.chartDay.setOption(this.optionDay);
   },
-  destroyed() {},
+  unmounted() {},
   computed: {},
   methods: {
     onQueryClick() {

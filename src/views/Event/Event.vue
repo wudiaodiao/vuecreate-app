@@ -153,7 +153,7 @@
                     label="状态"
                     width="50px"
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       <img :src="
                           require(`@/assets/image/index/event${scope.row.level}.png`)
                         " />
@@ -165,7 +165,7 @@
                     width="195px"
                     show-overflow-tooltip
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       <span>
                         {{ $Convert.getTime(scope.row.alarmTime) }}
                       </span>
@@ -177,7 +177,7 @@
                     width="195px"
                     show-overflow-tooltip
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       <span>
                         {{ $Convert.getTime(scope.row.resetTime) }}
                       </span>
@@ -214,7 +214,7 @@
                     label="级别"
                     width="50px"
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       <span :class="[`event${scope.row.level}`]">{{
                         level(scope.row.level)
                       }}</span>
@@ -224,7 +224,7 @@
                     prop="workOrderState"
                     label="工单状态"
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       <span>
                         {{$Convert.WorkOrder.State(scope.row.workOrderState)}}
                       </span>
@@ -234,7 +234,7 @@
                     label="查看"
                     width="50px"
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       <span
                         class="moshou changkan"
                         @click="chankan(scope.row)"
@@ -490,7 +490,7 @@ export default {
     this.SubSysList()
     this.GetList()
   },
-  destroyed() {},
+  unmounted() {},
   computed: {
     level: function () {
       //返回当前时间的上一个月

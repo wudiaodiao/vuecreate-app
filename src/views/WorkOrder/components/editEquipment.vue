@@ -56,7 +56,7 @@
             label="状态"
             width="100px"
           >
-         <template slot-scope="scope">
+         <template v-slot="scope">
               <span >{{ scope.row.state==1?'正常':'维保中' }}</span>
             </template>
         </el-table-column>
@@ -65,7 +65,7 @@
             width="60px"
             v-if="MaintenanceType=='planEquipment'"
           >
-            <template slot-scope="scope">
+            <template v-slot="scope">
               <span @click="addTc('chakan',scope.row.no)">查看</span>
             </template>
           </el-table-column>
@@ -74,7 +74,7 @@
             width="60px"
             v-else
           >
-            <template slot-scope="scope">
+            <template v-slot="scope">
               <el-popconfirm
                 title="确定删除吗"
                 @onConfirm="MaintainPlanRemoveEquipment(scope.row.no,scope.row.id)"

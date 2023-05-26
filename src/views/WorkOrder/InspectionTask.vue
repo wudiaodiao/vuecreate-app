@@ -69,7 +69,7 @@
                     @change="sDepartmentChane(schedulingDepartment)"
                     :placeholder="schedulingDepartment"
                   >
-                    <template slot-scope="{ node, data }">
+                    <template v-slot="{ node, data }">
                               <span disabled>{{ data.label }}</span>
                               <span v-if="!node.isLeaf">({{ data.children.length }})</span>
                             </template>
@@ -139,7 +139,7 @@
                     width="170px"
                     show-overflow-tooltip
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       {{ $Convert.getTime(scope.row.time)}}
                     </template>
                   </el-table-column>
@@ -160,7 +160,7 @@
                     show-overflow-tooltip
                     label="时间段"
                   >
-                    <template slot-scope="scope">
+                    <template v-slot="scope">
                       <span>
                         {{
                      DateTime.parse(scope.row.beginTime).format('hh:mm')
@@ -180,7 +180,7 @@
                     label="状态"
                     width="100px"
                   >
-                    <template slot-scope="scope">
+                    <template v-slot="scope">
                       {{ $Convert.InspectionTask.State(scope.row.state) }}
                     </template>
                   </el-table-column>
@@ -188,7 +188,7 @@
                     label="查看"
                     width="100px"
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       <span
                         class="changkan"
                         @click="addTc('InspectionTask_look', scope.row.no)"

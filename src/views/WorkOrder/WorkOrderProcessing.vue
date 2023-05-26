@@ -52,7 +52,7 @@
                 prop="type"
                 label="工单类别"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span>{{ $Convert.WorkOrder.Type(scope.row.type) }}</span>
                 </template>
               </el-table-column>
@@ -60,7 +60,7 @@
                 prop="source"
                 label="工单来源"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span>{{ $Convert.WorkOrder.Source(scope.row.source) }}</span>
                 </template>
               </el-table-column>
@@ -69,7 +69,7 @@
                 label="工单级别"
                 width="80px"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span>{{ $Convert.WorkOrder.Level(scope.row.level) }}</span>
                 </template>
               </el-table-column>
@@ -79,7 +79,7 @@
                 label="报单时间"
                 width="160px"
               >
-                <template scope="scope">
+                <template v-slot="scope">
                   <span>{{ $Convert.getTime(scope.row.reportTime) }}</span>
                 </template>
               </el-table-column>
@@ -98,7 +98,7 @@
                 prop="dispatchTimeSpan"
                 width="90px"
               >
-                <template scope="scope">
+                <template v-slot="scope">
                   <span>{{ $Convert.getTimeSpan(scope.row.dispatchTimeSpan, '小时') }}</span>
                 </template>
               </el-table-column>
@@ -107,7 +107,7 @@
                 prop="receiveTimeSpan"
                 width="90px"
               >
-                <template scope="scope">
+                <template v-slot="scope">
                   <span>{{ $Convert.getTimeSpan(scope.row.receiveTimeSpan, '小时') }}</span>
                 </template>
               </el-table-column>
@@ -116,7 +116,7 @@
                 label="处理时长"
                 width="90px"
               >
-                <template scope="scope">
+                <template v-slot="scope">
                   <span :style="color1(scope.row.finishTimeSpan)">{{ $Convert.getTimeSpan(scope.row.finishTimeSpan, '小时') }}</span>
                 </template>
               </el-table-column>
@@ -127,7 +127,7 @@
                 sortable="custom"
                 v-if="tabs[tabIndex].id == 'finished'"
               >
-                <template scope="scope">
+                <template v-slot="scope">
                   <span style="color:red">{{ color2(scope.row.finishTimeSpan) }}</span>
                 </template>
               </el-table-column>
@@ -137,7 +137,7 @@
                 width="80px"
                 :key="Math.random()"
               >
-                <template scope="scope">
+                <template v-slot="scope">
                   <span>
                     {{ $Convert.WorkOrder.State(scope.row.state) }}
                   </span>
@@ -147,7 +147,7 @@
                 label="查看"
                 width="60px"
               >
-                <template scope="scope">
+                <template v-slot="scope">
                   <span
                     class="changkan"
                     @click="addTc('chakanLog', scope.row.no)"
@@ -159,7 +159,7 @@
                 width="100px"
                 v-if="tabs.length > 0 && tabs[tabIndex].id == 'dealing'"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span
                     v-if="
                       $store.state.user && scope.row.state == 2
@@ -174,7 +174,7 @@
                 width="60px"
                 v-if="tabs.length > 0 && tabs[tabIndex].id == 'undispatched'"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span
                     v-if="
                       $store.state.user
@@ -189,7 +189,7 @@
                 width="60px"
                 v-if="tabs.length > 0 && tabs[tabIndex].id == 'undispatched'"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span
                     class="green"
                     @click="addTc('Transfer', scope.row.no)"
@@ -201,7 +201,7 @@
                 width="60px"
                 v-if="tabs.length > 0 && tabs[tabIndex].id == 'undispatched'"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span
                     v-if="$store.state.user  "
                     class="red"
@@ -665,7 +665,7 @@ export default {
     }, 3000)
   },
 
-  destroyed() {
+  unmounted() {
     if (this.timer) {
       clearInterval(this.timer)
       this.timer = null

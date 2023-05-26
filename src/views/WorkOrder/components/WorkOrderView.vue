@@ -200,7 +200,7 @@
                 prop="partName"
                 label="名称"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span>
                     <a
                       href="#"
@@ -254,7 +254,7 @@
                 prop="time"
                 label="处理时间"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span>
                     <a
                       href="#"
@@ -275,7 +275,7 @@
                 label="处理内容"
               ></el-table-column>
               <el-table-column label="图片">
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <img
                     v-if="scope.row.photoId0"
                     style="width:30px;height:30px;cursor: pointer;"
@@ -293,7 +293,7 @@
                 </template>
               </el-table-column>
               <el-table-column label="视频">
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <a
                     @click="handlePreviewVideo(scope.row.videoId)"
                     href="javascript:void(0)"
@@ -307,7 +307,7 @@
                 label="工单操作"
                 width="100px"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span>{{ $Convert.WorkFlow.Action(scope.row.action) }}</span>
                 </template>
               </el-table-column>

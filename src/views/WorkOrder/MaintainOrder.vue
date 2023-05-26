@@ -105,7 +105,7 @@
                     label="工单级别"
                     width="80px"
                   >
-                    <template slot-scope="scope">
+                    <template v-slot="scope">
                       <span>{{ $Convert.WorkOrder.Level(scope.row.level) }}</span>
                     </template>
                   </el-table-column>
@@ -135,7 +135,7 @@
                     prop="reportTime"
                     width="170px"
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       <span>{{ $Convert.getTime(scope.row.reportTime) }}</span>
                     </template>
                   </el-table-column>
@@ -144,7 +144,7 @@
                     prop="finishTime"
                     width="170px"
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       <span>{{ $Convert.getTime(scope.row.finishTime) }}</span>
                     </template>
                   </el-table-column>
@@ -162,7 +162,7 @@
                     label="工单状态"
                     width="80px"
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       <span>
                         {{ $Convert.WorkOrder.State(scope.row.state) }}
                       </span>
@@ -172,7 +172,7 @@
                     label="查看"
                     width="60px"
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       <span
                         class="changkan"
                         @click="addTc('chakanLog', scope.row.no)"

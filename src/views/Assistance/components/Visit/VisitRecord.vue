@@ -50,7 +50,7 @@
 
     <el-table :data="pagedData.list" :row-class-name="onRowClassName">
       <el-table-column label="预约时间">
-        <template slot-scope="scope">
+        <template v-slot="scope">
           {{ DateTime.parse(scope.row.beginTime).format('yyyy-MM-dd hh:mm') }}
         </template>
       </el-table-column>
@@ -62,12 +62,12 @@
         show-overflow-tooltip
       />
       <el-table-column label="状态">
-        <template slot-scope="scope">
+        <template v-slot="scope">
           {{ $Convert.Visit.State(scope.row.state) }}
         </template>
       </el-table-column>
       <el-table-column label="查看">
-        <template slot-scope="scope">
+        <template v-slot="scope">
           <a
             href="javascript:void(0)"
             class="greenbutton"
@@ -204,7 +204,7 @@ export default {
   mounted() {
     this.queryData()
   },
-  destroyed() {},
+  unmounted() {},
   computed: {},
   methods: {
     onQueryClick() {

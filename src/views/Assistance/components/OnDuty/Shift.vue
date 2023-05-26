@@ -30,7 +30,7 @@
                   @change="sDepartmentChane(schedulingDepartment1)"
                   placeholder="请选择"
                 >
-                  <template slot-scope="{node,  data }">
+                  <template v-slot="{node,  data }">
                     <span disabled>{{ node.label }}</span>
                     <span v-if="!node.isLeaf">({{ data.children.length }})</span>
                   </template>
@@ -337,7 +337,7 @@ export default {
     this.ShiftClassGetList() //班次管理控制器--获取列表
     this.sameMonth()
   },
-  destroyed() {},
+  unmounted() {},
   computed: {
     headers() {
       return {

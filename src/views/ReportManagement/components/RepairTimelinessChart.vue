@@ -23,12 +23,12 @@
             label="维修数量（单）"
           ></el-table-column>
           <el-table-column prop="recordSum" label="维修总时长（小时）">
-            <template slot-scope="scope">
+            <template v-slot="scope">
               <span>{{ scope.row.recordSum.toFixed(2) }}</span>
             </template>
           </el-table-column>
           <el-table-column prop="recordAverage" label="维修平均时长（小时）">
-            <template slot-scope="scope">
+            <template v-slot="scope">
               <span>{{ scope.row.recordAverage.toFixed(2) }}</span>
             </template>
           </el-table-column>
@@ -52,18 +52,18 @@
           :row-class-name="tableRowClassName"
         >
           <el-table-column prop="reportTime" label="时间">
-            <template scope="scope">
+            <template v-slot="scope">
               <span>{{ $Convert.getTime(scope.row.reportTime) }}</span>
             </template>
           </el-table-column>
           <el-table-column prop="dealUserName" label="处理人"></el-table-column>
           <el-table-column prop="content" label="内容">
-            <template slot-scope="scope">
+            <template v-slot="scope">
               <span :title="scope.row.content">{{ scope.row.content }}</span>
             </template>
           </el-table-column>
           <el-table-column prop="finishTimeSpan" label="处理时长（小时）">
-            <template slot-scope="scope">
+            <template v-slot="scope">
               <span>{{ scope.row.finishTimeSpan.toFixed(2) }}</span>
             </template>
           </el-table-column>
@@ -82,18 +82,18 @@
           :row-class-name="tableRowClassName"
         >
           <el-table-column prop="reportTime" label="时间">
-            <template scope="scope">
+            <template v-slot="scope">
               <span>{{ $Convert.getTime(scope.row.reportTime) }}</span>
             </template>
           </el-table-column>
           <el-table-column prop="dealUserName" label="处理人"></el-table-column>
           <el-table-column prop="content" label="内容">
-            <template slot-scope="scope">
+            <template v-slot="scope">
               <span :title="scope.row.content">{{ scope.row.content }}</span>
             </template>
           </el-table-column>
           <el-table-column prop="finishTimeSpan" label="处理时长（小时）">
-            <template slot-scope="scope">
+            <template v-slot="scope">
               <span>{{ scope.row.finishTimeSpan.toFixed(2) }}</span>
             </template>
           </el-table-column>

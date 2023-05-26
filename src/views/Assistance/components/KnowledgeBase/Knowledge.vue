@@ -60,7 +60,7 @@
               width="170px"
               show-overflow-tooltip
             >
-              <template scope="scope">
+              <template v-slot="scope">
                 <span>
                   {{ $Convert.getTime(scope.row.createTime) }}
                 </span>
@@ -71,7 +71,7 @@
               label="查看"
               width="50px"
             >
-              <template slot-scope="scope">
+              <template v-slot="scope">
                 <span
                   class="EditingingEquipment_yellew"
                   @click="addKnowledge('chakan', scope.row)"
@@ -88,7 +88,7 @@
                 )
               "
             >
-              <template slot-scope="scope">
+              <template v-slot="scope">
                 <span
                   class="Editinging_green"
                   @click="addKnowledge('Editing', scope.row)"
@@ -105,7 +105,7 @@
                 )
               "
             >
-              <template slot-scope="scope">
+              <template v-slot="scope">
                 <el-popconfirm
                   title="确定删除吗"
                   @onConfirm="KnowledgeDelete(scope.row.no)"
@@ -225,7 +225,7 @@
                           @change="DepartmentChane(formValidator.inputCategory)"
                           :placeholder="formValidator.inputCategory || '请选择'"
                         >
-                          <template slot-scope="{ node, data }">
+                          <template v-slot="{ node, data }">
                             <span>{{ data.model.name }}</span>
                             <span v-if="!node.isLeaf">({{ data.children.length }})</span>
                           </template>
@@ -477,7 +477,7 @@ export default {
     this.KnowledgeGetList()
     this.KnowledgeCategoryGetList()
   },
-  destroyed() {},
+  unmounted() {},
   computed: {
     headers() {
       return {

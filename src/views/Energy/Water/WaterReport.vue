@@ -56,7 +56,7 @@
       :row-class-name="onRowClassName"
     >
       <el-table-column label="日期">
-        <template slot-scope="scope">
+        <template v-slot="scope">
           {{ $Convert.getDate(scope.row.day) }}
         </template>
       </el-table-column>
@@ -64,7 +64,7 @@
         prop="value"
         label="用量（吨）"
       >
-        <template slot-scope="scope">
+        <template v-slot="scope">
           {{ scope.row.value.toFixed(2) }}
         </template>
       </el-table-column>
@@ -113,7 +113,7 @@ export default {
     this.filter.endDay = DateTime.today().addDate(0, 0, 1).format('yyyy-MM-dd')
     this.queryEnergyMeters()
   },
-  destroyed() {},
+  unmounted() {},
   computed: {},
   methods: {
     onQueryClick() {

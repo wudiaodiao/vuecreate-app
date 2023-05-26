@@ -65,7 +65,7 @@
                 prop="type"
                 label="工单类别"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span>{{ $Convert.WorkOrder.Type(scope.row.type) }}</span>
                 </template>
               </el-table-column>
@@ -73,7 +73,7 @@
                 prop="source"
                 label="工单来源"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span>{{ $Convert.WorkOrder.Source(scope.row.source) }}</span>
                 </template>
               </el-table-column>
@@ -82,7 +82,7 @@
                 label="工单级别"
                 width="80px"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span>{{ $Convert.WorkOrder.Level(scope.row.level) }}</span>
                 </template>
               </el-table-column>
@@ -93,7 +93,7 @@
                 label="报单时间"
                 width="160px"
               >
-                <template scope="scope">
+                <template v-slot="scope">
                   <span>{{ $Convert.getTime(scope.row.reportTime) }}</span>
                 </template>
               </el-table-column>
@@ -112,7 +112,7 @@
                 prop="dispatchTimeSpan"
                 width="100px"
               >
-                <template scope="scope">
+                <template v-slot="scope">
                   <span>{{ $Convert.getTimeSpan(scope.row.dispatchTimeSpan, '小时') }}</span>
                 </template>
               </el-table-column>
@@ -121,7 +121,7 @@
                 prop="receiveTimeSpan"
                 width="100px"
               >
-                <template scope="scope">
+                <template v-slot="scope">
                   <span>{{ $Convert.getTimeSpan(scope.row.receiveTimeSpan, '小时') }}</span>
                 </template>
               </el-table-column>
@@ -130,7 +130,7 @@
                 label="处理时长"
                 width="100px"
               >
-                <template scope="scope">
+                <template v-slot="scope">
                   <span>{{ $Convert.getTimeSpan(scope.row.finishTimeSpan, '小时') }}</span>
                 </template>
               </el-table-column>
@@ -139,7 +139,7 @@
                 label="工单状态"
                 width="80px"
               >
-                <template scope="scope">
+                <template v-slot="scope">
                   <span>
                     {{ $Convert.WorkOrder.State(scope.row.state) }}
                   </span>
@@ -149,7 +149,7 @@
                 label="查看"
                 width="60px"
               >
-                <template scope="scope">
+                <template v-slot="scope">
                   <span
                     class="changkan"
                     @click="addTc('chakanLog', scope.row.no)"
@@ -162,7 +162,7 @@
                 width="60px"
                 v-if="tabs.length > 0 && tabs[tabIndex].id == 'undispatched'"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span
                     class="green"
                     @click="addTc('urge', scope.row.no)"
@@ -620,7 +620,7 @@ export default {
       this.checkUpdate()
     }, 3000)
   },
-  destroyed() {
+  unmounted() {
     if (this.timer) {
       clearInterval(this.timer)
       this.timer = null

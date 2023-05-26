@@ -41,7 +41,7 @@
                     <el-table-column prop="name" label="操作证名称">
                     </el-table-column>
                     <el-table-column prop="" label="状态">
-                      <template scope="scope">
+                      <template v-slot="scope">
                         <span
                           v-if="((new Date(scope.row.endTime) - new Date()) / 1000 / 3600 / 24) < scope.row.remindDate"
                           class="red"
@@ -51,7 +51,7 @@
                       </template>
                     </el-table-column>
                     <el-table-column prop="endTime" label="到期时间">
-                      <template scope="scope">
+                      <template v-slot="scope">
                         <span>
                           {{ String(scope.row.endTime).slice(0, 10) + ' ' + String(scope.row.endTime).slice(11) }}
                         </span>
@@ -60,7 +60,7 @@
                       <el-table-column prop="remindDate" label="提醒周期(天)" width="110px">
                       </el-table-column>
                     <el-table-column prop="" label="操作证">
-                      <template scope="scope">
+                      <template v-slot="scope">
                         <img
                           v-if="scope.row.imageId1"
                           style="cursor: pointer; width: 40px; height: 40px"
@@ -86,7 +86,7 @@
                       label="操作"
                       width="90px"
                     >
-                      <template slot-scope="scope">
+                      <template v-slot="scope">
                         <span
                           class="editing_green"
                           @click="editoperationlist(scope.row)"
@@ -391,7 +391,7 @@ export default {
     mounted() {
         this.getoperationlist() //值班日志本控制器
     },
-    destroyed() { },
+    unmounted() { },
     computed: {},
     methods: {
                 submitUpload(file, fileList) {

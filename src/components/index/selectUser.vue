@@ -30,7 +30,7 @@
           prop="gender"
           label="性别"
         >
-          <template slot-scope="scope">
+          <template v-slot="scope">
             <span>{{scope.row.gender?'男':'女'}}</span>
           </template>
         </el-table-column>
@@ -55,7 +55,7 @@
           label="选择"
           width="60px"
         >
-          <template slot-scope="scope">
+          <template v-slot="scope">
             <span
               class="green"
               @click="addTc('Distribute',scope.row)"

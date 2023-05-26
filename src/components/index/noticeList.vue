@@ -56,7 +56,7 @@
               label="操作"
               width="50px"
             >
-              <template slot-scope="scope">
+              <template v-slot="scope">
                 <span
                 v-if="scope.row.key!='UserOperateCert'"
                   class="editing_green"

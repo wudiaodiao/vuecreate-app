@@ -26,7 +26,7 @@
               :placeholder="inputCategory"
               clearable
             >
-              <template slot-scope="{ node, data }">
+              <template v-slot="{ node, data }">
                 <span>{{ data.model.name }}</span>
                 <span v-if="!node.isLeaf">({{ data.children.length }})</span>
               </template>
@@ -87,7 +87,7 @@
             width="170px"
             show-overflow-tooltip
           >
-            <template slot-scope="scope">
+            <template v-slot="scope">
               <span>
                 {{ $Convert.getTime(scope.row.createTime) }}
               </span>
@@ -98,7 +98,7 @@
             label="查看"
             width="50px"
           >
-            <template slot-scope="scope">
+            <template v-slot="scope">
               <span
                 class="editingEquipment_green"
                 @click="addTc('chakan', scope.row)"
@@ -241,7 +241,7 @@ export default {
     this.KnowledgeCategoryGetList()
     this.KnowledgeGetList(1, '.', '')
   },
-  destroyed() {},
+  unmounted() {},
   computed: {},
   methods: {
     // 预览

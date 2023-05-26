@@ -43,7 +43,7 @@
                 )
               "
             >
-              <template slot-scope="scope">
+              <template v-slot="scope">
                 <span
                   class="green"
                   @click="shiftManagementTcShowbian(scope.row, 'Editing')"
@@ -60,7 +60,7 @@
                 )
               "
             >
-              <template slot-scope="scope">
+              <template v-slot="scope">
                 <el-popconfirm
                   title="确定删除吗"
                   @onConfirm="ShiftClassDelete(scope.row.no)"
@@ -202,7 +202,7 @@ export default {
   mounted() {
     this.ShiftClassGetList() //班次管理控制器--获取列表
   },
-  destroyed() {},
+  unmounted() {},
   computed: {},
   methods: {
     async ShiftClassAdd(formName) {

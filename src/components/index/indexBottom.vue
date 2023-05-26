@@ -273,8 +273,8 @@
         muted
         loop
       >
-        <source :src="require('../../assets/audio/alarm.mp3')" />
-        <source :src="require('../../assets/audio/alarm.ogg')" />
+        <source src="@/assets/audio/alarm.mp3" />
+        <source src="@/assets/audio/alarm.ogg" />
       </audio>
       <iframe :src="item.webAction" v-for="(item, index) in linkageItems" :key="index" style="display:none;"></iframe>
     </div>
@@ -283,6 +283,11 @@
 <script></script>
 <script>
 import axios from 'axios'
+import { storeToRefs } from 'pinia'
+import { useAuthStore } from '~@/stores/index'
+import earthcomponent from '@/views/Index/components/earth/earthcomponent.vue'
+
+const authStore = useAuthStore()
 var time = null
 export default {
   data() {
@@ -305,8 +310,8 @@ export default {
       ],
       Tomenulist: '',
       clickIndex: '',
-      activeMenu: this.$store.state.itemItem, //选中的菜单
-      activeSubMenu: '' || this.$store.state.subItem,
+      activeMenu: authStore.itemItem, //选中的菜单
+      activeSubMenu: '' || authStore.subItem,
       enterShow: '',
       Start: 0,
       end: 9,
@@ -323,7 +328,7 @@ export default {
     }
   },
   mounted() {
-    this.$store.commit('setindexItemShow', true)
+    authStore.setindexItemShow = true
     var boxes = document.querySelectorAll('#boxes > div')
     ;[].forEach.call(boxes, (box) => {
       box.addEventListener('mousemove', (e) => {
@@ -409,7 +414,7 @@ export default {
         if (res.ok && res.data > 0) {
           this.alarmbaojin = res.data
           this.aplayAudio(this.alarmbaojin)
-          this.$store.commit('setAlarmCount', this.alarmbaojin)
+          authStore.setAlarmCount = this.alarmbaojin
         } else {
           if (res.ok && res.data == 0) {
             this.aplayAudio(res.data)
@@ -434,16 +439,16 @@ export default {
       this.getTree()
     },
     threedLeft(type) {
-      if (type != this.$store.state.modelMode) {
+      if (type != authStore.modelMode) {
         if (type == '2D') {
           window.location.href = '2d.html'
-          this.$store.commit('setindexItemShow', true)
+          authStore.setindexItemShow = true
         } else {
           window.location.href = '3d.html'
-          this.$store.commit('setindexItemShow', true)
+          authStore.setindexItemShow = true
         }
       }
-      this.$store.commit('setModelMode', type)
+      authStore.setModelMode = type
     },
     // twoRight(type) {
     //   this.$store.commit('setModelMode', type)
@@ -489,7 +494,7 @@ export default {
       //右击事件
 
       this.dtab = !this.dtab
-      this.$store.commit('setDtab', this.dtab)
+      authStore.setDtab = this.dtab
     },
     addRight() {
       this.clickIndex = this.menu.length
@@ -535,7 +540,7 @@ export default {
       this.activeSubMenu = ''
       this.showDialogT = !this.showDialogT
       this.dtab = false
-      this.$store.state.modelMode == '2D'
+      authStore.modelMode == '2D'
         ? this.$router.push({ name: '2d' })
         : this.$router.push({ name: '3d' })
     },
@@ -547,7 +552,7 @@ export default {
         self.dtab = false
         self.indexItemShow = false
         self.$emit('setindexItemShow', self.indexItemShow)
-        self.$store.commit('setindexItemShow', self.indexItemShow)
+        authStore.setindexItemShow = self.indexItemShow
         $('#navigation')
           .removeClass('TabroundCenterShow')
           .addClass('TabroundCenterShowyc')
@@ -566,9 +571,9 @@ export default {
       }
       if (arr.indexOf(this.activeSubMenu) == -1) {
         this.activeSubMenu = ''
-        this.$store.commit('setItem', this.activeMenu)
+        authStore.setItem = this.activeMenu
       } else {
-        this.$store.commit('setItem', this.activeMenu)
+        authStore.setItem = this.activeMenu
       }
 
       if (!item.model.route) {
@@ -576,20 +581,16 @@ export default {
           for (let i in item.children) {
             if (i == 0) {
               this.activeSubMenu = item.children[i].model.name
-              this.$store.commit('setSubItem', this.activeSubMenu)
-
+              authStore.setSubItem = this.activeSubMenu
               let nenghao = item.children[i].children.map((v, i) => {
                 if (i == 0) {
                   return v.model.name
                 }
               })
-
               if (item.children[i].children.length != 0) {
-             
-                this.$store.commit('subitemData', item.children[i])
-                this.$store.commit('setEnergyClick', ...nenghao)
+                authStore.subitemData = item.children[i]
+                authStore.setEnergyClick = [...nenghao]
               }
-
               this.$router.push({ name: item.children[i].model.route })
             }
           }
@@ -605,7 +606,7 @@ export default {
     async selectedSub(subitem, item) {
       this.activeMenu = item.model.name
       this.activeSubMenu = subitem.model.name
-      this.$store.commit('subitemData', subitem)
+      authStore.subitemData = subitem
 
       if (item.model.route == null) {
         if (item.children.length > 0) {
@@ -616,13 +617,12 @@ export default {
               window.location.href = 'login.html'
             }
           }
-
           this.$router.push({
             name: subitem.model.route,
           })
           this.dtab = false
-          this.$store.commit('setDtab', this.dtab)
-          this.$store.commit('setSubItem', this.activeSubMenu)
+          authStore.setDtab = this.dtab
+          authStore.setSubItem = this.activeSubMenu
 
           if (subitem.children.length > 0) {
             let nenghao = subitem.children.map((v, s) => {
@@ -897,12 +897,6 @@ for (let index = 0; index < res.length; index++) {
         }
         .margin_r4 {
           margin-right: 120px;
-        }
-        .margin_r7 {
-          // margin-right: 100px;
-        }
-        .margin_l7 {
-          // margin-left: 100px;
         }
         .overFlowHide {
           overflow: unset;
@@ -1291,17 +1285,6 @@ for (let index = 0; index < res.length; index++) {
 }
 </style>
 <style lang="scss" scoped>
-.hamburger {
-  // position: absolute;
-  // top: 0%;
-  // left: 0%;
-  // width: 50px;
-  // height: 80px;
-  // // background-color: #e84f3e;
-  // border-radius: 100%;
-  // z-index: 10;
-  // cursor: pointer;
-}
 .action_items_bar {
   // position: absolute;
   // top: 0%;

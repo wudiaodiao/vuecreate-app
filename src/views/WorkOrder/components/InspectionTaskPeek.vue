@@ -31,7 +31,7 @@
             prop="itemResult"
             label="结果"
           >
-            <template slot-scope="scope">
+            <template v-slot="scope">
               <span>
                 <!-- <el-checkbox
                   v-model="scope.row.itemResult"
@@ -46,7 +46,7 @@
             label="备注"
           ></el-table-column>
           <el-table-column label="图片">
-            <template slot-scope="scope">
+            <template v-slot="scope">
               <img
                 style="width:15px;height:15px;cursor: pointer;"
                 :src="ImageGetImg + scope.row.photoId0"

@@ -25,7 +25,7 @@
                 prop="originalFileName"
                 label="名称"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <div class="file_icon">
                     <img
                       :src="
@@ -62,7 +62,7 @@
                 label="创建时间"
                 width="180px"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span>{{
                     scope.row.createTime
                       .split('T')
@@ -80,7 +80,7 @@
                 label="选择"
                 width="50px"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span
                     style="cursor: pointer;"
                     v-if="

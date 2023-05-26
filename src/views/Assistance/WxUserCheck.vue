@@ -81,7 +81,7 @@
                 label="核对时间"
                 show-overflow-tooltip
               >
-                <template scope="scope">
+                <template v-slot="scope">
                   <span>
                     {{ $Convert.getTime(scope.row.time) }}
                   </span>
@@ -111,7 +111,7 @@
                 label="查看"
                 width="100px"
               >
-                <template scope="scope">
+                <template v-slot="scope">
                   <span
                     class="changkan"
                     @click="announcementChankan(scope.row)"

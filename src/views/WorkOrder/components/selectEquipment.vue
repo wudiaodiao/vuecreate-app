@@ -32,7 +32,7 @@
                   :placeholder="inputEquipmentType"
                   clearable
                 >
-                  <template slot-scope="{ node, data }">
+                  <template v-slot="{ node, data }">
                     <span>{{ data.model.name }}</span>
                     <span v-if="!node.isLeaf">({{ data.children.length }})</span>
                   </template>
@@ -67,7 +67,7 @@
                                   :placeholder="floor"
                                   clearable
                                 >
-                                  <template slot-scope="{ node, data }">
+                                  <template v-slot="{ node, data }">
                                     <span v-if="data.children.length == 0">({{ data.model.code }})</span>
                                     <span disabled>{{ data.model.name }}</span>
                                     <!-- <span v-if="data.children.length==0">({{ data.model.id}})</span> -->
@@ -131,7 +131,7 @@
                 prop="name"
                 label="名称"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span>
                     <a
                       href="#"
@@ -177,7 +177,7 @@
                 label="状态"
                 width="70px"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span> {{(scope.row.state==1?'正常':'维保中')}}</span>
                 </template>
               </el-table-column>
@@ -188,7 +188,7 @@
                 v-if="WorkOrderTcType!='selectEquipmentEd'"
                 :key="Math.random()"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span
                     class="editing_green"
                     @click="selectTc('add',scope.row)"

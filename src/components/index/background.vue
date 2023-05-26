@@ -39,7 +39,7 @@ export default {
   computed: {},
   mounted() {},
 
-  destroyed() {},
+  unmounted() {},
   methods: {}
 }
 </script>

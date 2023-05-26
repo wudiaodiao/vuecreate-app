@@ -69,7 +69,7 @@
               prop="subSystemName"
               label="子系统"
             >
-              <template scope="scope">
+              <template v-slot="scope">
                 <el-popover
                   placement="top"
                   trigger="click"
@@ -102,7 +102,7 @@
               prop="urgent"
               label="紧急"
             >
-              <template scope="scope">
+              <template v-slot="scope">
                 <a
                   href="#"
                   :title="scope.row.urgent"
@@ -116,7 +116,7 @@
               prop="total"
               label="工单数量"
             >
-              <template scope="scope">
+              <template v-slot="scope">
                 <a
                   href="#"
                   :title="scope.row.total"

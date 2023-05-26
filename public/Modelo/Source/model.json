@@ -1,0 +1,71 @@
+{
+  "buffers": [
+    {
+      "byteLength": 1757350,
+      "meshes": 17
+    },
+    {
+      "byteLength": 56560,
+      "meshes": 808
+    },
+    {
+      "byteLength": 63758,
+      "meshes": 8
+    },
+    {
+      "byteLength": 8940446,
+      "meshes": 195
+    },
+    {
+      "byteLength": 252987,
+      "meshes": 48
+    },
+    {
+      "byteLength": 7495006,
+      "meshes": 19
+    },
+    {
+      "byteLength": 43066,
+      "meshes": 2
+    },
+    {
+      "byteLength": 1755704,
+      "meshes": 11
+    },
+    {
+      "byteLength": 113296,
+      "meshes": 5
+    },
+    {
+      "byteLength": 1281660,
+      "meshes": 16
+    },
+    {
+      "byteLength": 568012,
+      "meshes": 5
+    },
+    {
+      "byteLength": 69832,
+      "meshes": 6
+    },
+    {
+      "byteLength": 1014712,
+      "meshes": 11
+    }
+  ],
+  "model.bin": {
+    "nodes": 1151,
+    "bbox": [
+      -262.6775207519531,
+      -329.3604736328125,
+      -49.21198272705078,
+      1047.6717529296875,
+      906.2056274414062,
+      186.33682250976562
+    ],
+    "byteLength": 119712
+  },
+  "modelgraph.bin": {
+    "byteLength": 18099
+  }
+}

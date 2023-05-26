@@ -69,7 +69,7 @@ export default {
       }
     },
   },
-  destroyed() {},
+  unmounted() {},
   computed: {},
   directives: {
     trigger: {

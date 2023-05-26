@@ -322,7 +322,7 @@
                   label="领用类型"
                   show-overflow-tooltip
                 >
-                 <template slot-scope="scope">
+                 <template v-slot="scope">
                       <span>
                         {{ gettype(scope.row.type) }}
                       </span>
@@ -343,7 +343,7 @@
                     label="入库数量"
                     show-overflow-tooltip
                   >
-                    <template slot-scope="scope">
+                    <template v-slot="scope">
                       <span>
                          {{ scope.row.isInDb ==true ? Math.abs(scope.row.count) : '' }}
                       </span>
@@ -354,7 +354,7 @@
                   label="出库数量"
                   show-overflow-tooltip
                 >
-                  <template slot-scope="scope">
+                  <template v-slot="scope">
                     <span>
                      {{
                      scope.row.isInDb != true ? Math.abs(scope.row.count) : ''
@@ -389,7 +389,7 @@
                   label="申请时间"
                   show-overflow-tooltip
                 >
-                  <template scope="scope">
+                  <template v-slot="scope">
                     <span>
                       {{ $Convert.getTime(scope.row.applyTime) }}
                     </span>
@@ -405,7 +405,7 @@
                   label="批准时间"
                   show-overflow-tooltip
                 >
-                  <template scope="scope">
+                  <template v-slot="scope">
                     <span>
                       {{ $Convert.getTime(scope.row.approveTime) }}
                     </span>
@@ -416,7 +416,7 @@
                   label="查看"
                   width="50px"
                 >
-                  <template slot-scope="scope">
+                  <template v-slot="scope">
                     <span
                       class="editing_green"
                       @click="addTc('PartGetModelOutIn', scope.row)"

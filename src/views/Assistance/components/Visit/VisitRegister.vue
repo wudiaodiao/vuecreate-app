@@ -32,7 +32,7 @@
 
     <el-table :data="pagedData.list" :row-class-name="onRowClassName">
       <el-table-column label="预约时间" width="300px">
-        <template slot-scope="scope">
+        <template v-slot="scope">
           {{ DateTime.parse(scope.row.beginTime).format('yyyy-MM-dd hh:mm') }}
         </template>
       </el-table-column>
@@ -41,7 +41,7 @@
       <el-table-column prop="name" label="访客姓名" />
       <el-table-column prop="mobile" label="访客手机" />
       <el-table-column label="登记">
-        <template slot-scope="scope">
+        <template v-slot="scope">
           <a
             href="javascript:void(0)"
             class="greenbutton"
@@ -140,7 +140,7 @@ export default {
   mounted() {
     this.queryData()
   },
-  destroyed() {},
+  unmounted() {},
   computed: {},
   methods: {
     onQueryClick() {

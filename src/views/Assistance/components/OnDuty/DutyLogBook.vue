@@ -26,7 +26,7 @@
               prop="createTime"
               label="创建时间"
             >
-              <template scope="scope">
+              <template v-slot="scope">
                 {{
                  $Tools.timeFormatAll(scope.row.createTime)
                 }}
@@ -37,7 +37,7 @@
               width="80px"
               v-if="$Tools.accessControl( this.$store.state.userGetUserRole.resList,'EditDutyLogBook')"
             >
-              <template slot-scope="scope">
+              <template v-slot="scope">
                 <span
                   class="green"
                   @click="watchBookTcShowbian(scope.row, 'Editing')"
@@ -49,7 +49,7 @@
               width="80px"
               v-if="$Tools.accessControl( this.$store.state.userGetUserRole.resList,'EditDutyLogBook')"
             >
-              <template slot-scope="scope">
+              <template v-slot="scope">
                 <el-popconfirm
                   title="确定删除吗"
                   @onConfirm="DutyLogBookDelete(scope.row.no)"
@@ -140,7 +140,7 @@ export default {
   mounted() {
     this.DutyLogBookGetList() //值班日志本控制器
   },
-  destroyed() {},
+  unmounted() {},
   computed: {},
   methods: {
     async DutyLogBookUpdate() {

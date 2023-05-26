@@ -32,7 +32,7 @@
           label="性别"
           width="50"
         >
-          <template slot-scope="scope">
+          <template v-slot="scope">
             <span>{{scope.row.sdSex?'男':'女'}}</span>
           </template>
         </el-table-column>
@@ -57,7 +57,7 @@
           label="选择"
           width="60px"
         >
-          <template slot-scope="scope">
+          <template v-slot="scope">
             <span
               class="green"
               @click="addTc(type,scope.row)"

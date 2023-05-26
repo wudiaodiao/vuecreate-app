@@ -53,7 +53,7 @@
               label="创建时间"
               show-overflow-tooltip
             >
-              <template scope="scope">
+              <template v-slot="scope">
                 <span>
                   {{ $Convert.getTime(scope.row.createTime) }}
                 </span>
@@ -63,7 +63,7 @@
               label="查看"
               width="80px"
             >
-              <template slot-scope="scope">
+              <template v-slot="scope">
                 <span
                   class="chankan"
                   @click="logBookTcShowbian(scope.row, 'chakan')"
@@ -238,7 +238,7 @@ export default {
   mounted() {
     this.DutyLogBookGetList() //值班日志本控制器
   },
-  destroyed() {},
+  unmounted() {},
   computed: {},
   methods: {
     // 预览

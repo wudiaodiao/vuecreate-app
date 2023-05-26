@@ -7,12 +7,12 @@
     ></div>
     <!-- <backgroundbg> -->
     <div class="index_box">
-      <!-- <div
+      <div
         :class="['index_left',authStore.indexItemShow? 'index_left_l_de' : 'index_left_l']"
         v-if="$route.name == '2d'"
       >
-        <indexLeft></indexLeft>
-      </div> -->
+        <!-- <indexLeft></indexLeft> -->
+      </div>
 
       <div
         v-if="$route.name == '2d'"
@@ -64,7 +64,7 @@
 
       <div
         :class="[
-          meunlength % 2 == 0 && meunlength < '10'
+          meunlength % 2 == 0 && meunlength < 10
             ? 'index_bottom' + meunlength
             : 'index_bottom50',
           'index_bottom'
@@ -88,14 +88,20 @@
     <!-- </backgroundbg> -->
   </div>
 </template>
-<script setup>
-import { storeToRefs } from 'pinia'
-import { useAuthStore } from '~@/stores/index'
+<script setup lang="ts">
+import '@/js/Scripts/jquery-1.11.1.min.js'
+import '@/js/Scripts/jquery.api.js'
+import '@/js/Scripts/jquery.scada.min.js'
+
+import { useAuthStore } from '@/stores/index'
+import noticeList from '../../components/index/noticeList.vue'
+import indexLeft from '@/components/index/indexLeft.vue'
+import indexRight from '@/components/index/indexRight.vue'
+import indexBottom from '@/components/index/indexBottom.vue'
 const authStore = useAuthStore()
 </script>
-<script>
-import noticeList from '../../components/index/noticeList.vue'
-const authStore = useAuthStore()
+<link href="static/Styles/jquery.scada.min.css" rel="stylesheet" /> 
+<script lang="ts">
 // function resize() {
 //   var height1 = $(window).height()
 //   var h = $('.index_left').height()
@@ -118,26 +124,29 @@ const authStore = useAuthStore()
 //   })
 // })
 export default {
-   components: {
-    noticeList,
-   
-  },
   data() {
     return {
-      datalist:'',
+      datalist:'' as string | any,
       datanum:0,
       notice_show:false,
       faval: true,
       informationShow: true,
       menu: [],
-      meunlength: '',
+      meunlength: 0,
       to: '',
       from: '',
       IOTVisible: false,
       lightgreen: 0,
       // 二维电子地图
       showCanvas: false,
-      form: null
+      form: {
+        width: 0,
+        height: 0,
+        stop: false
+      },
+      model: {
+        gui: ''
+      }
     }
   },
   watch: {
@@ -150,12 +159,7 @@ export default {
       }
     }
   },
-  computed: {
-    monitorNo() {
-      const { monitorNo } = storeToRefs(authStore)
-      return authStore
-    }
-  },
+  
   mounted() {
     this.getnoticelist()
     setInterval(() => {
@@ -165,7 +169,7 @@ export default {
 
   methods: {
     getnoticelist(){
-      this.$api.MMS.InfoNotice.Get().then((res)=>{
+      (this as any).$api.MMS.InfoNotice.Get().then((res: { data: string | any[] })=>{
         console.log(res);
         let num=0
         for (let index = 0; index < res.data.length; index++) {
@@ -174,18 +178,20 @@ export default {
         }
         this.datanum= num
         this.datalist=res.data
+      }).catch( (eer: any) =>{
+        console.log("错误！")
       })
     },
-    callBack(val){
+    callBack(val: boolean){
      
       // console.log(val);
       console.log(this.datalist);
       this.notice_show=val;
     },
-    getValue(data) {
+    getValue(data: boolean) {
       this.faval = data
     },
-    getMeunLength(data) {
+    getMeunLength(data: number) {
       this.meunlength = data
     },
     // async getTree() {
@@ -203,8 +209,8 @@ export default {
       window.open('IOTOM://exe/', '_self')
     },
     // 电子地图
-    async openGui(no) {
-      const res = await this.$api.MMS.Monitor.GetModel({ No: no })
+    async openGui(no: any) {
+      const res = await (this as any).$api.MMS.Monitor.GetModel({ No: no })
       if (res.ok) {
         this.model = res.data
         if (this.model) {
@@ -244,7 +250,7 @@ export default {
       $('#canvas1').empty()
     }
   },
-  destroyed() {}
+  unmounted() {}
 }
 </script>
 <style>
@@ -278,7 +284,6 @@ export default {
 }
 .index_shouye {
   background: url(~@/assets/image/index/erbao_bg.jpg);
-
   background-size: 100% 100%;
 }
 .index_qita {

@@ -82,7 +82,7 @@
                 prop="originalFileName"
                 label="名称"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <div class="file_icon">
                     <img
                       :src="
@@ -133,7 +133,7 @@
                 label="创建时间"
                 width="180px"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <a
                     href="javascript:;"
                     :title="$Tools.timeFormatAll(scope.row.createTime)"
@@ -159,7 +159,7 @@
                   )
                 "
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span
                     class="yidong"
                     @click="moveFiles(scope.row)"
@@ -178,7 +178,7 @@
                   )
                 "
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <el-popconfirm
                     title="确定删除吗"
                     @onConfirm="FileDelete(scope.row)"
@@ -203,7 +203,7 @@
                   )
                 "
               >
-                <template scope="scope">
+                <template v-slot="scope">
                   <span
                     class="changkan"
                     @click="showInput(scope.row)"
@@ -224,7 +224,7 @@
                 prop="originalFileName"
                 label="名称"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <div class="file_icon">
                     <img
                       :src="
@@ -247,7 +247,7 @@
                 prop="createTime"
                 label="创建时间"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span>{{
                     scope.row.createTime
                       .split('T')
@@ -265,7 +265,7 @@
                 label="移动"
                 width="100px"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span
                     class="yidong"
                     @click="jumpFiles(scope.row)"
@@ -360,7 +360,7 @@
                             prop="originalFileName"
                             label="名称"
                           >
-                            <template slot-scope="scope">
+                            <template v-slot="scope">
                               <div class="file_icon">
                                 <img
                                   :src="
@@ -384,7 +384,7 @@
                             prop="createTime"
                             label="创建时间"
                           >
-                            <template slot-scope="scope">
+                            <template v-slot="scope">
                               <span>{{
                                 scope.row.createTime
                                   .split('T')
@@ -563,7 +563,7 @@ export default {
 
     this.FileSystemGetList() //文档管理数据
   },
-  destroyed() {},
+  unmounted() {},
   computed: {
     headers() {
       return {

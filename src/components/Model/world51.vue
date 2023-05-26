@@ -556,7 +556,7 @@ export default {
   },
   computed: {},
 
-  destroyed() {},
+  unmounted() {},
 }
 </script>
 

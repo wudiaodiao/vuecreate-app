@@ -9,7 +9,7 @@
 <template>
   <div class="editEquipment">
     <el-dialog
-      :visible.sync="imgdialogVisible"
+      v-model:visible="imgdialogVisible"
       append-to-body
     >
       <img
@@ -57,7 +57,7 @@
             label="巡检照片"
             width="150px"
           >
-            <template scope="scope">
+            <template v-slot="scope">
               <img
                 v-if="scope.row.imageId1"
                 style="cursor: pointer; width: 40px; height: 40px;margin-right: 10px;"
@@ -79,7 +79,7 @@
               label="时间"
               show-overflow-tooltip
             >
-          <template scope="scope">
+          <template v-slot="scope">
                 <span>
                   {{ scope.row.time | datefmt("YYYY-MM-DD HH:mm:ss") }}
                 </span>
@@ -95,7 +95,7 @@
                         label="预警状态"
                         width="100px"
                       >
-                        <template slot-scope="scope">
+                        <template v-slot="scope">
                           <span :style="$Convert.InspectionTask2.State(scope.row.result) == '异常' ? 'color:red !important' : ''">
                             {{ $Convert.InspectionTask2.State(scope.row.result) }}
                           </span>
@@ -106,7 +106,7 @@
             show-overflow-tooltip
             label="巡检项目"
           >
-            <template slot-scope="scope">
+            <template v-slot="scope">
               <span
                 style="cursor: pointer;"
                 @click="addTc('chakanXJXM', scope.row.no)"

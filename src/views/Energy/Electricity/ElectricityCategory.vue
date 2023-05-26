@@ -21,7 +21,7 @@
         label="名称"
       />
       <el-table-column label="编辑">
-        <template slot-scope="scope">
+        <template v-slot="scope">
           <a
             href="javascript:void(0)"
             class="greenbutton"
@@ -30,7 +30,7 @@
         </template>
       </el-table-column>
       <el-table-column label="删除">
-        <template slot-scope="scope">
+        <template v-slot="scope">
           <a
             href="javascript:void(0)"
             class="redbutton"
@@ -99,7 +99,7 @@ export default {
   mounted() {
     this.queryData()
   },
-  destroyed() {},
+  unmounted() {},
   computed: {},
   methods: {
     onAddClick() {

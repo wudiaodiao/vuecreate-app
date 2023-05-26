@@ -211,7 +211,7 @@
                   )
                 "
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span
                     class="editing_green"
                     @click="addTc('editor', scope.row)"
@@ -542,7 +542,7 @@
                     @change="floorlistChane(floor)"
                   placeholder="请选择"
                 >
-                  <template slot-scope="{node,  data }">
+                  <template v-slot="{node,  data }">
                     <span disabled>{{ node.label }}</span>
                     <span v-if="!node.isLeaf">({{ data.children.length }})</span>
                   </template>

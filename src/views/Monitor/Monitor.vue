@@ -528,7 +528,7 @@ export default {
       })
   },
 
-  destroyed() {
+  unmounted() {
     this.closeGui()
   },
   methods: {

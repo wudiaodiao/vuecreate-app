@@ -103,7 +103,7 @@
                   width="140px"
                   label="时间"
                 >
-                  <template slot-scope="scope">
+                  <template v-slot="scope">
                     <span>
                       <a
                         href="#"
@@ -119,7 +119,7 @@
                   width="140px"
                   label="用户"
                 >
-                  <template slot-scope="scope">
+                  <template v-slot="scope">
                     <span>
                       <a
                         href="#"
@@ -135,7 +135,7 @@
                   width="140px"
                   label="计算机名"
                 >
-                  <template slot-scope="scope">
+                  <template v-slot="scope">
                     <span>
                       <a
                         href="#"
@@ -151,7 +151,7 @@
                   width="140px"
                   label="类型"
                 >
-                  <template slot-scope="scope">
+                  <template v-slot="scope">
                     <span>
                       <a
                         href="#"
@@ -166,7 +166,7 @@
                   prop="content"
                   label="内容"
                 >
-                  <template slot-scope="scope">
+                  <template v-slot="scope">
                     <span>
                       <a
                         href="#"

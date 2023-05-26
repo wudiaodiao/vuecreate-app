@@ -56,7 +56,7 @@
                 >
                   <template
                     class="custom-tree-node"
-                    slot-scope="{ node, data }"
+                    v-slot="{ node, data }"
                   >
                     <span
                       :class="[
@@ -124,7 +124,7 @@
                             @change="onDepartmentChange()"
                             placeholder="请选择"
                           >
-                            <template slot-scope="{ node, data }">
+                            <template v-slot="{ node, data }">
                               <span disabled>{{ data.label }}</span>
                               <span v-if="data.children">({{ data.children.length }})</span>
                             </template>

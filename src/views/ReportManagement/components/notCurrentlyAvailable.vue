@@ -21,7 +21,7 @@
         <el-table-column prop="model" label="型号"></el-table-column>
         <el-table-column prop="manufactor" label="厂商"></el-table-column>
         <el-table-column prop="state" label="状态">
-          <template slot-scope="scope">
+          <template v-slot="scope">
             <span>{{
               $Convert.Equipment.getEquipmentState(scope.row.state)
             }}</span>

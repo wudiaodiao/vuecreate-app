@@ -51,7 +51,7 @@
                   label="巡检项"
                   show-overflow-tooltip
                 >
-                  <template slot-scope="scope">
+                  <template v-slot="scope">
                     <span
                       v-for="item in scope.row.items"
                       :key="item.no"
@@ -70,7 +70,7 @@
                     )
                   "
                 >
-                  <template slot-scope="scope">
+                  <template v-slot="scope">
                     <span
                       class="green"
                       @click="addTc('InspectionPlan_ed', scope.row)"
@@ -87,7 +87,7 @@
                     )
                   "
                 >
-                  <template slot-scope="scope">
+                  <template v-slot="scope">
                     <el-popconfirm
                       title="确定删除吗"
                       @onConfirm="InspectionPlanRemove(scope.row.no)"
@@ -270,7 +270,7 @@
                           @change="floorlistChane(floorlistName)"
                           :placeholder="floorlistName"
                         >
-                          <template slot-scope="{ node, data }">
+                          <template v-slot="{ node, data }">
                             <span v-if="data.children.length==0">({{ data.model.code}})</span>
                             <span disabled>{{ data.model.name }}</span>
                             <span v-if="!node.isLeaf">({{ data.children.length }})</span>

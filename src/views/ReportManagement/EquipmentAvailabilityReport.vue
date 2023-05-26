@@ -26,7 +26,7 @@
                     :placeholder="inputEquipmentType"
                     clearable
                   >
-                    <template slot-scope="{ node, data }">
+                    <template v-slot="{ node, data }">
                       <span>{{ data.model.name }}</span>
                       <span v-if="!node.isLeaf">({{ data.children.length }})</span>
                     </template>

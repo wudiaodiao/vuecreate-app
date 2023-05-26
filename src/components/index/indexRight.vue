@@ -7,11 +7,11 @@
     <right_main4></right_main4>
   </div>
 </template>
-<script>
-import right_main1 from '../echarts/right_main1'
-import right_main2 from '../echarts/right_main2'
-import right_main3 from '../echarts/right_main3'
-import right_main4 from '../echarts/right_main4'
+<script lang="ts">
+import right_main1 from '../echarts/right_main1.vue'
+import right_main2 from '../echarts/right_main2.vue'
+import right_main3 from '../echarts/right_main3.vue'
+import right_main4 from '../echarts/right_main4.vue'
 export default {
   components: {
     right_main1,

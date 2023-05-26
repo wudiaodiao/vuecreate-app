@@ -33,7 +33,7 @@
               prop="date1"
               label="调班人1排班时间"
             >
-              <template scope="scope">
+              <template v-slot="scope">
                 {{
                  String($Tools.timeFormatAll(scope.row.date1)).slice(0,10)
                 }}
@@ -43,7 +43,7 @@
               prop="date2"
               label="调班人2排班时间"
             >
-              <template scope="scope">
+              <template v-slot="scope">
                 {{
                  String($Tools.timeFormatAll(scope.row.date2)).slice(0,10)
                 }}
@@ -54,7 +54,7 @@
               prop="time"
               label="修改时间"
             >
-              <template scope="scope">
+              <template v-slot="scope">
                 {{
                  $Tools.timeFormatAll(scope.row.time)
                 }}
@@ -102,7 +102,7 @@ export default {
   mounted() {
     this.DutyLogBookGetList() //值班日志本控制器
   },
-  destroyed() {},
+  unmounted() {},
   computed: {},
   methods: {
     handleCustomerPage(val) {

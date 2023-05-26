@@ -33,7 +33,7 @@
                     prop="time"
                     label="时间"
                   >
-                    <template slot-scope="scope">
+                    <template v-slot="scope">
                       <span>{{scope.row.beginTime+'至'+scope.row.endTime}}</span>
                     </template>
                   </el-table-column>
@@ -42,7 +42,7 @@
                     label="编辑设备组"
                     v-if="$Tools.accessControl( this.$store.state.userGetUserRole.resList,'EditControlMode')"
                   >
-                    <template slot-scope="scope">
+                    <template v-slot="scope">
                       <span
                         class="editingEquipment_green"
                         @click="chankanShebei('EditingSb',scope.row)"
@@ -54,7 +54,7 @@
                     width="60px"
                     v-if="$Tools.accessControl( this.$store.state.userGetUserRole.resList,'EditControlMode')"
                   >
-                    <template slot-scope="scope">
+                    <template v-slot="scope">
                       <span
                         class="editing_green"
                         @click="Editing(scope.row, 'Editing')"
@@ -65,7 +65,7 @@
                     label="删除"
                     width="60px"
                   >
-                    <template slot-scope="scope">
+                    <template v-slot="scope">
                       <el-popconfirm
                         title="确定删除吗"
                         @onConfirm="ControlModeDelete(scope.row.no)"
@@ -431,12 +431,12 @@
                           prop="delay"
                           label="延迟"
                         >
-                          <template slot-scope="scope">
+                          <template v-slot="scope">
                             <span>{{scope.row.delay+'分钟'}}</span>
                           </template>
                         </el-table-column>
                         <el-table-column label="编辑">
-                          <template slot-scope="scope">
+                          <template v-slot="scope">
                             <span
                               class="editing_yeelow"
                               @click="EditingShebei('EditingSb_bj', scope.row)"
@@ -444,7 +444,7 @@
                           </template>
                         </el-table-column>
                         <el-table-column label="删除">
-                          <template slot-scope="scope">
+                          <template v-slot="scope">
                             <el-popconfirm
                               title="确定删除吗"
                               @onConfirm="ControlModeItemDelete(scope.row.no)"

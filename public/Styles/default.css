@@ -1,0 +1,2092 @@
+@charset "UTF-8";
+.pointer_events_none {
+  pointer-events: none;
+}
+
+.alarmLevel .el-radio.is-bordered.is-checked {
+  border-color: #00f0ff;
+}
+
+.alarmLevel .el-radio__input.is-checked + .el-radio__label {
+  color: #00f0ff;
+}
+
+.alarmLevel .el-radio__input.is-checked .el-radio__inner {
+  border-color: #00f0ff;
+  background: #00f0ff;
+}
+
+.el-radio {
+  color: #fff !important;
+}
+
+.el-textarea__inner {
+  background-color: transparent !important;
+  color: #fff !important;
+  border: 1px solid #00f0ff !important;
+  border-radius: 0 !important;
+}
+
+.importExport {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.event1 {
+  color: lightskyblue;
+}
+
+.event2 {
+  color: rgb(187, 1, 137);
+}
+
+.event3 {
+  color: orange;
+}
+
+.event4 {
+  color: red;
+}
+
+.min_hei {
+  max-height: 12.5rem;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+.login .login_card_body {
+  color: rgb(255, 255, 255);
+}
+.login .login_card_body .el-input {
+  height: 2.4rem;
+}
+.login .login_card_body .el-form-item__error {
+  color: #ed1c24;
+}
+.login .login_card_body .el-input__inner {
+  background-color: rgba(166, 166, 167, 0.6);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  border: 1px solid #4e6ef2;
+  vertical-align: super;
+}
+.login .login_card_body .el-input__prefix {
+  left: 1px;
+}
+.login .login_card_body .el-form-item.is-error .el-input__inner,
+.login .login_card_body .el-form-item.is-error .el-input__inner:focus,
+.login .login_card_body .el-form-item.is-error .el-textarea__inner,
+.login .login_card_body .el-form-item.is-error .el-textarea__inner:focus,
+.login .login_card_body .el-message-box__input input.invalid,
+.login .login_card_body .el-message-box__input input.invalid:focus {
+  border-color: #ed1c24;
+}
+.login .login_card_body .el-input__inner:focus {
+  border-color: #4e6ef2;
+  outline: 0;
+}
+.login .login_card_body .el-input--prefix .el-input__inner {
+  padding-left: 43px;
+}
+.login .login_card_body .el-form-item__content {
+  width: 320px;
+}
+.login .login_card_body .el-icon-user-solid:after {
+  content: "\e7a5";
+  width: 40px;
+  color: rgb(255, 255, 255);
+  background: #4e6ef2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login .login_card_body .el-icon-user-solid:before {
+  content: "";
+}
+.login .login_card_body .el-icon-lock:after {
+  content: "\e6e4";
+  width: 40px;
+  color: rgb(255, 255, 255);
+  background: #4e6ef2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login .login_card_body .el-icon-lock:before {
+  content: "";
+}
+.login .login_button .el-checkbox {
+  margin-right: 60px;
+  color: rgb(255, 255, 255);
+}
+.login .el-checkbox__inner {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #dcdee2;
+  border-radius: 2px;
+}
+
+.monitor_left .monitor_left_top .el-input-group__prepend,
+.monitor_left .monitor_left_top .el-input-group__append,
+.monitor_left .monitor_left_top input {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: 0;
+  font-size: 14px;
+  line-height: 14px;
+}
+.monitor_left .monitor_left_top .el-input-group__prepend {
+  font-size: 18px;
+  line-height: 18px;
+}
+.monitor_left .my_tree {
+  width: 10.42vw;
+  height: 48.6vh;
+  overflow: hidden;
+}
+.monitor_left .my_tree .el-tree-node > .el-tree-node__children {
+  overflow: unset !important;
+}
+.monitor_left .my_tree .el-scrollbar__wrap {
+  overflow-x: hidden;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+.monitor_left .my_tree .el-tree {
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0);
+}
+.monitor_left .my_tree .el-tree .el-tree-node__content {
+  height: 28px;
+  color: #f3f4f4;
+  padding-left: 14px !important;
+}
+.monitor_left .my_tree .el-tree-node:focus > .el-tree-node__content {
+  background-color: transparent;
+}
+.monitor_left .my_tree .el-tree-node__content:hover {
+  color: #00f0ff !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.monitor_left .my_tree .el-tree-node:focus > .el-tree-node__content {
+  color: #00f0ff;
+}
+.monitor_left .my_tree .el-scrollbar__wrap {
+  overflow: scroll;
+  width: 120%;
+  overflow-x: hidden;
+}
+.monitor_left .my_tree .el-tree-node {
+  padding-left: 12px !important;
+}
+.monitor_left .my_tree .el-scrollbar__thumb {
+  background-color: #009ef0 !important;
+}
+
+.monitor_right .chakan_info .el-tabs--border-card {
+  background: rgba(0, 0, 0, 0);
+  border: 0.0625rem solid #00f0ff;
+  height: 40.19vh;
+  overflow: auto;
+}
+.monitor_right .chakan_info .el-tabs--border-card .el-tabs__item.is-active {
+  color: #00f0ff !important;
+  border-right-color: #00f0ff;
+  border-left-color: #00f0ff;
+  background: rgba(0, 0, 0, 0);
+}
+.monitor_right .chakan_info .el-tabs--border-card > .el-tabs__header {
+  background-color: #315d93;
+  border-bottom: 0.0625rem solid #315d93;
+}
+.monitor_right .chakan_info .el-tabs--border-card > .el-tabs__header .el-tabs__item:not(.is-disabled):hover {
+  color: #00f0ff;
+}
+.monitor_right .chakan_info .el-tabs--border-card > .el-tabs__header .el-tabs__item {
+  color: #fff;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+}
+
+.lightEdit {
+  position: absolute;
+  top: 20px;
+  right: 320px;
+  z-index: 12;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.lightEdit .el-form {
+  text-align: left;
+}
+.lightEdit .el-form .el-form-item__label {
+  color: #f3f4f4;
+}
+.lightEdit .el-form .el-input__inner {
+  height: 3vh;
+  color: #fff;
+  border-radius: 0;
+  line-height: 3vh;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 216, 255, 0.5);
+}
+
+.baojin_center_top .el-input__inner {
+  height: 3vh;
+  line-height: 3vh;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 0px;
+}
+.baojin_center_top .el-input--suffix .el-input__inner {
+  padding-right: 0px;
+}
+.baojin_center_top .baojin_center_top_riqishij .el-input {
+  width: 10vw;
+}
+.baojin_center_top .zixitong > span {
+  width: 35%;
+}
+.baojin_center_top .zixitong .el-select .el-input {
+  width: 100%;
+}
+.baojin_center_top .center_top_shebei > span {
+  width: 28%;
+}
+.baojin_center_top .center_top_shebei .el-select .el-input {
+  width: 100%;
+}
+.baojin_center_top .center_top_xinhao > span {
+  width: 28%;
+}
+.baojin_center_top .center_top_xinhao .el-select .el-input {
+  width: 100%;
+}
+.baojin_center_top .el-checkbox {
+  color: #fff;
+}
+.baojin_center_top .el-checkbox .el-checkbox__inner {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #dcdfe6 !important;
+}
+.baojin_center_top .el-checkbox .el-checkbox__inner:hover {
+  border: 1px solid #00f0ff !important;
+}
+.baojin_center_top .el-checkbox .el-checkbox__inner::after {
+  border-color: #00f0ff;
+}
+.baojin_center_top .el-checkbox .el-checkbox__input.is-checked .el-checkbox__inner,
+.baojin_center_top .el-checkbox .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background-color: #366b71;
+  border-color: #00f0ff !important;
+}
+.baojin_center_top .el-checkbox__input.is-checked + .el-checkbox__label {
+  color: #fff;
+}
+.baojin_center_top .el-button--mini {
+  padding: 7px 25px;
+}
+
+.baojin_center_zhong_list .el-table .cell {
+  width: 100%;
+  word-break: keep-all;
+  /* 不换行 */
+  white-space: nowrap;
+  /* 不换行 */
+  overflow: hidden;
+  /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis;
+}
+
+.el-popper[x-placement^=bottom] .popper__arrow {
+  display: none;
+}
+
+.el-select .el-input.is-focus .el-input__inner {
+  border-color: rgba(0, 216, 255, 0.5) !important;
+}
+.el-select .el-input__inner:focus {
+  border-color: rgba(0, 216, 255, 0.5) !important;
+}
+
+.el-select-dropdown {
+  border-radius: 0px !important;
+  margin: 1px 0 !important;
+  border: 1px solid rgba(0, 216, 255, 0.5) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+.el-select-dropdown .el-scrollbar {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 0px 20px 0px rgba(0, 34, 84, 0.6);
+  opacity: 1;
+  color: #fff;
+  border: 1px solid transparent;
+}
+.el-select-dropdown .el-select-dropdown__item {
+  color: #fff;
+}
+.el-select-dropdown .el-select-dropdown__item.hover {
+  background: linear-gradient(120deg, rgba(12, 236, 234, 0.2), rgba(12, 236, 234, 0.6));
+}
+.el-select-dropdown .el-select-dropdown__item.selected {
+  color: #fff;
+}
+
+.el-date-table td.disabled div {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.el-date-table td.in-range div,
+.el-date-table td.in-range div:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.el-cascader-node.in-active-path {
+  color: #00f0ff !important;
+  font-weight: 700 !important;
+}
+
+.el-cascader-node:not(.is-disabled):focus,
+.el-cascader-node:not(.is-disabled):hover {
+  color: #00f0ff !important;
+  background-color: rgb(0, 0, 0) !important;
+}
+
+.el-cascader__dropdown {
+  border-radius: 0 !important;
+  border: 0px solid transparent !important;
+  color: transparent;
+  background: transparent;
+}
+.el-cascader__dropdown .el-cascader-panel {
+  background-color: rgb(0, 0, 0);
+  border: 1px solid transparent !important;
+  border-radius: 0;
+}
+.el-cascader__dropdown .el-cascader-panel .el-cascader-menu {
+  color: #fff;
+  border: 1px solid rgba(0, 216, 255, 0.4) !important;
+  border-right: solid 0.0625rem rgba(0, 216, 255, 0.5);
+}
+.el-cascader__dropdown .el-cascader-panel .el-cascader-menu .el-cascader-node {
+  position: relative;
+}
+.el-cascader__dropdown .el-cascader-panel .el-cascader-menu .el-cascader-node > .el-radio {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translate(0%, -50%);
+  height: 3vh;
+  line-height: 3vh;
+}
+.el-cascader__dropdown .el-cascader-panel .el-cascader-node:not(.is-disabled):hover {
+  background: linear-gradient(120deg, rgba(12, 236, 234, 0.2), rgba(12, 236, 234, 0.6));
+}
+
+.baojin_center_zhong .el-table,
+.EditingSbz_list .el-table {
+  background-color: transparent;
+}
+.baojin_center_zhong .el-table .cell,
+.EditingSbz_list .el-table .cell {
+  width: 100%;
+  word-break: keep-all;
+  /* 不换行 */
+  white-space: nowrap;
+  /* 不换行 */
+  overflow: hidden;
+  /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis;
+}
+.baojin_center_zhong .el-table td,
+.EditingSbz_list .el-table td {
+  border-bottom: 1px solid transparent;
+  border: 1px solid transparent;
+  padding: 0.7vh 0;
+  font-size: 14px;
+}
+.baojin_center_zhong .el-table .warning-row,
+.EditingSbz_list .el-table .warning-row {
+  background: transparent;
+  color: #fff;
+  opacity: 1;
+}
+.baojin_center_zhong .el-table .success-row,
+.EditingSbz_list .el-table .success-row {
+  background: #0069b7;
+  opacity: 1;
+  color: #fff;
+}
+.baojin_center_zhong .el-table th,
+.baojin_center_zhong .el-table tr,
+.EditingSbz_list .el-table th,
+.EditingSbz_list .el-table tr {
+  color: #fff;
+  background: transparent;
+  opacity: 1;
+  text-align: center;
+}
+.baojin_center_zhong .el-table tr,
+.EditingSbz_list .el-table tr {
+  color: #fff;
+  background: transparent;
+  opacity: 1;
+  text-align: center;
+}
+.baojin_center_zhong .el-table tr td:last-child,
+.EditingSbz_list .el-table tr td:last-child {
+  color: #ffd904;
+}
+.baojin_center_zhong .el-table::before,
+.EditingSbz_list .el-table::before {
+  background-color: transparent;
+}
+.baojin_center_zhong .el-table--enable-row-hover .el-table__body tr:hover > td,
+.EditingSbz_list .el-table--enable-row-hover .el-table__body tr:hover > td {
+  background-color: transparent;
+}
+.baojin_center_zhong .el-table td,
+.baojin_center_zhong .el-table th.is-leaf,
+.EditingSbz_list .el-table td,
+.EditingSbz_list .el-table th.is-leaf {
+  border-bottom: 1px solid transparent;
+  text-align: center;
+}
+
+.el-pagination .el-pager li {
+  color: #fff;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0);
+}
+.el-pagination .el-pager .active {
+  color: #ffd904;
+}
+.el-pagination .el-pager .btn-quicknext {
+  color: #fff;
+}
+.el-pagination .el-pager .btn-quickprev {
+  color: #fff;
+}
+.el-pagination .el-pager li:hover {
+  color: #ffd904;
+}
+.el-pagination .btn-next {
+  color: #fff;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0) !important;
+}
+.el-pagination .btn-next .el-icon-arrow-right {
+  color: #fff;
+}
+.el-pagination .btn-prev {
+  color: #fff;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0) !important;
+}
+.el-pagination .btn-prev .el-icon-arrow-left {
+  color: #fff;
+}
+
+.tanchuang_baobiao .meterManagement_left .el-input--suffix .el-input__inner {
+  padding-right: 0px;
+  border-radius: 0;
+}
+.tanchuang_baobiao .meterManagement_left .el-input {
+  width: 7.4vw !important;
+  color: #fff;
+}
+.tanchuang_baobiao .meterManagement_left .el-select-dropdown .el-scrollbar {
+  background: #0068b7;
+  box-shadow: 0px 0px 20px 0px rgba(0, 34, 84, 0.6);
+  opacity: 1;
+  color: #fff;
+  border: 1px solid transparent;
+}
+.tanchuang_baobiao .el-input--prefix .el-input__inner {
+  padding-left: 5px;
+}
+.tanchuang_baobiao .el-input--suffix .el-input__inner {
+  padding-right: 0px;
+}
+.tanchuang_baobiao .el-table {
+  background-color: transparent;
+  font-size: 14px;
+}
+.tanchuang_baobiao .el-table .cell {
+  width: 100%;
+  word-break: keep-all;
+  /* 不换行 */
+  white-space: nowrap;
+  /* 不换行 */
+  overflow: hidden;
+  /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis;
+}
+.tanchuang_baobiao .el-table td {
+  border-bottom: 1px solid transparent;
+  border: 1px solid transparent;
+  padding: 0.7vh 0;
+}
+.tanchuang_baobiao .el-table .warning-row {
+  background: transparent;
+  color: #fff;
+  opacity: 1;
+}
+.tanchuang_baobiao .el-table .success-row {
+  background: #0069b7;
+  opacity: 1;
+  color: #fff;
+}
+.tanchuang_baobiao .el-table th,
+.tanchuang_baobiao .el-table tr {
+  color: #fff;
+  background: transparent;
+  opacity: 1;
+  text-align: center;
+}
+.tanchuang_baobiao .el-table::before {
+  background-color: transparent;
+}
+.tanchuang_baobiao .el-table--enable-row-hover .el-table__body tr:hover > td {
+  background-color: transparent;
+}
+.tanchuang_baobiao .el-table td,
+.tanchuang_baobiao .el-table th.is-leaf {
+  border-bottom: 1px solid transparent;
+  text-align: center;
+}
+.tanchuang_baobiao .el-input__inner {
+  height: 3vh;
+  background-color: transparent;
+  color: #fff;
+}
+
+.el-select-dropdown .el-select-dropdown__empty {
+  color: #fff;
+  background: rgb(0, 0, 0);
+}
+
+.kongz_list .el-table {
+  background-color: transparent;
+}
+.kongz_list .el-table .cell {
+  width: 100%;
+  word-break: keep-all;
+  /* 不换行 */
+  white-space: nowrap;
+  /* 不换行 */
+  overflow: hidden;
+  /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis;
+}
+.kongz_list .el-table td {
+  border-bottom: 1px solid transparent;
+  border: 1px solid transparent;
+  padding: 0.7vh 0;
+}
+.kongz_list .el-table .warning-row {
+  background: transparent;
+  color: #fff;
+  opacity: 1;
+}
+.kongz_list .el-table .success-row {
+  background: #0069b7;
+  opacity: 1;
+  color: #fff;
+}
+.kongz_list .el-table th,
+.kongz_list .el-table tr {
+  color: #fff;
+  background: transparent;
+  opacity: 1;
+  text-align: center;
+}
+.kongz_list .el-table tr {
+  color: #fff;
+  background: transparent;
+  opacity: 1;
+  text-align: center;
+}
+.kongz_list .el-table tr td:last-child {
+  color: #ffd904;
+}
+.kongz_list .el-table::before {
+  background-color: transparent;
+}
+.kongz_list .el-table--enable-row-hover .el-table__body tr:hover > td {
+  background-color: transparent;
+}
+.kongz_list .el-table td,
+.kongz_list .el-table th.is-leaf {
+  border-bottom: 1px solid transparent;
+  text-align: center;
+}
+
+.schematicRestraint > .schematicRestraint_center .el-radio__input.is-checked .el-radio__inner {
+  border-color: #00f0ff;
+  background: #00f0ff;
+}
+.schematicRestraint > .schematicRestraint_center .el-radio__input.is-checked + .el-radio__label {
+  color: #00f0ff;
+}
+.schematicRestraint > .schematicRestraint_center .el-input__inner {
+  height: 3vh;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid rgb(0, 240, 255);
+  border-radius: 0px;
+}
+.schematicRestraint > .schematicRestraint_center .el-input--suffix .el-input__inner {
+  padding-right: 0px;
+}
+.schematicRestraint > .schematicRestraint_center .el-select .el-input .el-select__caret {
+  color: rgb(0, 240, 255);
+}
+.schematicRestraint > .schematicRestraint_center .el-select .el-input.is-focus .el-input__inner {
+  border-color: rgb(0, 240, 255);
+}
+.schematicRestraint > .schematicRestraint_center .el-select .el-input__inner:focus {
+  border-color: rgb(0, 240, 255);
+}
+.schematicRestraint > .schematicRestraint_center .el-select:hover .el-input__inner {
+  border-color: rgb(0, 240, 255);
+}
+.schematicRestraint > .schematicRestraint_center .el-input {
+  width: 8.5vw !important;
+}
+.schematicRestraint > .schematicRestraint_center .el-range-editor.is-active,
+.schematicRestraint > .schematicRestraint_center .el-range-editor.is-active:hover {
+  border-color: rgb(0, 240, 255);
+}
+.schematicRestraint > .schematicRestraint_center .el-input__inner:hover {
+  border-color: rgb(0, 240, 255);
+}
+.schematicRestraint > .schematicRestraint_center .el-date-editor .el-range-input {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+}
+.schematicRestraint > .schematicRestraint_center .el-date-editor .el-range__icon {
+  line-height: 3vh;
+  color: #fff;
+}
+.schematicRestraint > .schematicRestraint_center .el-date-editor .el-range-separator {
+  line-height: 3vh;
+  color: #fff;
+}
+.schematicRestraint > .schematicRestraint_center .el-range-editor.el-input__inner {
+  height: 3vh;
+  padding: 0 10px;
+}
+.schematicRestraint > .schematicRestraint_center .el-date-editor .el-range__close-icon {
+  color: #fff;
+  line-height: 3vh;
+}
+.schematicRestraint > .schematicRestraint_center .el-button {
+  padding: 12px 35px;
+}
+.schematicRestraint .tanchuang_ying .rili_tangchuang_cen .el-date-editor--daterange.el-input__inner {
+  width: 15vw;
+}
+.schematicRestraint .tanchuang_ying .rili_tangchuang_cen .el-transfer-panel {
+  text-align: left;
+  border: 1px solid rgba(0, 240, 255, 0.6);
+  background: rgba(0, 158, 240, 0.5);
+  width: 8vw;
+}
+.schematicRestraint .tanchuang_ying .rili_tangchuang_cen .el-transfer-panel .el-transfer-panel__header {
+  display: none;
+  background: rgba(0, 158, 240, 0.1);
+}
+.schematicRestraint .tanchuang_ying .rili_tangchuang_cen .el-transfer-panel .el-transfer-panel__header .el-checkbox__label {
+  color: rgba(255, 255, 255, 0.7);
+}
+.schematicRestraint .tanchuang_ying .rili_tangchuang_cen .el-transfer-panel .el-input {
+  width: 8.5vw;
+}
+.schematicRestraint .tanchuang_ying .rili_tangchuang_cen .el-transfer-panel .el-transfer-panel__item.el-checkbox {
+  color: rgba(255, 255, 255, 0.7);
+}
+.schematicRestraint .tanchuang_ying .rili_tangchuang_cen .el-transfer__buttons {
+  padding: 0 20px;
+}
+.schematicRestraint .tanchuang_ying .rili_tangchuang_cen .el-transfer__buttons .el-button {
+  padding: 5px 15px;
+}
+.schematicRestraint .tanchuang_ying .rili_tangchuang_cen .el-input__inner {
+  border: 1px solid rgb(0, 240, 255);
+  height: 3vh;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.schematicRestraint .tanchuang_ying .rili_tangchuang_cen .el-range__icon {
+  line-height: 3vh;
+  height: 3vh;
+}
+.schematicRestraint .tanchuang_ying .rili_tangchuang_cen .el-range__close-icon {
+  line-height: 3vh;
+  height: 3vh;
+}
+.schematicRestraint .tanchuang_ying .rili_tangchuang_cen .el-range-editor {
+  margin: 0 0.5vw;
+}
+.schematicRestraint .tanchuang_ying .rili_tangchuang_cen .el-range-editor .el-range-input {
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+.schematicRestraint .tanchuang_ying .rili_tangchuang_cen .el-range-editor .el-range-separator {
+  line-height: 3vh;
+  color: #dcdfe6;
+  height: 3vh;
+  font-size: 14px;
+}
+.schematicRestraint .tanchuang_ying .rili_tangchuang_cen .demonstration .el-input__inner {
+  line-height: 3vh;
+  height: 3vh;
+}
+.schematicRestraint .tanchuang_ying .rili_tangchuang_cen .el-select {
+  width: 7vw;
+  margin-left: 0.25vw;
+  margin-right: 0.5vw;
+}
+.schematicRestraint .tanchuang_ying .tanchuang_defulet .el-transfer__buttons {
+  padding: 0 20px;
+}
+.schematicRestraint .tanchuang_ying .tanchuang_defulet .el-transfer__buttons .el-button {
+  padding: 5px 15px;
+}
+.schematicRestraint .tanchuang_ying .tanchuang_defulet .el-input {
+  width: 8.5vw;
+  color: #fff;
+}
+.schematicRestraint .tanchuang_ying .tanchuang_defulet .el-input__inner {
+  border: 1px solid rgb(0, 240, 255);
+  height: 3vh;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 0;
+}
+.schematicRestraint .tanchuang_ying .tanchuang_defulet .el-range__icon {
+  line-height: 3vh;
+  height: 3vh;
+}
+.schematicRestraint .tanchuang_ying .tanchuang_defulet .el-range__close-icon {
+  line-height: 3vh;
+  height: 3vh;
+}
+.schematicRestraint .tanchuang_ying .tanchuang_defulet .el-range-editor {
+  margin: 0 0.5vw;
+}
+.schematicRestraint .tanchuang_ying .tanchuang_defulet .el-range-editor .el-range-input {
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+.schematicRestraint .tanchuang_ying .tanchuang_defulet .el-range-editor .el-range-separator {
+  line-height: 3vh;
+  color: #dcdfe6;
+  height: 3vh;
+  font-size: 14px;
+}
+.schematicRestraint .tanchuang_ying .tanchuang_defulet .demonstration .el-input__inner {
+  line-height: 3vh;
+  height: 3vh;
+}
+
+.tanchuang_dianbiao .tanchuang_center_cen_top input::-webkit-input-placeholder {
+  color: #fff;
+}
+.tanchuang_dianbiao .tanchuang_center_cen_top_edit .el-upload-list__item-name {
+  color: #fff;
+}
+.tanchuang_dianbiao .tanchuang_center_cen_top_edit .el-upload-list__item-name [class^=el-icon] {
+  color: #fff;
+}
+.tanchuang_dianbiao .tanchuang_center_cen_top_edit .el-icon-close {
+  color: #fff;
+}
+.tanchuang_dianbiao .tanchuang_center_cen_top_edit .el-upload-list__item:hover {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #00f0ff;
+}
+
+.index_off {
+  top: 86px !important;
+  transition: all ease-in-out 0.75s;
+}
+
+.index_no {
+  top: 122px !important;
+  transition: all ease-in-out 0.75s;
+}
+
+.el-cascader .el-input .el-input__inner:focus,
+.el-cascader .el-input.is-focus .el-input__inner {
+  border-color: rgba(0, 216, 255, 0.5) !important;
+}
+
+.craftingassistance .craftingassistance_cneter .announcement .announcement_list .el-table,
+.craftingassistance .craftingassistance_cneter .announcement .systemFile_center_list .el-table,
+.craftingassistance .craftingassistance_cneter .announcement .Selectuser_center .el-table,
+.craftingassistance .craftingassistance_cneter .announcement .moveFiles_center .el-table,
+.craftingassistance .craftingassistance_cneter .announcement .watchBook_center .el-table,
+.craftingassistance .craftingassistance_cneter .announcement .logbook_center .el-table,
+.craftingassistance .craftingassistance_cneter .systemFile .announcement_list .el-table,
+.craftingassistance .craftingassistance_cneter .systemFile .systemFile_center_list .el-table,
+.craftingassistance .craftingassistance_cneter .systemFile .Selectuser_center .el-table,
+.craftingassistance .craftingassistance_cneter .systemFile .moveFiles_center .el-table,
+.craftingassistance .craftingassistance_cneter .systemFile .watchBook_center .el-table,
+.craftingassistance .craftingassistance_cneter .systemFile .logbook_center .el-table,
+.craftingassistance .craftingassistance_cneter .Selectuser .announcement_list .el-table,
+.craftingassistance .craftingassistance_cneter .Selectuser .systemFile_center_list .el-table,
+.craftingassistance .craftingassistance_cneter .Selectuser .Selectuser_center .el-table,
+.craftingassistance .craftingassistance_cneter .Selectuser .moveFiles_center .el-table,
+.craftingassistance .craftingassistance_cneter .Selectuser .watchBook_center .el-table,
+.craftingassistance .craftingassistance_cneter .Selectuser .logbook_center .el-table,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .announcement_list .el-table,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .systemFile_center_list .el-table,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .Selectuser_center .el-table,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .moveFiles_center .el-table,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .watchBook_center .el-table,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .logbook_center .el-table,
+.craftingassistance .craftingassistance_cneter .shiftClass .announcement_list .el-table,
+.craftingassistance .craftingassistance_cneter .shiftClass .systemFile_center_list .el-table,
+.craftingassistance .craftingassistance_cneter .shiftClass .Selectuser_center .el-table,
+.craftingassistance .craftingassistance_cneter .shiftClass .moveFiles_center .el-table,
+.craftingassistance .craftingassistance_cneter .shiftClass .watchBook_center .el-table,
+.craftingassistance .craftingassistance_cneter .shiftClass .logbook_center .el-table {
+  background-color: transparent;
+  font-size: 14px;
+}
+.craftingassistance .craftingassistance_cneter .announcement .announcement_list .el-table .cell,
+.craftingassistance .craftingassistance_cneter .announcement .systemFile_center_list .el-table .cell,
+.craftingassistance .craftingassistance_cneter .announcement .Selectuser_center .el-table .cell,
+.craftingassistance .craftingassistance_cneter .announcement .moveFiles_center .el-table .cell,
+.craftingassistance .craftingassistance_cneter .announcement .watchBook_center .el-table .cell,
+.craftingassistance .craftingassistance_cneter .announcement .logbook_center .el-table .cell,
+.craftingassistance .craftingassistance_cneter .systemFile .announcement_list .el-table .cell,
+.craftingassistance .craftingassistance_cneter .systemFile .systemFile_center_list .el-table .cell,
+.craftingassistance .craftingassistance_cneter .systemFile .Selectuser_center .el-table .cell,
+.craftingassistance .craftingassistance_cneter .systemFile .moveFiles_center .el-table .cell,
+.craftingassistance .craftingassistance_cneter .systemFile .watchBook_center .el-table .cell,
+.craftingassistance .craftingassistance_cneter .systemFile .logbook_center .el-table .cell,
+.craftingassistance .craftingassistance_cneter .Selectuser .announcement_list .el-table .cell,
+.craftingassistance .craftingassistance_cneter .Selectuser .systemFile_center_list .el-table .cell,
+.craftingassistance .craftingassistance_cneter .Selectuser .Selectuser_center .el-table .cell,
+.craftingassistance .craftingassistance_cneter .Selectuser .moveFiles_center .el-table .cell,
+.craftingassistance .craftingassistance_cneter .Selectuser .watchBook_center .el-table .cell,
+.craftingassistance .craftingassistance_cneter .Selectuser .logbook_center .el-table .cell,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .announcement_list .el-table .cell,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .systemFile_center_list .el-table .cell,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .Selectuser_center .el-table .cell,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .moveFiles_center .el-table .cell,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .watchBook_center .el-table .cell,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .logbook_center .el-table .cell,
+.craftingassistance .craftingassistance_cneter .shiftClass .announcement_list .el-table .cell,
+.craftingassistance .craftingassistance_cneter .shiftClass .systemFile_center_list .el-table .cell,
+.craftingassistance .craftingassistance_cneter .shiftClass .Selectuser_center .el-table .cell,
+.craftingassistance .craftingassistance_cneter .shiftClass .moveFiles_center .el-table .cell,
+.craftingassistance .craftingassistance_cneter .shiftClass .watchBook_center .el-table .cell,
+.craftingassistance .craftingassistance_cneter .shiftClass .logbook_center .el-table .cell {
+  width: 100%;
+  word-break: keep-all;
+  /* 不换行 */
+  white-space: nowrap;
+  /* 不换行 */
+  overflow: hidden;
+  /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis;
+}
+.craftingassistance .craftingassistance_cneter .announcement .announcement_list .el-table td,
+.craftingassistance .craftingassistance_cneter .announcement .systemFile_center_list .el-table td,
+.craftingassistance .craftingassistance_cneter .announcement .Selectuser_center .el-table td,
+.craftingassistance .craftingassistance_cneter .announcement .moveFiles_center .el-table td,
+.craftingassistance .craftingassistance_cneter .announcement .watchBook_center .el-table td,
+.craftingassistance .craftingassistance_cneter .announcement .logbook_center .el-table td,
+.craftingassistance .craftingassistance_cneter .systemFile .announcement_list .el-table td,
+.craftingassistance .craftingassistance_cneter .systemFile .systemFile_center_list .el-table td,
+.craftingassistance .craftingassistance_cneter .systemFile .Selectuser_center .el-table td,
+.craftingassistance .craftingassistance_cneter .systemFile .moveFiles_center .el-table td,
+.craftingassistance .craftingassistance_cneter .systemFile .watchBook_center .el-table td,
+.craftingassistance .craftingassistance_cneter .systemFile .logbook_center .el-table td,
+.craftingassistance .craftingassistance_cneter .Selectuser .announcement_list .el-table td,
+.craftingassistance .craftingassistance_cneter .Selectuser .systemFile_center_list .el-table td,
+.craftingassistance .craftingassistance_cneter .Selectuser .Selectuser_center .el-table td,
+.craftingassistance .craftingassistance_cneter .Selectuser .moveFiles_center .el-table td,
+.craftingassistance .craftingassistance_cneter .Selectuser .watchBook_center .el-table td,
+.craftingassistance .craftingassistance_cneter .Selectuser .logbook_center .el-table td,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .announcement_list .el-table td,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .systemFile_center_list .el-table td,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .Selectuser_center .el-table td,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .moveFiles_center .el-table td,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .watchBook_center .el-table td,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .logbook_center .el-table td,
+.craftingassistance .craftingassistance_cneter .shiftClass .announcement_list .el-table td,
+.craftingassistance .craftingassistance_cneter .shiftClass .systemFile_center_list .el-table td,
+.craftingassistance .craftingassistance_cneter .shiftClass .Selectuser_center .el-table td,
+.craftingassistance .craftingassistance_cneter .shiftClass .moveFiles_center .el-table td,
+.craftingassistance .craftingassistance_cneter .shiftClass .watchBook_center .el-table td,
+.craftingassistance .craftingassistance_cneter .shiftClass .logbook_center .el-table td {
+  border-bottom: 1px solid transparent;
+  border: 1px solid transparent;
+  padding: 0.7vh 0;
+  width: 100%;
+}
+.craftingassistance .craftingassistance_cneter .announcement .announcement_list .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .announcement .systemFile_center_list .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .announcement .Selectuser_center .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .announcement .moveFiles_center .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .announcement .watchBook_center .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .announcement .logbook_center .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .systemFile .announcement_list .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .systemFile .systemFile_center_list .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .systemFile .Selectuser_center .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .systemFile .moveFiles_center .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .systemFile .watchBook_center .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .systemFile .logbook_center .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .Selectuser .announcement_list .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .Selectuser .systemFile_center_list .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .Selectuser .Selectuser_center .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .Selectuser .moveFiles_center .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .Selectuser .watchBook_center .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .Selectuser .logbook_center .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .announcement_list .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .systemFile_center_list .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .Selectuser_center .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .moveFiles_center .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .watchBook_center .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .logbook_center .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .shiftClass .announcement_list .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .shiftClass .systemFile_center_list .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .shiftClass .Selectuser_center .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .shiftClass .moveFiles_center .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .shiftClass .watchBook_center .el-table .warning-row,
+.craftingassistance .craftingassistance_cneter .shiftClass .logbook_center .el-table .warning-row {
+  background: transparent;
+  color: #fff;
+  opacity: 1;
+}
+.craftingassistance .craftingassistance_cneter .announcement .announcement_list .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .announcement .systemFile_center_list .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .announcement .Selectuser_center .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .announcement .moveFiles_center .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .announcement .watchBook_center .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .announcement .logbook_center .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .systemFile .announcement_list .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .systemFile .systemFile_center_list .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .systemFile .Selectuser_center .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .systemFile .moveFiles_center .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .systemFile .watchBook_center .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .systemFile .logbook_center .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .Selectuser .announcement_list .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .Selectuser .systemFile_center_list .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .Selectuser .Selectuser_center .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .Selectuser .moveFiles_center .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .Selectuser .watchBook_center .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .Selectuser .logbook_center .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .announcement_list .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .systemFile_center_list .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .Selectuser_center .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .moveFiles_center .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .watchBook_center .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .logbook_center .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .shiftClass .announcement_list .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .shiftClass .systemFile_center_list .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .shiftClass .Selectuser_center .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .shiftClass .moveFiles_center .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .shiftClass .watchBook_center .el-table .success-row,
+.craftingassistance .craftingassistance_cneter .shiftClass .logbook_center .el-table .success-row {
+  background: #0069b7;
+  opacity: 1;
+  color: #fff;
+}
+.craftingassistance .craftingassistance_cneter .announcement .announcement_list .el-table th,
+.craftingassistance .craftingassistance_cneter .announcement .announcement_list .el-table tr,
+.craftingassistance .craftingassistance_cneter .announcement .systemFile_center_list .el-table th,
+.craftingassistance .craftingassistance_cneter .announcement .systemFile_center_list .el-table tr,
+.craftingassistance .craftingassistance_cneter .announcement .Selectuser_center .el-table th,
+.craftingassistance .craftingassistance_cneter .announcement .Selectuser_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .announcement .moveFiles_center .el-table th,
+.craftingassistance .craftingassistance_cneter .announcement .moveFiles_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .announcement .watchBook_center .el-table th,
+.craftingassistance .craftingassistance_cneter .announcement .watchBook_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .announcement .logbook_center .el-table th,
+.craftingassistance .craftingassistance_cneter .announcement .logbook_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .systemFile .announcement_list .el-table th,
+.craftingassistance .craftingassistance_cneter .systemFile .announcement_list .el-table tr,
+.craftingassistance .craftingassistance_cneter .systemFile .systemFile_center_list .el-table th,
+.craftingassistance .craftingassistance_cneter .systemFile .systemFile_center_list .el-table tr,
+.craftingassistance .craftingassistance_cneter .systemFile .Selectuser_center .el-table th,
+.craftingassistance .craftingassistance_cneter .systemFile .Selectuser_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .systemFile .moveFiles_center .el-table th,
+.craftingassistance .craftingassistance_cneter .systemFile .moveFiles_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .systemFile .watchBook_center .el-table th,
+.craftingassistance .craftingassistance_cneter .systemFile .watchBook_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .systemFile .logbook_center .el-table th,
+.craftingassistance .craftingassistance_cneter .systemFile .logbook_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .Selectuser .announcement_list .el-table th,
+.craftingassistance .craftingassistance_cneter .Selectuser .announcement_list .el-table tr,
+.craftingassistance .craftingassistance_cneter .Selectuser .systemFile_center_list .el-table th,
+.craftingassistance .craftingassistance_cneter .Selectuser .systemFile_center_list .el-table tr,
+.craftingassistance .craftingassistance_cneter .Selectuser .Selectuser_center .el-table th,
+.craftingassistance .craftingassistance_cneter .Selectuser .Selectuser_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .Selectuser .moveFiles_center .el-table th,
+.craftingassistance .craftingassistance_cneter .Selectuser .moveFiles_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .Selectuser .watchBook_center .el-table th,
+.craftingassistance .craftingassistance_cneter .Selectuser .watchBook_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .Selectuser .logbook_center .el-table th,
+.craftingassistance .craftingassistance_cneter .Selectuser .logbook_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .announcement_list .el-table th,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .announcement_list .el-table tr,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .systemFile_center_list .el-table th,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .systemFile_center_list .el-table tr,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .Selectuser_center .el-table th,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .Selectuser_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .moveFiles_center .el-table th,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .moveFiles_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .watchBook_center .el-table th,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .watchBook_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .logbook_center .el-table th,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .logbook_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .shiftClass .announcement_list .el-table th,
+.craftingassistance .craftingassistance_cneter .shiftClass .announcement_list .el-table tr,
+.craftingassistance .craftingassistance_cneter .shiftClass .systemFile_center_list .el-table th,
+.craftingassistance .craftingassistance_cneter .shiftClass .systemFile_center_list .el-table tr,
+.craftingassistance .craftingassistance_cneter .shiftClass .Selectuser_center .el-table th,
+.craftingassistance .craftingassistance_cneter .shiftClass .Selectuser_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .shiftClass .moveFiles_center .el-table th,
+.craftingassistance .craftingassistance_cneter .shiftClass .moveFiles_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .shiftClass .watchBook_center .el-table th,
+.craftingassistance .craftingassistance_cneter .shiftClass .watchBook_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .shiftClass .logbook_center .el-table th,
+.craftingassistance .craftingassistance_cneter .shiftClass .logbook_center .el-table tr {
+  color: #fff;
+  background: transparent;
+  opacity: 1;
+  text-align: center;
+}
+.craftingassistance .craftingassistance_cneter .announcement .announcement_list .el-table tr,
+.craftingassistance .craftingassistance_cneter .announcement .systemFile_center_list .el-table tr,
+.craftingassistance .craftingassistance_cneter .announcement .Selectuser_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .announcement .moveFiles_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .announcement .watchBook_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .announcement .logbook_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .systemFile .announcement_list .el-table tr,
+.craftingassistance .craftingassistance_cneter .systemFile .systemFile_center_list .el-table tr,
+.craftingassistance .craftingassistance_cneter .systemFile .Selectuser_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .systemFile .moveFiles_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .systemFile .watchBook_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .systemFile .logbook_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .Selectuser .announcement_list .el-table tr,
+.craftingassistance .craftingassistance_cneter .Selectuser .systemFile_center_list .el-table tr,
+.craftingassistance .craftingassistance_cneter .Selectuser .Selectuser_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .Selectuser .moveFiles_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .Selectuser .watchBook_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .Selectuser .logbook_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .announcement_list .el-table tr,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .systemFile_center_list .el-table tr,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .Selectuser_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .moveFiles_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .watchBook_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .logbook_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .shiftClass .announcement_list .el-table tr,
+.craftingassistance .craftingassistance_cneter .shiftClass .systemFile_center_list .el-table tr,
+.craftingassistance .craftingassistance_cneter .shiftClass .Selectuser_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .shiftClass .moveFiles_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .shiftClass .watchBook_center .el-table tr,
+.craftingassistance .craftingassistance_cneter .shiftClass .logbook_center .el-table tr {
+  color: #fff;
+  background: transparent;
+  opacity: 1;
+  text-align: center;
+}
+.craftingassistance .craftingassistance_cneter .announcement .announcement_list .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .announcement .systemFile_center_list .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .announcement .Selectuser_center .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .announcement .moveFiles_center .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .announcement .watchBook_center .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .announcement .logbook_center .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .systemFile .announcement_list .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .systemFile .systemFile_center_list .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .systemFile .Selectuser_center .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .systemFile .moveFiles_center .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .systemFile .watchBook_center .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .systemFile .logbook_center .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .Selectuser .announcement_list .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .Selectuser .systemFile_center_list .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .Selectuser .Selectuser_center .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .Selectuser .moveFiles_center .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .Selectuser .watchBook_center .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .Selectuser .logbook_center .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .announcement_list .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .systemFile_center_list .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .Selectuser_center .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .moveFiles_center .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .watchBook_center .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .logbook_center .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .shiftClass .announcement_list .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .shiftClass .systemFile_center_list .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .shiftClass .Selectuser_center .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .shiftClass .moveFiles_center .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .shiftClass .watchBook_center .el-table tr td:last-child,
+.craftingassistance .craftingassistance_cneter .shiftClass .logbook_center .el-table tr td:last-child {
+  color: #ffd904;
+}
+.craftingassistance .craftingassistance_cneter .announcement .announcement_list .el-table::before,
+.craftingassistance .craftingassistance_cneter .announcement .systemFile_center_list .el-table::before,
+.craftingassistance .craftingassistance_cneter .announcement .Selectuser_center .el-table::before,
+.craftingassistance .craftingassistance_cneter .announcement .moveFiles_center .el-table::before,
+.craftingassistance .craftingassistance_cneter .announcement .watchBook_center .el-table::before,
+.craftingassistance .craftingassistance_cneter .announcement .logbook_center .el-table::before,
+.craftingassistance .craftingassistance_cneter .systemFile .announcement_list .el-table::before,
+.craftingassistance .craftingassistance_cneter .systemFile .systemFile_center_list .el-table::before,
+.craftingassistance .craftingassistance_cneter .systemFile .Selectuser_center .el-table::before,
+.craftingassistance .craftingassistance_cneter .systemFile .moveFiles_center .el-table::before,
+.craftingassistance .craftingassistance_cneter .systemFile .watchBook_center .el-table::before,
+.craftingassistance .craftingassistance_cneter .systemFile .logbook_center .el-table::before,
+.craftingassistance .craftingassistance_cneter .Selectuser .announcement_list .el-table::before,
+.craftingassistance .craftingassistance_cneter .Selectuser .systemFile_center_list .el-table::before,
+.craftingassistance .craftingassistance_cneter .Selectuser .Selectuser_center .el-table::before,
+.craftingassistance .craftingassistance_cneter .Selectuser .moveFiles_center .el-table::before,
+.craftingassistance .craftingassistance_cneter .Selectuser .watchBook_center .el-table::before,
+.craftingassistance .craftingassistance_cneter .Selectuser .logbook_center .el-table::before,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .announcement_list .el-table::before,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .systemFile_center_list .el-table::before,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .Selectuser_center .el-table::before,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .moveFiles_center .el-table::before,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .watchBook_center .el-table::before,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .logbook_center .el-table::before,
+.craftingassistance .craftingassistance_cneter .shiftClass .announcement_list .el-table::before,
+.craftingassistance .craftingassistance_cneter .shiftClass .systemFile_center_list .el-table::before,
+.craftingassistance .craftingassistance_cneter .shiftClass .Selectuser_center .el-table::before,
+.craftingassistance .craftingassistance_cneter .shiftClass .moveFiles_center .el-table::before,
+.craftingassistance .craftingassistance_cneter .shiftClass .watchBook_center .el-table::before,
+.craftingassistance .craftingassistance_cneter .shiftClass .logbook_center .el-table::before {
+  background-color: transparent;
+}
+.craftingassistance .craftingassistance_cneter .announcement .announcement_list .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .announcement .systemFile_center_list .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .announcement .Selectuser_center .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .announcement .moveFiles_center .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .announcement .watchBook_center .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .announcement .logbook_center .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .systemFile .announcement_list .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .systemFile .systemFile_center_list .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .systemFile .Selectuser_center .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .systemFile .moveFiles_center .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .systemFile .watchBook_center .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .systemFile .logbook_center .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .Selectuser .announcement_list .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .Selectuser .systemFile_center_list .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .Selectuser .Selectuser_center .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .Selectuser .moveFiles_center .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .Selectuser .watchBook_center .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .Selectuser .logbook_center .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .announcement_list .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .systemFile_center_list .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .Selectuser_center .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .moveFiles_center .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .watchBook_center .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .logbook_center .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .shiftClass .announcement_list .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .shiftClass .systemFile_center_list .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .shiftClass .Selectuser_center .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .shiftClass .moveFiles_center .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .shiftClass .watchBook_center .el-table--enable-row-hover .el-table__body tr:hover > td,
+.craftingassistance .craftingassistance_cneter .shiftClass .logbook_center .el-table--enable-row-hover .el-table__body tr:hover > td {
+  background-color: transparent;
+}
+.craftingassistance .craftingassistance_cneter .announcement .announcement_list .el-table td,
+.craftingassistance .craftingassistance_cneter .announcement .announcement_list .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .announcement .systemFile_center_list .el-table td,
+.craftingassistance .craftingassistance_cneter .announcement .systemFile_center_list .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .announcement .Selectuser_center .el-table td,
+.craftingassistance .craftingassistance_cneter .announcement .Selectuser_center .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .announcement .moveFiles_center .el-table td,
+.craftingassistance .craftingassistance_cneter .announcement .moveFiles_center .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .announcement .watchBook_center .el-table td,
+.craftingassistance .craftingassistance_cneter .announcement .watchBook_center .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .announcement .logbook_center .el-table td,
+.craftingassistance .craftingassistance_cneter .announcement .logbook_center .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .systemFile .announcement_list .el-table td,
+.craftingassistance .craftingassistance_cneter .systemFile .announcement_list .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .systemFile .systemFile_center_list .el-table td,
+.craftingassistance .craftingassistance_cneter .systemFile .systemFile_center_list .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .systemFile .Selectuser_center .el-table td,
+.craftingassistance .craftingassistance_cneter .systemFile .Selectuser_center .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .systemFile .moveFiles_center .el-table td,
+.craftingassistance .craftingassistance_cneter .systemFile .moveFiles_center .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .systemFile .watchBook_center .el-table td,
+.craftingassistance .craftingassistance_cneter .systemFile .watchBook_center .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .systemFile .logbook_center .el-table td,
+.craftingassistance .craftingassistance_cneter .systemFile .logbook_center .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .Selectuser .announcement_list .el-table td,
+.craftingassistance .craftingassistance_cneter .Selectuser .announcement_list .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .Selectuser .systemFile_center_list .el-table td,
+.craftingassistance .craftingassistance_cneter .Selectuser .systemFile_center_list .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .Selectuser .Selectuser_center .el-table td,
+.craftingassistance .craftingassistance_cneter .Selectuser .Selectuser_center .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .Selectuser .moveFiles_center .el-table td,
+.craftingassistance .craftingassistance_cneter .Selectuser .moveFiles_center .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .Selectuser .watchBook_center .el-table td,
+.craftingassistance .craftingassistance_cneter .Selectuser .watchBook_center .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .Selectuser .logbook_center .el-table td,
+.craftingassistance .craftingassistance_cneter .Selectuser .logbook_center .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .announcement_list .el-table td,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .announcement_list .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .systemFile_center_list .el-table td,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .systemFile_center_list .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .Selectuser_center .el-table td,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .Selectuser_center .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .moveFiles_center .el-table td,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .moveFiles_center .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .watchBook_center .el-table td,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .watchBook_center .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .logbook_center .el-table td,
+.craftingassistance .craftingassistance_cneter .file_tanchuang_center_cen_top .logbook_center .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .shiftClass .announcement_list .el-table td,
+.craftingassistance .craftingassistance_cneter .shiftClass .announcement_list .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .shiftClass .systemFile_center_list .el-table td,
+.craftingassistance .craftingassistance_cneter .shiftClass .systemFile_center_list .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .shiftClass .Selectuser_center .el-table td,
+.craftingassistance .craftingassistance_cneter .shiftClass .Selectuser_center .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .shiftClass .moveFiles_center .el-table td,
+.craftingassistance .craftingassistance_cneter .shiftClass .moveFiles_center .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .shiftClass .watchBook_center .el-table td,
+.craftingassistance .craftingassistance_cneter .shiftClass .watchBook_center .el-table th.is-leaf,
+.craftingassistance .craftingassistance_cneter .shiftClass .logbook_center .el-table td,
+.craftingassistance .craftingassistance_cneter .shiftClass .logbook_center .el-table th.is-leaf {
+  border-bottom: 1px solid transparent;
+  text-align: center;
+}
+.craftingassistance .craftingassistance_cneter .tc_textarea .el-textarea {
+  width: 90%;
+}
+.craftingassistance .craftingassistance_cneter .tc_textarea .el-textarea .el-textarea__inner {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #00f0ff;
+  border-radius: 0;
+  height: 16vh;
+}
+.craftingassistance .craftingassistance_cneter .tanchuang_ying .Selectuser .Selectuser_top .el-cascader {
+  line-height: 3vh;
+}
+.craftingassistance .craftingassistance_cneter .tanchuang_ying .Selectuser .Selectuser_top .el-cascader .el-input {
+  width: 10vw !important;
+}
+.craftingassistance .craftingassistance_cneter .tanchuang_ying .Selectuser .Selectuser_top .el-cascader .el-input input {
+  width: 10vw !important;
+}
+.craftingassistance .craftingassistance_cneter .tanchuang_ying .Selectuser .Selectuser_top .el-input__inner {
+  height: 3vh;
+  color: #fff;
+  border-radius: 0;
+  line-height: 3vh;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 216, 255, 0.5);
+}
+.craftingassistance .craftingassistance_cneter .shiftManagement_list .el-input {
+  width: 8.5vw;
+  color: rgb(255, 255, 255);
+}
+.craftingassistance .craftingassistance_cneter .shiftManagement_list .el-input__inner {
+  border: 1px solid rgb(0, 240, 255);
+  height: 3vh;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 0;
+}
+.craftingassistance .craftingassistance_cneter .shiftManagement_list .el-range__icon {
+  line-height: 3vh;
+  height: 3vh;
+}
+.craftingassistance .craftingassistance_cneter .shiftManagement_list .el-range__close-icon {
+  line-height: 3vh;
+  height: 3vh;
+}
+.craftingassistance .craftingassistance_cneter .shiftManagement_list .el-range-editor {
+  margin: 0 0.5vw;
+}
+.craftingassistance .craftingassistance_cneter .shiftManagement_list .el-range-editor .el-range-input {
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+.craftingassistance .craftingassistance_cneter .shiftManagement_list .el-range-editor .el-range-separator {
+  line-height: 3vh;
+  color: #dcdfe6;
+  height: 3vh;
+  font-size: 14px;
+}
+.craftingassistance .craftingassistance_cneter .shiftManagement_list .demonstration .el-input__inner {
+  line-height: 3vh;
+  height: 3vh;
+}
+.craftingassistance .craftingassistance_cneter .scheduling_top_left_list .el-date-editor.el-input {
+  width: 140px;
+}
+.craftingassistance .craftingassistance_cneter .scheduling_top_left_list .el-cascader {
+  line-height: 3vh;
+}
+.craftingassistance .craftingassistance_cneter .scheduling_top_left_list .el-cascader .el-input {
+  width: 10vw;
+}
+.craftingassistance .craftingassistance_cneter .scheduling_top_left_list .el-cascader .el-input input {
+  width: 10vw;
+}
+.craftingassistance .craftingassistance_cneter .scheduling_top_left_list .el-input__inner {
+  height: 3vh;
+  color: #fff;
+  border-radius: 0;
+  line-height: 3vh;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.el-picker-panel {
+  background: rgb(0, 0, 0) !important;
+  border-radius: 0 !important;
+}
+.el-picker-panel .el-picker-panel__footer {
+  background-color: rgb(0, 0, 0);
+}
+.el-picker-panel .el-picker-panel__footer .el-button--text {
+  color: #fff;
+}
+.el-picker-panel .el-picker-panel__body-wrapper .el-picker-panel__sidebar {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}
+.el-picker-panel .el-picker-panel__body-wrapper .el-picker-panel__sidebar .el-picker-panel__shortcut {
+  color: #fff;
+}
+.el-picker-panel .el-picker-panel__body-wrapper .el-picker-panel__content {
+  color: #fff;
+}
+.el-picker-panel .el-picker-panel__body-wrapper .el-picker-panel__content .el-date-table th {
+  color: #dcdfe6;
+}
+.el-picker-panel .el-picker-panel__body-wrapper .el-picker-panel__body .el-picker-panel__content .el-month-table td .cell {
+  color: #fff;
+}
+.el-picker-panel .el-picker-panel__body-wrapper .el-picker-panel__body .el-picker-panel__content .el-month-table .today .cell {
+  color: #409eff;
+  font-weight: 700;
+}
+.el-picker-panel .el-picker-panel__body-wrapper .el-picker-panel__body .el-date-range-picker__header .el-picker-panel__icon-btn {
+  color: #fff;
+}
+.el-picker-panel .el-picker-panel__body-wrapper .el-picker-panel__body .el-date-picker__time-header .el-date-picker__editor-wrap .el-input--small > .el-input__inner {
+  border-radius: 0;
+}
+.el-picker-panel .el-picker-panel__body-wrapper .el-picker-panel__body .el-date-picker__header .el-picker-panel__icon-btn {
+  color: #f3f4f4;
+}
+.el-picker-panel .el-picker-panel__body-wrapper .el-picker-panel__body .el-date-picker__header .el-date-picker__header-label {
+  color: #fff;
+}
+
+.time-select {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  color: #fff !important;
+  border: 1px solid rgba(0, 216, 255, 0.5) !important;
+}
+.time-select .el-scrollbar .time-select-item.selected:not(.disabled) {
+  color: #00f0ff;
+  font-weight: 700;
+}
+.time-select .el-scrollbar .time-select-item:hover {
+  background: linear-gradient(120deg, rgba(12, 236, 234, 0.2), rgba(12, 236, 234, 0.6));
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.Distribute .el-date-editor.el-input {
+  width: 140px;
+}
+.Distribute .el-cascader {
+  line-height: 3vh;
+}
+.Distribute .el-cascader .el-input {
+  width: 10vw;
+  color: #00f0ff;
+}
+.Distribute .el-cascader .el-input input {
+  width: 10vw;
+}
+.Distribute .el-input__inner {
+  height: 3vh;
+  color: #00f0ff;
+  border-radius: 0;
+  line-height: 3vh;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #00f0ff;
+}
+
+.el-input__inner {
+  border-radius: 0 !important;
+}
+
+.information_uploadFiles .upload-demo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.information_uploadFiles .upload-demo .el-upload-list--text {
+  margin-left: 20px;
+}
+.information_uploadFiles .upload-demo .el-upload-list--text .el-upload-list__item:first-child {
+  margin-top: 0px;
+}
+.information_uploadFiles .upload-demo .el-upload-list--text .el-upload-list__item {
+  margin-top: 0px;
+}
+
+.upload-demo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.upload-demo .el-upload-list--text {
+  margin-left: 20px;
+}
+.upload-demo .el-upload-list--text .el-upload-list__item:first-child {
+  margin-top: 0px;
+}
+.upload-demo .el-upload-list--text .el-upload-list__item {
+  margin-top: 0px;
+}
+
+.tanchuang_center_cen_top_edit .el-button--small {
+  padding: 7px 6px;
+}
+
+.el-cascader-node.is-active {
+  color: #00f0ff !important;
+}
+
+/*修改.el-progress背景色*/
+.el-progress-circle__track {
+  color: #fff;
+  background: #ffffff;
+  opacity: 0.1;
+  border: 10px solid #fff !important;
+}
+
+.tree_center {
+  opacity: 1;
+}
+.tree_center > .el-tree {
+  background: unset;
+  font-size: 15px;
+  color: #fff;
+  width: 48vw;
+}
+.tree_center > .el-tree > :nth-child(n) > :nth-child(1) {
+  background: linear-gradient(90deg, #0068b7, rgba(0, 104, 183, 0));
+}
+.tree_center > .el-tree .el-tree-node {
+  margin: 10px 0;
+}
+.tree_center > .el-tree .el-tree-node__content {
+  height: 3.8vh;
+}
+.tree_center > .el-tree .el-tree-node__content:hover {
+  background: linear-gradient(90deg, #0068b7, rgba(0, 104, 183, 0));
+}
+.tree_center > .el-tree .el-tree-node:focus > .el-tree-node__content {
+  background: linear-gradient(90deg, #0068b7, rgba(0, 104, 183, 0));
+}
+
+.tree_center_xunjianjihua {
+  opacity: 1;
+}
+.tree_center_xunjianjihua > .el-tree {
+  background: unset;
+  font-size: 15px;
+  color: #fff;
+}
+.tree_center_xunjianjihua > .el-tree > :nth-child(n) > :nth-child(1) {
+  background: linear-gradient(90deg, #0068b7, rgba(0, 104, 183, 0));
+}
+.tree_center_xunjianjihua > .el-tree .el-tree-node {
+  margin: 10px 0;
+}
+.tree_center_xunjianjihua > .el-tree .el-tree-node__content {
+  height: 3.8vh;
+}
+.tree_center_xunjianjihua > .el-tree .el-tree-node__content:hover {
+  background: linear-gradient(90deg, #0068b7, rgba(0, 104, 183, 0));
+}
+.tree_center_xunjianjihua > .el-tree .el-tree-node:focus > .el-tree-node__content {
+  background: linear-gradient(90deg, #0068b7, rgba(0, 104, 183, 0));
+}
+
+.selectUser .el-table,
+.MaintainPlan_main_list .el-table,
+.WorkOrderQuery_main_list .el-table,
+.WorkOrder_list .el-table,
+.Partlist_list .el-table,
+.div_table .el-table,
+.selectFile .el-table,
+.KnowledgeSearch .el-table,
+.Equipment_center .el-table,
+.InspectionPlan_main_list .el-table,
+.meterManagement_bottom .el-table,
+.yongdian_list .el-table,
+.Knowledge_list .el-table {
+  background-color: transparent;
+  font-size: 14px;
+}
+.selectUser .el-table .cell,
+.MaintainPlan_main_list .el-table .cell,
+.WorkOrderQuery_main_list .el-table .cell,
+.WorkOrder_list .el-table .cell,
+.Partlist_list .el-table .cell,
+.div_table .el-table .cell,
+.selectFile .el-table .cell,
+.KnowledgeSearch .el-table .cell,
+.Equipment_center .el-table .cell,
+.InspectionPlan_main_list .el-table .cell,
+.meterManagement_bottom .el-table .cell,
+.yongdian_list .el-table .cell,
+.Knowledge_list .el-table .cell {
+  width: 100%;
+  word-break: keep-all;
+  /* 不换行 */
+  white-space: nowrap;
+  /* 不换行 */
+  overflow: hidden;
+  /* 内容超出宽度时隐藏超出部分的内容 */
+  text-overflow: ellipsis;
+}
+.selectUser .el-table td,
+.MaintainPlan_main_list .el-table td,
+.WorkOrderQuery_main_list .el-table td,
+.WorkOrder_list .el-table td,
+.Partlist_list .el-table td,
+.div_table .el-table td,
+.selectFile .el-table td,
+.KnowledgeSearch .el-table td,
+.Equipment_center .el-table td,
+.InspectionPlan_main_list .el-table td,
+.meterManagement_bottom .el-table td,
+.yongdian_list .el-table td,
+.Knowledge_list .el-table td {
+  border-bottom: 1px solid transparent;
+  border: 1px solid transparent;
+  padding: 0.7vh 0;
+  width: 100%;
+}
+.selectUser .el-table .warning-row,
+.MaintainPlan_main_list .el-table .warning-row,
+.WorkOrderQuery_main_list .el-table .warning-row,
+.WorkOrder_list .el-table .warning-row,
+.Partlist_list .el-table .warning-row,
+.div_table .el-table .warning-row,
+.selectFile .el-table .warning-row,
+.KnowledgeSearch .el-table .warning-row,
+.Equipment_center .el-table .warning-row,
+.InspectionPlan_main_list .el-table .warning-row,
+.meterManagement_bottom .el-table .warning-row,
+.yongdian_list .el-table .warning-row,
+.Knowledge_list .el-table .warning-row {
+  background: transparent;
+  color: #fff;
+  opacity: 1;
+}
+.selectUser .el-table .success-row,
+.MaintainPlan_main_list .el-table .success-row,
+.WorkOrderQuery_main_list .el-table .success-row,
+.WorkOrder_list .el-table .success-row,
+.Partlist_list .el-table .success-row,
+.div_table .el-table .success-row,
+.selectFile .el-table .success-row,
+.KnowledgeSearch .el-table .success-row,
+.Equipment_center .el-table .success-row,
+.InspectionPlan_main_list .el-table .success-row,
+.meterManagement_bottom .el-table .success-row,
+.yongdian_list .el-table .success-row,
+.Knowledge_list .el-table .success-row {
+  background: #0069b7;
+  opacity: 1;
+  color: #fff;
+}
+.selectUser .el-table th,
+.selectUser .el-table tr,
+.MaintainPlan_main_list .el-table th,
+.MaintainPlan_main_list .el-table tr,
+.WorkOrderQuery_main_list .el-table th,
+.WorkOrderQuery_main_list .el-table tr,
+.WorkOrder_list .el-table th,
+.WorkOrder_list .el-table tr,
+.Partlist_list .el-table th,
+.Partlist_list .el-table tr,
+.div_table .el-table th,
+.div_table .el-table tr,
+.selectFile .el-table th,
+.selectFile .el-table tr,
+.KnowledgeSearch .el-table th,
+.KnowledgeSearch .el-table tr,
+.Equipment_center .el-table th,
+.Equipment_center .el-table tr,
+.InspectionPlan_main_list .el-table th,
+.InspectionPlan_main_list .el-table tr,
+.meterManagement_bottom .el-table th,
+.meterManagement_bottom .el-table tr,
+.yongdian_list .el-table th,
+.yongdian_list .el-table tr,
+.Knowledge_list .el-table th,
+.Knowledge_list .el-table tr {
+  color: #fff;
+  background: transparent;
+  opacity: 1;
+  text-align: center;
+}
+.selectUser .el-table tr,
+.MaintainPlan_main_list .el-table tr,
+.WorkOrderQuery_main_list .el-table tr,
+.WorkOrder_list .el-table tr,
+.Partlist_list .el-table tr,
+.div_table .el-table tr,
+.selectFile .el-table tr,
+.KnowledgeSearch .el-table tr,
+.Equipment_center .el-table tr,
+.InspectionPlan_main_list .el-table tr,
+.meterManagement_bottom .el-table tr,
+.yongdian_list .el-table tr,
+.Knowledge_list .el-table tr {
+  color: #fff;
+  background: transparent;
+  opacity: 1;
+  text-align: center;
+}
+.selectUser .el-table tr td:last-child,
+.MaintainPlan_main_list .el-table tr td:last-child,
+.WorkOrderQuery_main_list .el-table tr td:last-child,
+.WorkOrder_list .el-table tr td:last-child,
+.Partlist_list .el-table tr td:last-child,
+.div_table .el-table tr td:last-child,
+.selectFile .el-table tr td:last-child,
+.KnowledgeSearch .el-table tr td:last-child,
+.Equipment_center .el-table tr td:last-child,
+.InspectionPlan_main_list .el-table tr td:last-child,
+.meterManagement_bottom .el-table tr td:last-child,
+.yongdian_list .el-table tr td:last-child,
+.Knowledge_list .el-table tr td:last-child {
+  color: #ffd904;
+}
+.selectUser .el-table::before,
+.MaintainPlan_main_list .el-table::before,
+.WorkOrderQuery_main_list .el-table::before,
+.WorkOrder_list .el-table::before,
+.Partlist_list .el-table::before,
+.div_table .el-table::before,
+.selectFile .el-table::before,
+.KnowledgeSearch .el-table::before,
+.Equipment_center .el-table::before,
+.InspectionPlan_main_list .el-table::before,
+.meterManagement_bottom .el-table::before,
+.yongdian_list .el-table::before,
+.Knowledge_list .el-table::before {
+  background-color: transparent;
+}
+.selectUser .el-table--enable-row-hover .el-table__body tr:hover > td,
+.MaintainPlan_main_list .el-table--enable-row-hover .el-table__body tr:hover > td,
+.WorkOrderQuery_main_list .el-table--enable-row-hover .el-table__body tr:hover > td,
+.WorkOrder_list .el-table--enable-row-hover .el-table__body tr:hover > td,
+.Partlist_list .el-table--enable-row-hover .el-table__body tr:hover > td,
+.div_table .el-table--enable-row-hover .el-table__body tr:hover > td,
+.selectFile .el-table--enable-row-hover .el-table__body tr:hover > td,
+.KnowledgeSearch .el-table--enable-row-hover .el-table__body tr:hover > td,
+.Equipment_center .el-table--enable-row-hover .el-table__body tr:hover > td,
+.InspectionPlan_main_list .el-table--enable-row-hover .el-table__body tr:hover > td,
+.meterManagement_bottom .el-table--enable-row-hover .el-table__body tr:hover > td,
+.yongdian_list .el-table--enable-row-hover .el-table__body tr:hover > td,
+.Knowledge_list .el-table--enable-row-hover .el-table__body tr:hover > td {
+  background-color: transparent;
+}
+.selectUser .el-table td,
+.selectUser .el-table th.is-leaf,
+.MaintainPlan_main_list .el-table td,
+.MaintainPlan_main_list .el-table th.is-leaf,
+.WorkOrderQuery_main_list .el-table td,
+.WorkOrderQuery_main_list .el-table th.is-leaf,
+.WorkOrder_list .el-table td,
+.WorkOrder_list .el-table th.is-leaf,
+.Partlist_list .el-table td,
+.Partlist_list .el-table th.is-leaf,
+.div_table .el-table td,
+.div_table .el-table th.is-leaf,
+.selectFile .el-table td,
+.selectFile .el-table th.is-leaf,
+.KnowledgeSearch .el-table td,
+.KnowledgeSearch .el-table th.is-leaf,
+.Equipment_center .el-table td,
+.Equipment_center .el-table th.is-leaf,
+.InspectionPlan_main_list .el-table td,
+.InspectionPlan_main_list .el-table th.is-leaf,
+.meterManagement_bottom .el-table td,
+.meterManagement_bottom .el-table th.is-leaf,
+.yongdian_list .el-table td,
+.yongdian_list .el-table th.is-leaf,
+.Knowledge_list .el-table td,
+.Knowledge_list .el-table th.is-leaf {
+  border-bottom: 1px solid transparent;
+  text-align: center;
+}
+
+.KnowledgeSearch_top .el-cascader {
+  line-height: 3vh;
+}
+.KnowledgeSearch_top .el-cascader .el-input {
+  width: 10vw !important;
+}
+.KnowledgeSearch_top .el-cascader .el-input input {
+  width: 10vw !important;
+}
+.KnowledgeSearch_top .el-input__inner {
+  height: 3vh;
+  color: #fff;
+  border-radius: 0;
+  line-height: 3vh;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 216, 255, 0.5);
+}
+
+.Equipment_top .el-cascader {
+  line-height: 3vh;
+}
+.Equipment_top .el-cascader .el-input {
+  width: 10vw !important;
+}
+.Equipment_top .el-cascader .el-input input {
+  width: 10vw !important;
+}
+.Equipment_top .el-input__inner {
+  height: 3vh;
+  color: #fff;
+  border-radius: 0;
+  line-height: 3vh;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.selectEquipment_top .el-cascader {
+  line-height: 3vh;
+}
+.selectEquipment_top .el-cascader .el-input {
+  width: 7.4vw !important;
+}
+.selectEquipment_top .el-cascader .el-input input {
+  width: 7.4vw !important;
+}
+.selectEquipment_top .el-input__inner {
+  height: 3vh;
+  color: #fff;
+  border-radius: 0;
+  line-height: 3vh;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.EquipmentSignal_tanchuang_ying .PartInDb_tccenter_top .el-date-editor.el-input,
+.EquipmentSignal_tanchuang_ying .InspectionPlan_add_cen_top .el-date-editor.el-input {
+  width: 10.25rem;
+}
+
+.signal .el-checkbox__input.is-disabled.is-checked .el-checkbox__inner {
+  background-color: #fff;
+}
+.signal .el-checkbox__input.is-disabled.is-checked .el-checkbox__inner::after {
+  border-color: #007edd;
+}
+
+.chakan .chakan_center .el-tabs--border-card {
+  background: rgba(0, 0, 0, 0);
+  border: 0.0625rem solid #00f0ff;
+  height: 52vh;
+  overflow: auto;
+}
+.chakan .chakan_center .el-tabs--border-card .el-tabs__item.is-active {
+  color: #00f0ff !important;
+  border-right-color: #00f0ff;
+  border-left-color: #00f0ff;
+  background: rgba(0, 0, 0, 0);
+}
+.chakan .chakan_center .el-tabs--border-card > .el-tabs__header {
+  background-color: #315d93;
+  border-bottom: 0.0625rem solid #315d93;
+}
+.chakan .chakan_center .el-tabs--border-card > .el-tabs__header .el-tabs__item:not(.is-disabled):hover {
+  color: #00f0ff;
+}
+.chakan .chakan_center .el-tabs--border-card > .el-tabs__header .el-tabs__item {
+  color: #fff;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+}
+
+.PartOut_tanchuang_ying .PartOut_tccenter_top .tc_textarea .el-textarea,
+.PartOut_tanchuang_ying .EdProject_tccenter_top .tc_textarea .el-textarea,
+.EquipmentSignal_tanchuang_ying .PartOut_tccenter_top .tc_textarea .el-textarea,
+.EquipmentSignal_tanchuang_ying .EdProject_tccenter_top .tc_textarea .el-textarea {
+  width: 90%;
+}
+.PartOut_tanchuang_ying .PartOut_tccenter_top .tc_textarea .el-textarea .el-textarea__inner,
+.PartOut_tanchuang_ying .EdProject_tccenter_top .tc_textarea .el-textarea .el-textarea__inner,
+.EquipmentSignal_tanchuang_ying .PartOut_tccenter_top .tc_textarea .el-textarea .el-textarea__inner,
+.EquipmentSignal_tanchuang_ying .EdProject_tccenter_top .tc_textarea .el-textarea .el-textarea__inner {
+  background-color: transparent;
+  color: #00f0ff;
+  border: 1px solid #00f0ff;
+  border-radius: 0;
+  height: 16vh;
+}
+
+.EquipmentSignal_tanchuang_ying .abandoned_textarea .tc_textarea .el-textarea {
+  width: 40%;
+}
+.EquipmentSignal_tanchuang_ying .abandoned_textarea .tc_textarea .el-textarea .el-textarea__inner {
+  background-color: transparent;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #00f0ff;
+  border: 1px solid #00f0ff;
+  border-radius: 0;
+  height: 14vh;
+}
+.EquipmentSignal_tanchuang_ying .PartInDb .PartInDb_tccenter_top .tc_textarea .el-textarea,
+.EquipmentSignal_tanchuang_ying .add_dianh_list_center .PartInDb_tccenter_top .tc_textarea .el-textarea {
+  width: 40%;
+}
+.EquipmentSignal_tanchuang_ying .PartInDb .PartInDb_tccenter_top .tc_textarea .el-textarea .el-textarea__inner,
+.EquipmentSignal_tanchuang_ying .add_dianh_list_center .PartInDb_tccenter_top .tc_textarea .el-textarea .el-textarea__inner {
+  background-color: transparent;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #00f0ff;
+  border: 1px solid #00f0ff;
+  border-radius: 0;
+  height: 14vh;
+}
+
+.Partlist_left .el-badge__content {
+  background-color: rgb(255, 0, 0);
+  border: 1px solid transparent;
+  border-radius: 7px;
+  line-height: 135%;
+}
+.Partlist_left .el-badge__content.is-fixed {
+  position: absolute;
+  right: 0px !important;
+}
+
+.MonitorReport_center_top .el-input__inner {
+  height: 3vh;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 0px;
+  width: 7.4vw;
+}
+.MonitorReport_center_top .baojin_center_top_riqishij .sele_time {
+  width: 13vw;
+}
+.MonitorReport_center_top .baojin_center_top_riqishij .el-date-editor .el-input__icon {
+  height: unset;
+}
+.MonitorReport_center_top .baojin_center_top_riqishij .el-date-editor .el-range-separator {
+  padding: 0;
+  width: unset;
+  height: unset;
+  color: #fff;
+}
+.MonitorReport_center_top .baojin_center_top_riqishij .el-range-editor .el-range-input {
+  color: #fff;
+  background: rgba(0, 0, 0, 0);
+}
+.MonitorReport_center_top .baojin_center_top_riqishij .el-input {
+  width: 7.2vw !important;
+}
+
+.container .tree {
+  width: 10.42vw;
+  height: 48.6vh;
+  overflow: hidden;
+}
+.container .tree .el-tree--highlight-current .el-tree-node.is-current > .el-tree-node__content {
+  background: linear-gradient(120deg, rgba(12, 236, 234, 0.2), rgba(12, 236, 234, 0.6));
+}
+.container .tree .el-tree-node > .el-tree-node__children {
+  overflow: unset !important;
+}
+.container .tree .el-scrollbar__wrap {
+  overflow-x: hidden;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+.container .tree .el-tree {
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0);
+}
+.container .tree .el-tree .el-tree-node__content {
+  height: 28px;
+  color: #f3f4f4;
+}
+.container .tree .el-tree-node:focus > .el-tree-node__content {
+  background-color: transparent;
+}
+.container .tree .el-tree-node__content:hover {
+  color: #00f0ff !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.container .tree .el-tree-node:focus > .el-tree-node__content {
+  color: #00f0ff;
+}
+.container .tree .el-scrollbar__wrap {
+  overflow: scroll;
+  width: 120%;
+  overflow-x: hidden;
+}
+.container .tree .el-scrollbar__thumb {
+  background-color: #009ef0 !important;
+}
+
+.panel .el-cascader-panel.is-bordered {
+  border: 0.0625rem solid rgba(166, 166, 167, 0.1);
+  width: 30vw;
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.panel .el-cascader-panel.is-bordered .el-cascader-menu__wrap {
+  height: 100%;
+}
+
+.tanchuang_center_cen_addbottom .el-tree {
+  background: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.7);
+  transform: translateZ(0);
+}
+.tanchuang_center_cen_addbottom .el-tree-node__content:hover {
+  background: linear-gradient(120deg, rgba(12, 236, 234, 0.2), rgba(12, 236, 234, 0.6));
+}
+.tanchuang_center_cen_addbottom .el-tree-node:focus > .el-tree-node__content {
+  background: linear-gradient(120deg, rgba(12, 236, 234, 0.2), rgba(12, 236, 234, 0.6));
+}
+.tanchuang_center_cen_addbottom .el-tree-node__content {
+  margin: 3px 0;
+  padding: 16px 0;
+}
+.tanchuang_center_cen_addbottom .el-checkbox__input.is-checked .el-checkbox__inner,
+.tanchuang_center_cen_addbottom .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background-color: rgba(0, 240, 255, 0.1);
+  border-color: rgb(0, 240, 255);
+}
+.tanchuang_center_cen_addbottom .el-checkbox__inner {
+  border: 0.0625rem solid rgb(0, 240, 255);
+  background-color: rgba(0, 240, 255, 0.1);
+}
+.tanchuang_center_cen_addbottom .el-checkbox__inner:hover {
+  border-color: rgb(0, 240, 255);
+}
+.tanchuang_center_cen_addbottom .el-checkbox__input.is-focus .el-checkbox__inner {
+  border-color: rgb(0, 240, 255);
+}
+.tanchuang_center_cen_addbottom .el-checkbox__inner::after {
+  box-sizing: content-box;
+  content: "";
+  border: 0.1rem solid #00f0ff;
+  border-left: 0;
+  border-top: 0;
+  height: 0.4375rem;
+  left: 0.25rem;
+  position: absolute;
+  top: 0.0625rem;
+  transform: rotate(45deg) scaleY(0);
+  width: 0.1875rem;
+  transform-origin: center;
+}
+.tanchuang_center_cen_addbottom .el-checkbox__input.is-indeterminate .el-checkbox__inner::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #00f0ff;
+  border: 0.1rem solid #00f0ff;
+  height: 0.125rem;
+  transform: scale(0.5);
+  left: 0;
+  right: 0;
+  top: 0.3125rem;
+}
+
+.transfer_select .el-button--primary.is-disabled {
+  background-color: #66b1ff;
+  border-color: #66b1ff;
+}
+.transfer_select .el-transfer__button i,
+.transfer_select .el-transfer__button span {
+  color: #fff;
+}
+
+.formValidator .el-form .el-form-item {
+  margin-bottom: unset !important;
+}
+.formValidator .el-form .el-form-item .el-form-item__content {
+  line-height: unset !important;
+  margin-left: 0px !important;
+}
+.formValidator .el-form .el-form-item .el-form-item__content .el-form-item__error {
+  left: 102%;
+  width: 100px;
+  top: 0%;
+  text-align: left;
+}
+
+.block .el-input__icon {
+  line-height: 0vh !important;
+}
+
+.role_input input {
+  border-radius: 0;
+  width: 8.5vw;
+  height: 3vh;
+  line-height: 3vh;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 240, 255, 0.6);
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  padding-left: 0.7vw;
+}
+
+.form_flex .el-form-item__content {
+  display: flex;
+}
+
+.shixiaoData {
+  width: 10.35rem !important;
+}
+
+.el-loading-mask {
+  z-index: 10000 !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.el-input__icon {
+  line-height: unset !important;
+}
+
+.el-tooltip__popper,
+.el-tooltip__popper.is-dark {
+  color: #606266 !important;
+  background-color: #ebeef5 !important;
+  max-width: 50%;
+}
+
+.el-tooltip__popper[x-placement^=top] .popper__arrow,
+.el-tooltip__popper[x-placement^=top] .popper__arrow::after {
+  border-top-color: #ebeef5 !important;
+}/*# sourceMappingURL=default.css.map */

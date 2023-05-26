@@ -42,7 +42,7 @@
                     label="状态"
                     width="50px"
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       <img :src="
                           require(`@/assets/image/index/event${scope.row.level}.png`)
                         " />
@@ -54,7 +54,7 @@
                     width="190px"
                     show-overflow-tooltip
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       <span>
                         {{ $Convert.getTime(scope.row.alarmTime) }}
                       </span>
@@ -91,7 +91,7 @@
                     label="级别"
                     width="50px"
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       <span :class="[`event${scope.row.level}`]">
                         {{ level(scope.row.level) }}
                       </span>
@@ -108,7 +108,7 @@
                     label="查看"
                     width="50px"
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       <span
                         class="moshou changkan"
                         @click="chankan(scope.row)"
@@ -121,7 +121,7 @@
                     label="确认"
                     width="70px"
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       <span
                         :class="[
                           'moshou',
@@ -137,7 +137,7 @@
                     </template>
                   </el-table-column>
                   <el-table-column label="摄像头" width="70">
-                    <template scope="scope">
+                    <template v-slot="scope">
                       <span
                         v-show="scope.row.cameraNo"
                         class="queren"
@@ -203,7 +203,7 @@
                     prop="alarmTime"
                     label="报警时间"
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       {{ $Tools.timeFormatAll(scope.row.alarmTime) }}
                     </template>
                   </el-table-column>
@@ -238,7 +238,7 @@
                     label="级别"
                     width="50px"
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       <span>{{ level(scope.row.level) }}</span>
                     </template>
                   </el-table-column>
@@ -246,7 +246,7 @@
                     prop="workOrderState"
                     label="工单状态"
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       <span>
                         {{ $Convert.WorkOrder.State(scope.row.workOrderState) }}
                       </span>
@@ -256,7 +256,7 @@
                     label="查看"
                     width="50px"
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       <span
                         class="moshou changkan"
                         @click="chankan(scope.row)"
@@ -267,7 +267,7 @@
                     label="确认"
                     width="70px"
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       <span
                         :class="[
                           'moshou',
@@ -284,7 +284,7 @@
                     label="定位"
                     width="50px"
                   >
-                    <template scope="scope">
+                    <template v-slot="scope">
                       <span
                         class="queren"
                         @click="Shrink ? jump(scope.row) : Back()"
@@ -469,7 +469,7 @@ export default {
       }, 1500)
     }
   },
-  destroyed() {
+  unmounted() {
     clearInterval(this.timer)
   },
   computed: {

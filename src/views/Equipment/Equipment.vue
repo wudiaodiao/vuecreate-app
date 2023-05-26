@@ -44,7 +44,7 @@
                   :placeholder="inputEquipmentType"
                   clearable
                 >
-                  <template slot-scope="{ node, data }">
+                  <template v-slot="{ node, data }">
                     <span>{{ data.model.name }}</span>
                     <span v-if="!node.isLeaf">({{ data.children.length }})</span>
                   </template>
@@ -66,7 +66,7 @@
                   :placeholder="floor"
                   clearable
                 >
-                  <template slot-scope="{ node, data }">
+                  <template v-slot="{ node, data }">
                     <span v-if="data.children.length==0">({{ data.model.code}})</span>
                     <span disabled>{{ data.model.name }}</span>
                     <span v-if="!node.isLeaf">({{ data.children.length }})</span>
@@ -162,7 +162,7 @@
                 width="130px"
                 show-overflow-tooltip
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span>
                     {{ scope.row.purchaseDate | datefmt('YYYY-MM-DD') }}
                   </span>
@@ -179,7 +179,7 @@
                 label="下一次年检日期"
                 show-overflow-tooltip
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span :class="color1(scope.row.nextYearlyDate,scope.row.threshold)">
                     {{ scope.row.nextYearlyDate | datefmt('YYYY-MM-DD') }}
                   </span>
@@ -197,7 +197,7 @@
                 show-overflow-tooltip
               >
                 <!-- :style="color1(scope.row.nextYearlyDate)" -->
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span :class="color2(scope.row.state)">
                     {{ $Convert.Equipment.getEquipmentState(scope.row.state) }}
                   </span>
@@ -207,7 +207,7 @@
                 label="查看"
                 width="50px"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span
                     class="chakan"
                     @click="addTc('chakan', scope.row)"
@@ -241,7 +241,7 @@
                   ) && $store.state.modelMode === '3D'
                 "
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span
                     class="guanlian"
                     @click="addTc('bangding', scope.row)"
@@ -258,7 +258,7 @@
                   )
                 "
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span
                     class="editing_green"
                     @click="addTc('editor', scope.row)"
@@ -275,7 +275,7 @@
                   )
                 "
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <el-popconfirm
                     title="确定删除吗"
                     @onConfirm="EquipmentDelete(scope.row.no)"
@@ -365,7 +365,7 @@
                 label="启用日期"
                 show-overflow-tooltip
               >
-               <template slot-scope="scope">
+               <template v-slot="scope">
                   <span>
                     {{ scope.row.startDate | datefmt('YYYY-MM-DD') }}
                   </span>
@@ -408,7 +408,7 @@
                 label="查看"
                 width="50px"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span
                     class="chakan"
                     @click="addTc('chakan', scope.row)"
@@ -419,7 +419,7 @@
                 label="关联"
                 width="80px"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span
                     class="guanlian"
                     @click="addTc('signal', scope.row)"
@@ -430,7 +430,7 @@
                 label="编辑"
                 width="50px"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span
                     class="editing_green"
                     @click="addTc('editor', scope.row)"
@@ -441,7 +441,7 @@
                 label="删除"
                 width="50px"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <el-popconfirm
                     title="确定删除吗"
                     @onConfirm="EquipmentDelete(scope.row.no)"
@@ -458,7 +458,7 @@
                 label="定位"
                 width="50px"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span
                     class="editing_green"
                     @click.stop="
@@ -598,7 +598,7 @@
                             "
                             clearable
                           >
-                            <template slot-scope="{ node, data }">
+                            <template v-slot="{ node, data }">
                               <span>{{ data.model.name }}</span>
                               <span v-if="!node.isLeaf">({{ data.children.length }})</span>
                             </template>
@@ -621,7 +621,7 @@
                             @change="tcfloorlistChane(formValidator.Tcloufloor)"
                             :placeholder="formValidator.Tcloufloor || '请选择'"
                           >
-                            <template slot-scope="{ node, data }">
+                            <template v-slot="{ node, data }">
                                <span v-if="data.children.length==0">({{ data.model.code}})</span>
                               <span disabled>{{ data.model.name }}</span>
                               <span v-if="!node.isLeaf">({{ data.children.length }})</span>
@@ -969,7 +969,7 @@
                               label="编辑"
                               width="50px"
                             >
-                              <template slot-scope="scope">
+                              <template v-slot="scope">
                                 <span
                                   class="editing_green"
                                   @click="addTc('editorsignal', scope.row)"
@@ -980,7 +980,7 @@
                               label="删除"
                               width="50px"
                             >
-                              <template slot-scope="scope">
+                              <template v-slot="scope">
                                 <el-popconfirm
                                   title="确定删除吗"
                                   @onConfirm="EquipmentDelSignal(scope.row.no)"
@@ -1018,7 +1018,7 @@
                           >
                             <template
                               class="custom-tree-node"
-                              slot-scope="{ node, data }"
+                              v-slot="{ node, data }"
                             >
                               <span :class="[
                                   cameraActiveId == data.model.no ? 'aqua' : ''
@@ -1057,7 +1057,7 @@
                           >
                             <template
                               class="custom-tree-node"
-                              slot-scope="{ node, data }"
+                              v-slot="{ node, data }"
                             >
                               <span :class="[
                                   monitorActiveId == data.no ? 'aqua' : ''

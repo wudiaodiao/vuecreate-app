@@ -41,7 +41,7 @@
                   label="保养级别"
                   show-overflow-tooltip
                 >
-                  <template scope="scope">
+                  <template v-slot="scope">
                     <span>{{returnLevelType(scope.row.level)}}</span>
                   </template>
                 </el-table-column>
@@ -50,7 +50,7 @@
                   label="保养周期"
                   show-overflow-tooltip
                 >
-                  <template scope="scope">
+                  <template v-slot="scope">
                     <span>{{returnTimeType(scope.row.period,scope.row.periodUnit)}}</span>
                   </template>
                 </el-table-column>
@@ -59,7 +59,7 @@
                   label="下次保养日期"
                   show-overflow-tooltip
                 >
-                  <template scope="scope">
+                  <template v-slot="scope">
                     <span>
                       {{
                      DateTime.parse(scope.row.nextDate).format('yyyy-MM-dd')
@@ -71,7 +71,7 @@
                   label="查看"
                   width="60px"
                 >
-                  <template scope="scope">
+                  <template v-slot="scope">
                     <span
                       class="changkan"
                       @click="addTc('CheckTheMaintenance',scope.row)"
@@ -83,7 +83,7 @@
                   width="60px"
                   v-if="$Tools.accessControl( this.$store.state.userGetUserRole.resList,'EditMaintainPlan')"
                 >
-                  <template slot-scope="scope">
+                  <template v-slot="scope">
                     <span
                       class="green"
                       @click="addTc('Maint_ed',scope.row)"
@@ -95,7 +95,7 @@
                   width="100px"
                   v-if="$Tools.accessControl( this.$store.state.userGetUserRole.resList,'EditMaintainPlan')"
                 >
-                  <template slot-scope="scope">
+                  <template v-slot="scope">
                     <span
                       class="green"
                       @click="addTc('editEquipment',scope.row.no)"
@@ -107,7 +107,7 @@
                   width="60px"
                   v-if="$Tools.accessControl( this.$store.state.userGetUserRole.resList,'EditMaintainPlan')"
                 >
-                  <template slot-scope="scope">
+                  <template v-slot="scope">
                     <el-popconfirm
                       title="确定删除吗"
                       @onConfirm="MaintainPlanRemove(scope.row.no)"

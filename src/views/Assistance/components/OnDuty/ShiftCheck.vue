@@ -24,7 +24,7 @@ export default {
 
   created() {},
   mounted() {},
-  destroyed() {},
+  unmounted() {},
   computed: {},
   methods: {}
 }

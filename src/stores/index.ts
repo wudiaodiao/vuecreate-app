@@ -4,27 +4,54 @@
 // import axios from 'axios'
 // Vue.use(Vuex)
 
-
 import { defineStore } from 'pinia'
-import { useAuthPreferencesStore } from './auth-preferences'
-import { useAuthEmailStore } from './auth-email'
-import vuexStore from '@/store' // 逐步转换，见 fullUserDetails
+interface CopyIdName {
+  id: string;
+  layername: string;
+}
 
-// interface State {
-//   firstName: string
-//   lastName: string
-//   userId: number | null
-// }
+interface State {
+  token: string,
+  informationShow: boolean,
+  itemItem: string, //菜单项
+  subItem: string, //子菜单
+  subitemData: string[],
+  PatrolTask: string[],
+  checked: boolean, //记住密码
+  EnergyClick: string, //能耗菜单列表
+  modelMode: string,
+  InfolistData: any,
+  dtab: boolean, //右击事件
+  shiftArr: string[],
+  shiftNo: string,
+  categoryActiveId: string,
+  equipmentActiveId: string,
+  user: any,//用户信息
+  pathname: string,
+  center_p: string[],
+  alarmCount: number,
+  monitorNo: number,
+  dragBgShow: boolean,
+  refreshBuild: boolean, //刷新模型
+  copyIdLName: CopyIdName, // 拷贝的模型id和layername
+  indexItemShow: boolean,
+  userGetUserRole: any,
+  Menu: string[],
+  nodeNo: string,
+  nodePNo: string,
+  linkage: any,
+  urlParameter: any
+}
 
 export const useAuthStore = defineStore('AuthStore', {
-  state: () => {
+  state: (): State => {
     return {
     token: '',
     informationShow: false,
     itemItem: '', //菜单项
     subItem: '', //子菜单
     subitemData: [], //子菜单数据
-    PatrolTask:[],
+    PatrolTask: [],
     checked: false, //记住密码
     EnergyClick: '用电分项', //能耗菜单列表
     modelMode: '2D',
@@ -41,62 +68,61 @@ export const useAuthStore = defineStore('AuthStore', {
     monitorNo: -1,
     dragBgShow: false,
     refreshBuild: false, //刷新模型
-    copyIdLName: {}, // 拷贝的模型id和layername
+    copyIdLName: {id:'',layername:''}, // 拷贝的模型id和layername
     indexItemShow: true,
     userGetUserRole: {},
     Menu: [],
     nodeNo: '',
     nodePNo: '',
     linkage: {},
-    urlParameter: {},
-    user:{},
+    urlParameter: {}
     }
   },
   actions: {
 
-    setLinkage(state, val) {
+    setLinkage(state: { linkage: any }, val: any) {
       state.linkage = val
 
     },
-    setNodePno(state, val) {
+    setNodePno(state: { nodePNo: any }, val: any) {
       state.nodePNo = val
 
     },
-    setNodeno(state, val) {
+    setNodeno(state: { nodeNo: any }, val: any) {
       state.nodeNo = val
 
     },
-    setMenu(state, val) {
+    setMenu(state: { Menu: any }, val: any) {
       //权限
       state.Menu = val
     },
-    setUserGetUserRole(state, val) {
+    setUserGetUserRole(state: { userGetUserRole: { resList: any; resMonitors: any } }, val: { menuPrivilege: any; resMonitors: any }) {
       //权限
       state.userGetUserRole = {resList: val.menuPrivilege,resMonitors:val.resMonitors}
     },
-    setindexItemShow(state, val) {
+    setindexItemShow(state: { indexItemShow: any }, val: any) {
 
 
       state.indexItemShow = val
     },
-    setLocationPathname(state, val) {
+    setLocationPathname(state: { pathname: any }, val: any) {
 
 
       state.pathname = val
     },
-    setUser(state, val) {
+    setUser(state: { user: any }, val: any) {
       state.user = val
     },
-    setequipmentActiveId(state, val) {
+    setequipmentActiveId(state: { equipmentActiveId: any }, val: any) {
       state.equipmentActiveId = val
     },
-    setCategoryActiveId(state, val) {
+    setCategoryActiveId(state: { categoryActiveId: any }, val: any) {
       state.categoryActiveId = val
     },
-    setShiftArr(state, val) {
+    setShiftArr(state: { shiftArr: any }, val: any) {
       state.shiftArr = val
     },
-    setShiftObj(state, val) {
+    setShiftObj(state: { shiftNo: any; shiftArr: any[] }, val: { key: any; value: any[] }) {
 
       if (state.shiftNo == val.key && state.shiftArr.length < 1) {
 
@@ -105,7 +131,7 @@ export const useAuthStore = defineStore('AuthStore', {
       if (state.shiftNo == val.key) {
         for (var i in state.shiftArr) {
           if (state.shiftArr[i].key == state.shiftNo) {
-            let whether = state.shiftArr[i].value.findIndex(item => item.key == val.value[0].key)
+            let whether = state.shiftArr[i].value.findIndex((item: { key: any }) => item.key == val.value[0].key)
             if (whether === -1) {
 
               state.shiftArr[i].value.push(val.value[0]);
@@ -124,7 +150,7 @@ export const useAuthStore = defineStore('AuthStore', {
 
 
         //用于找出第一个符合条件的数组成员，如果没有找到返回undefined
-        let index = state.shiftArr.findIndex(item => item.key == val.key)
+        let index = state.shiftArr.findIndex((item: { key: any }) => item.key == val.key)
 
         if (index === -1) {
 
@@ -135,7 +161,7 @@ export const useAuthStore = defineStore('AuthStore', {
           for (var s in state.shiftArr) {
             if (state.shiftArr[s].key == val.key) {
 
-              let whether = state.shiftArr[s].value.findIndex(item => item.key == val.value[0].key)
+              let whether = state.shiftArr[s].value.findIndex((item: { key: any }) => item.key == val.value[0].key)
               if (whether === -1) {
                 state.shiftArr[s].value.push(val.value[0]);
               } else {
@@ -152,203 +178,58 @@ export const useAuthStore = defineStore('AuthStore', {
 
 
     },
-    setDtab(state, val) {
+    setDtab(state: { dtab: any }, val: any) {
       state.dtab = val
     },
-    setToken(state, val) {
+    setToken(state: { token: any }, val: any) {
       state.token = val
       window.ApiToken && window.ApiToken.set(val)
     },
-    setInformationShow(state, val) {
+    setInformationShow(state: { informationShow: any }, val: any) {
       state.informationShow = val
     },
-    setItem(state, val) {
+    setItem(state: { itemItem: any }, val: any) {
       state.itemItem = val
     },
-    setSubItem(state, val) {
+    setSubItem(state: { subItem: any }, val: any) {
       state.subItem = val
     },
-    checked(state, val) {
+    checked(state: { checked: any }, val: any) {
       state.checked = val
     },
-    subitemData(state, val) {
+    subitemData(state: { subitemData: any }, val: any) {
       state.subitemData = val
     },
-    PatrolTask(state, val) {
+    PatrolTask(state: { PatrolTask: any }, val: any) {
       state.PatrolTask = val
     },
-    setEnergyClick(state, val) {
+    setEnergyClick(state: { EnergyClick: any }, val: any) {
       state.EnergyClick = val
     },
-    setModelMode(state, val) {
+    setModelMode(state: { modelMode: any }, val: any) {
       state.modelMode = val
     },
-    setInfolistData(state, val) {
+    setInfolistData(state: { InfolistData: any }, val: any) {
       state.InfolistData = val
     },
-    setCenterP(state, val) {
+    setCenterP(state: { center_p: any }, val: any) {
       state.center_p = val
     },
-    setAlarmCount(state, val) {
+    setAlarmCount(state: { alarmCount: any }, val: any) {
       state.alarmCount = val
     },
-    setMonitorNo(state, val) {
+    setMonitorNo(state: { monitorNo: any }, val: any) {
       state.monitorNo = val
     },
-    setRefreshBuild(state, val) {
+    setRefreshBuild(state: { refreshBuild: boolean | null }, val: any) {
       if(val){
-        state.refreshBuild = state.refreshBuild ? state.refreshBuild + 1 : 1
+        state.refreshBuild = state.refreshBuild ? false: true
       }else{
         state.refreshBuild = state.refreshBuild ? false : state.refreshBuild == false ? null : false
       }
     },
-    setCopyIdLName(state, val) {
+    setCopyIdLName(state: { copyIdLName: any }, val: any) {
       state.copyIdLName = val
-    },
-    setUser(state, val) {
-      state.user = val
-    },
-  },
-  charAt: function (pos: number): string {
-    throw new Error('Function not implemented.')
-  },
-  charCodeAt: function (index: number): number {
-    throw new Error('Function not implemented.')
-  },
-  concat: function (...strings: string[]): string {
-    throw new Error('Function not implemented.')
-  },
-  indexOf: function (searchString: string, position?: number | undefined): number {
-    throw new Error('Function not implemented.')
-  },
-  lastIndexOf: function (searchString: string, position?: number | undefined): number {
-    throw new Error('Function not implemented.')
-  },
-  localeCompare: function (that: string): number {
-    throw new Error('Function not implemented.')
-  },
-  match: function (regexp: string | RegExp): RegExpMatchArray | null {
-    throw new Error('Function not implemented.')
-  },
-  replace: function (searchValue: string | RegExp, replaceValue: string): string {
-    throw new Error('Function not implemented.')
-  },
-  search: function (regexp: string | RegExp): number {
-    throw new Error('Function not implemented.')
-  },
-  slice: function (start?: number | undefined, end?: number | undefined): string {
-    throw new Error('Function not implemented.')
-  },
-  split: function (separator: string | RegExp, limit?: number | undefined): string[] {
-    throw new Error('Function not implemented.')
-  },
-  substring: function (start: number, end?: number | undefined): string {
-    throw new Error('Function not implemented.')
-  },
-  toLowerCase: function (): string {
-    throw new Error('Function not implemented.')
-  },
-  toLocaleLowerCase: function (locales?: string | string[] | undefined): string {
-    throw new Error('Function not implemented.')
-  },
-  toUpperCase: function (): string {
-    throw new Error('Function not implemented.')
-  },
-  toLocaleUpperCase: function (locales?: string | string[] | undefined): string {
-    throw new Error('Function not implemented.')
-  },
-  trim: function (): string {
-    throw new Error('Function not implemented.')
-  },
-  length: 0,
-  substr: function (from: number, length?: number | undefined): string {
-    throw new Error('Function not implemented.')
-  },
-  codePointAt: function (pos: number): number | undefined {
-    throw new Error('Function not implemented.')
-  },
-  includes: function (searchString: string, position?: number | undefined): boolean {
-    throw new Error('Function not implemented.')
-  },
-  endsWith: function (searchString: string, endPosition?: number | undefined): boolean {
-    throw new Error('Function not implemented.')
-  },
-  normalize: function (form: 'NFC' | 'NFD' | 'NFKC' | 'NFKD'): string {
-    throw new Error('Function not implemented.')
-  },
-  repeat: function (count: number): string {
-    throw new Error('Function not implemented.')
-  },
-  startsWith: function (searchString: string, position?: number | undefined): boolean {
-    throw new Error('Function not implemented.')
-  },
-  anchor: function (name: string): string {
-    throw new Error('Function not implemented.')
-  },
-  big: function (): string {
-    throw new Error('Function not implemented.')
-  },
-  blink: function (): string {
-    throw new Error('Function not implemented.')
-  },
-  bold: function (): string {
-    throw new Error('Function not implemented.')
-  },
-  fixed: function (): string {
-    throw new Error('Function not implemented.')
-  },
-  fontcolor: function (color: string): string {
-    throw new Error('Function not implemented.')
-  },
-  fontsize: function (size: number): string {
-    throw new Error('Function not implemented.')
-  },
-  italics: function (): string {
-    throw new Error('Function not implemented.')
-  },
-  link: function (url: string): string {
-    throw new Error('Function not implemented.')
-  },
-  small: function (): string {
-    throw new Error('Function not implemented.')
-  },
-  strike: function (): string {
-    throw new Error('Function not implemented.')
-  },
-  sub: function (): string {
-    throw new Error('Function not implemented.')
-  },
-  sup: function (): string {
-    throw new Error('Function not implemented.')
-  },
-  padStart: function (maxLength: number, fillString?: string | undefined): string {
-    throw new Error('Function not implemented.')
-  },
-  padEnd: function (maxLength: number, fillString?: string | undefined): string {
-    throw new Error('Function not implemented.')
-  },
-  trimEnd: function (): string {
-    throw new Error('Function not implemented.')
-  },
-  trimStart: function (): string {
-    throw new Error('Function not implemented.')
-  },
-  trimLeft: function (): string {
-    throw new Error('Function not implemented.')
-  },
-  trimRight: function (): string {
-    throw new Error('Function not implemented.')
-  },
-  matchAll: function (regexp: RegExp): IterableIterator<RegExpMatchArray> {
-    throw new Error('Function not implemented.')
-  },
-  replaceAll: function (searchValue: string | RegExp, replaceValue: string): string {
-    throw new Error('Function not implemented.')
-  },
-  at: function (index: number): string | undefined {
-    throw new Error('Function not implemented.')
-  },
-  [Symbol.iterator]: function (): IterableIterator<string> {
-    throw new Error('Function not implemented.')
+    }
   }
 })

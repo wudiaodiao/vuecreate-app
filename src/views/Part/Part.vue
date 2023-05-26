@@ -331,7 +331,7 @@
                             :placeholder="formValidator.PartinputTc || '请选择'"
                             clearable
                           >
-                            <template slot-scope="{ node, data }">
+                            <template v-slot="{ node, data }">
                               <span class="bianji">{{ data.model.name }}</span>
                               <span v-if="!node.isLeaf">({{ data.children.length }})</span>
                             </template>

@@ -1,4 +1,3 @@
-<!--  -->
 <template>
     <div class="left_main3">
         <div id="left_main3">
@@ -13,9 +12,8 @@
     
 </template>
 
-<script>
-//这里可以导入其他文件（比如：组件，工具js，第三方插件js，json文件，图片文件等等）
-//例如：import 《组件名称》 from '《组件路径》';
+<script >
+
 import * as echarts from 'echarts'
 export default {
     //import引入的组件需要注入到对象中才能使用
@@ -145,10 +143,9 @@ export default {
     methods: {
         initLeftMain3(val) {
             //左边波浪图
-           this.active=val
-                  var leftMain3 = this.$echarts.init(
-                    document.getElementById('left_main3')
-                )
+            console.log(document.getElementById('left_main3'))
+            this.active=val
+            var leftMain3 = this.$echarts.init(document.getElementById('left_main3'))
                 
             this.$api.MMS.Home.GetWorkOrderTrendStatistics({
                 type:val
@@ -171,11 +168,6 @@ export default {
             
         },
     },
-    beforeCreate() { }, //生命周期 - 创建之前
-    //生命周期 - 创建完成（可以访问当前this实例）
-    created() { },
-    beforeMount() { }, //生命周期 - 挂载之前
-    //生命周期 - 挂载完成（可以访问DOM元素）
     mounted() {
 
         this.initLeftMain3(1)
@@ -190,15 +182,7 @@ export default {
                 this.initLeftMain3(3)
             }
        }, 10000);
-    },
-    beforeUpdate() { }, //生命周期 - 更新之前
-    updated() { }, //生命周期 - 更新之后
-    beforeDestroy() { }, //生命周期 - 销毁之前
-    destroyed() { 
-        clearInterval(this.interval)
-    }, //生命周期 - 销毁完成
-    activated() { }, //如果页面有keep-alive缓存功能，这个函数会触发
-    deactivated() { }, //如果页面有keep-alive缓存功能，当组件移除时候，这个函数会触发
+    }
 }
 </script>
 <style lang="scss">

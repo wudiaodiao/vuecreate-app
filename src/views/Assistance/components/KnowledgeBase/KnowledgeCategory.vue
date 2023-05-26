@@ -67,7 +67,7 @@
             >
               <template
                 class="custom-tree-node"
-                slot-scope="{ node, data }"
+                v-slot="{ node, data }"
               >
                 <span :class="[categoryActiveId == data.model.id ? 'aqua' : '']">{{ data.model.name }}</span>
               </template>
@@ -185,7 +185,7 @@ export default {
   mounted() {
     this.KnowledgeCategoryGetList() //知识库列表
   },
-  destroyed() {},
+  unmounted() {},
   computed: {},
   watch: {
     'table.show'(newVal, oldVal) {

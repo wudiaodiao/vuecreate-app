@@ -2,7 +2,7 @@
   <div
     :class="[
       'index',
-      $store.state.modelMode === '3D' && $route.name == '3d'
+      authStore.modelMode === '3D' && $route.name == '3d'
         ? 'index_qita'
         : '',
     ]"
@@ -17,7 +17,7 @@
       >
         <indexLeft></indexLeft>
       </div> -->
-      <div  class="index_center" v-if="$store.state.modelMode === '3D'">
+      <div  class="index_center" v-if="authStore.modelMode === '3D'">
         <threeModel></threeModel>
       </div>
       <!-- <div
@@ -33,7 +33,7 @@
       <iotvisible />
       <div
         :class="[
-          meunlength % 2 == 0 && meunlength < '10'
+          meunlength % 2 == 0 && meunlength < 10
             ? 'index_bottom' + meunlength
             : 'index_bottom50',
           'index_bottom',
@@ -50,8 +50,13 @@
     </div>
   </div>
 </template>
-<script>
-import iotvisible from './components/Iotvisible'
+<script setup>
+import { useAuthStore } from '@/stores/index'
+const authStore = useAuthStore()
+</script>
+
+<script lang="ts">
+import iotvisible from './components/Iotvisible/index.vue'
 
 export default {
     components: {
@@ -61,15 +66,15 @@ export default {
     return {
       faval: true,
       informationShow: false,
-      meunlength: '',
+      meunlength: 0 as number,
     }
   },
   mounted() {},
   methods: {
-    getValue(data) {
+    getValue(data: boolean) {
       this.faval = data
     },
-    getMeunLength(data) {
+    getMeunLength(data: number) {
       this.meunlength = data
     }
   },

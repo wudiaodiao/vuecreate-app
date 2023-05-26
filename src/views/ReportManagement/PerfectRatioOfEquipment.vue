@@ -33,7 +33,7 @@
                     :placeholder="inputEquipmentType"
                     clearable
                   >
-                    <template slot-scope="{ node, data }">
+                    <template v-slot="{ node, data }">
                       <span>{{ data.model.name }}</span>
                       <span v-if="!node.isLeaf">({{ data.children.length }})</span>
                     </template>
@@ -53,7 +53,7 @@
                     @change="floorlistChane(floor)"
                     :placeholder="floor"
                   >
-                    <template slot-scope="{ node, data }">
+                    <template v-slot="{ node, data }">
                       <span v-if="data.children.length==0">({{ data.model.code}})</span>
                       <span disabled>{{ data.model.name }}</span>
                       <span v-if="!node.isLeaf">({{ data.children.length }})</span>

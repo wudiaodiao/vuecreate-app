@@ -21,12 +21,12 @@
       <el-table-column prop="areaName" label="计量区域"  show-overflow-tooltip/>
       <el-table-column prop="categoryName" label="分项" show-overflow-tooltip />
       <el-table-column label="编辑" v-if="this.$store.state.userGetUserRole.resList.indexOf('EditElectricityEnergyMeter') != -1" width="50">
-        <template slot-scope="scope">
+        <template v-slot="scope">
           <a href="javascript:void(0)" class="greenbutton" @click="onEditClick(scope.row)">编辑</a>
         </template>
       </el-table-column>
       <el-table-column label="删除" v-if="this.$store.state.userGetUserRole.resList.indexOf('EditElectricityEnergyMeter') != -1" width="50">
-        <template slot-scope="scope">
+        <template v-slot="scope">
           <a href="javascript:void(0)" class="redbutton" @click="onDeleteClick(scope.row.no)">删除</a>
         </template>
       </el-table-column>
@@ -150,7 +150,7 @@ export default {
   mounted() {
     this.queryData();
   },
-  destroyed() {},
+  unmounted() {},
   computed: {},
   methods: {
     onImportClick() {

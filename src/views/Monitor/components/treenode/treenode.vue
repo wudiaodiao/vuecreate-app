@@ -84,7 +84,7 @@ export default {
       newVal && this.drawChart(this.systemTreeList)
     },
   },
-  destroyed() {},
+  unmounted() {},
   methods: {
     drawChart(data) {
       if (

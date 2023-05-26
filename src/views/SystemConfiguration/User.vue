@@ -73,7 +73,7 @@
                 prop="userAccount"
                 label="账号"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span>
                     <a
                       href="#"
@@ -97,7 +97,7 @@
                 label="性别"
                 width="50px"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span>{{ scope.row.gender == true ? '男' : '女' }}</span>
                 </template>
               </el-table-column>
@@ -105,7 +105,7 @@
                 prop="mobile"
                 label="手机号码"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span>
                     <a
                       href="#"
@@ -120,7 +120,7 @@
                 prop="email"
                 label="电子邮箱"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span>
                     <a
                       href="#"
@@ -145,7 +145,7 @@
                 label="启用"
                 width="70px"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span>
                     {{ scope.row.enable ? '是' : '否' }}
                   </span>
@@ -156,7 +156,7 @@
                 label="党员"
                 width="70px"
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span>
                     {{ scope.row.partyMember ? '是' : '否' }}
                   </span>
@@ -173,7 +173,7 @@
                   )
                 "
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span
                     class="guanlian"
                     @click="addTc('resetPasswords', scope.row.no)"
@@ -190,7 +190,7 @@
                   )
                 "
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span
                     class="editing_green"
                     @click="addTc('editor', scope.row)"
@@ -356,7 +356,7 @@
                                   formValidator.schedulingDepartment || '请选择'
                                 "
                               >
-                                <template slot-scope="{ node, data }">
+                                <template v-slot="{ node, data }">
                                   <span v-if="data.children.length==0">({{ data.model.code}})</span>
                                   <span disabled>{{ data.model.name }}</span>
                                   <span v-if="!node.isLeaf">({{ data.children.length }})</span>

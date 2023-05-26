@@ -1,0 +1,674 @@
+{
+	"Subject": [
+		"视频安防监控系统",
+		"入侵报警系统",
+		"求助呼叫系统",
+		"门禁管理系统",
+		"停车场管理系统",
+		"车位引导系统",
+		"能源管理系统",
+		"变配电系统",
+		"智能照明系统",
+		"广播系统",
+		"信息引导及发布系统",
+		"火灾自动报警系统",
+		"信息网络系统",
+		"无线WIFI覆盖系统",
+		"机房环境监测系统",
+		"综合布线系统",
+		"有线电视系统",
+		"会议系统",
+		"物业管理系统",
+		"电气火灾监控系统",
+		"消防电源管理系统",
+		"智能末端试水系统",
+		"智能水炮控制系统",
+		"IPTV系统",
+		"时钟系统",
+		"卫星有线电视系统",
+		"酒店客房控制系统",
+		"水质监测系统"
+	],
+	"Point": {
+		"视频安防监控系统": {
+			"1F": [{
+					"location": [
+						56.854434967041016, -88.9974365234375, 7.411806583404541
+					],
+					"img": "子系统图标/视频监控系统/banqiuzx.png",
+					"elementId": "Self_JK_1F001",
+					"isShow": false
+				},
+				{
+					"location": [
+						56.854434967041016, -88.9974365234375, 7.411806583404541
+					],
+					"img": "子系统图标/视频监控系统/banqiuzx.png",
+					"elementId": "Self_JK_1F002",
+					"isShow": false
+				},
+				{
+					"location": [
+						192.69654846191406, -88.94053649902344, 13.897902488708496
+					],
+					"img": "子系统图标/视频监控系统/banqiuzx.png",
+					"elementId": "Self_JK_1F003",
+					"isShow": false
+				},
+				{
+					"location": [
+						246.0319061279297, -88.98973846435547, 3.8306984901428223
+					],
+					"img": "子系统图标/视频监控系统/banqiuzx.png",
+					"elementId": "Self_JK_1F004",
+					"isShow": false
+				},
+				{
+					"location": [
+						250.43072509765625, -88.98990631103516, 15.892587661743164
+					],
+					"img": "子系统图标/视频监控系统/banqiuzx.png",
+					"elementId": "Self_JK_1F005",
+					"isShow": false
+				},
+				{
+					"location": [
+						310.5875549316406, -88.9423828125, 10.727145195007324
+					],
+					"img": "子系统图标/视频监控系统/banqiuzx.png",
+					"elementId": "Self_JK_1F006",
+					"isShow": false
+				},
+				{
+					"location": [
+						378.02435302734375, -88.958740234375, 17.35026741027832
+					],
+					"img": "子系统图标/视频监控系统/banqiuzx.png",
+					"elementId": "Self_JK_1F007",
+					"isShow": false
+				},
+				{
+					"location": [
+						447.3901672363281, -47.84498596191406, 16.820180892944336
+					],
+					"img": "子系统图标/视频监控系统/banqiuzx.png",
+					"elementId": "Self_JK_1F008",
+					"isShow": false
+				},
+				{
+					"location": [-39.30029296875, -43.27683639526367, 14.501323699951172],
+					"img": "子系统图标/视频监控系统/banqiuzx.png",
+					"elementId": "Self_JK_1F009",
+					"isShow": false
+				},
+				{
+					"location": [-25.966413497924805, -72.23027801513672, 20.023595809936523],
+					"img": "子系统图标/视频监控系统/banqiuzx.png",
+					"elementId": "Self_JK_1F010",
+					"isShow": false
+				},
+				{
+					"location": [-25.966413497924805, -72.23027801513672, 20.023595809936523],
+					"img": "子系统图标/视频监控系统/banqiuzx.png",
+					"elementId": "Self_JK_1F011",
+					"isShow": false
+				},
+				{
+					"location": [-14.996698379516602, -37.10615158081055, 19.35682487487793],
+					"img": "子系统图标/视频监控系统/banqiuzx.png",
+					"elementId": "Self_JK_1F012",
+					"isShow": false
+				},
+				{
+					"location": [-9.645872116088867, 55.491146087646484, 19.028696060180664],
+					"img": "子系统图标/视频监控系统/banqiuzx.png",
+					"elementId": "Self_JK_1F013",
+					"isShow": false
+				}
+			],
+			"2F": [{
+				"location": [-0.6043878197669983, 86.58104705810547, 22.637752532958984],
+				"img": "子系统图标/视频监控系统/banqiuzx.png",
+				"elementId": "Self_JK_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+					"location": [
+						63.86211013793945, 35.71181106567383, 64.63636016845703
+					],
+					"img": "子系统图标/视频监控系统/banqiuzx.png",
+					"elementId": "Self_JK_3F001",
+					"isShow": false
+				},
+				{
+					"location": [
+						338.1683654785156, 7.942519187927246, 52.530052185058594
+					],
+					"img": "子系统图标/视频监控系统/banqiuzx.png",
+					"elementId": "Self_JK_3F002",
+					"isShow": false
+				}
+			]
+		},
+		"入侵报警系统": {
+			"2F": [{
+				"location": [
+					511.2129821777344, -0.23977291584014893, 60.70084762573242
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_2F017",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					831.1870727539062, 50.88432693481445, 5.575987815856934
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_3F018",
+				"isShow": false
+			}]
+		},
+		"求助呼叫系统": {
+			"2F": [{
+				"location": [
+					781.994384765625, -174.24703979492188, 5.492669105529785
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					492.93023681640625, -63.37274169921875, 67.44873046875
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_QZ_3F001",
+				"isShow": false
+			}]
+		},
+		"门禁管理系统": {
+			"2F": [{
+				"location": [
+					247.49574279785156, -61.27370834350586, 60.30906677246094
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_MJ_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					346.5295715332031, 115.96591186523438, 53.7574348449707
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_MJ_3F001",
+				"isShow": false
+			}]
+		},
+		"停车场管理系统": {
+			"2F": [{
+				"location": [
+					346.5295715332031, 115.96591186523438, 53.7574348449707
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_TC_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					328.62420654296875, -418.3629455566406, 36.230796813964844
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_TC_3F001",
+				"isShow": false
+			}]
+		},
+		"车位引导系统": {
+			"2F": [{
+				"location": [
+					303.4830322265625, -437.03375244140625, 41.834815979003906
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_YD_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					423.97430419921875, -55.67240905761719,
+					71.56712341308594
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_YD_3F001",
+				"isShow": false
+			}]
+		},
+		"能源管理系统": {
+			"2F": [{
+				"location": [
+					325.0935363769531, -430.09735107421875, 25.75531768798828
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_NY_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					423.97430419921875, -55.67240905761719,
+					71.56712341308594
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_NY_3F001",
+				"isShow": false
+			}]
+		},
+		"变配电系统": {
+			"2F": [{
+				"location": [
+					366.26849365234375, -482.33978271484375, 40.96001052856445
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_GDP_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					374.10693359375, -492.11004638671875, 48.726932525634766
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_GDP_3F001",
+				"isShow": false
+			}]
+		},
+		"智能照明系统": {
+			"2F": [{
+				"location": [
+					188.24143981933594, -345.08453369140625, 42.677452087402344
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_ZM_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					191.75840759277344, -345.45916748046875, 42.7170524597168
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_ZM_3F001",
+				"isShow": false
+			}]
+		},
+		"广播系统": {
+			"2F": [{
+				"location": [
+					731.6561889648438, 8.756591796875, 5.7617692947387695
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_GB_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					715.0374145507812, 13.538089752197266, 4.980789661407471
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_GB_3F001",
+				"isShow": false
+			}]
+		},
+		"信息引导及发布系统": {
+			"2F": [{
+				"location": [
+					583.3756713867188, -213.1914825439453, 34.13457489013672
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_XXFB_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					583.3745727539062, -226.44668579101562, 35.99664306640625
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_XXFB_3F001",
+				"isShow": false
+			}]
+		},
+		"火灾自动报警系统": {
+			"2F": [{
+				"location": [
+					171.45298767089844, -187.309814453125, 25.754554748535156
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_HZBJ_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					431.44732666015625, -175.36358642578125, 25.754499435424805
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_HZBJ_3F001",
+				"isShow": false
+			}]
+		},
+		"信息网络系统": {
+			"2F": [{
+				"location": [
+					162.6675262451172, -88.97038269042969,
+					11.714089393615723
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					423.97430419921875, -55.67240905761719,
+					71.56712341308594
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_3F001",
+				"isShow": false
+			}]
+		},
+		"无线WIFI覆盖系统": {
+			"2F": [{
+				"location": [
+					162.6675262451172, -88.97038269042969,
+					11.714089393615723
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					423.97430419921875, -55.67240905761719,
+					71.56712341308594
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_3F001",
+				"isShow": false
+			}]
+		},
+		"机房环境监测系统": {
+			"2F": [{
+				"location": [
+					162.6675262451172, -88.97038269042969,
+					11.714089393615723
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					423.97430419921875, -55.67240905761719,
+					71.56712341308594
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_3F001",
+				"isShow": false
+			}]
+		},
+		"综合布线系统": {
+			"2F": [{
+				"location": [
+					162.6675262451172, -88.97038269042969,
+					11.714089393615723
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					423.97430419921875, -55.67240905761719,
+					71.56712341308594
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_3F001",
+				"isShow": false
+			}]
+		},
+		"有线电视系统": {
+			"2F": [{
+				"location": [
+					162.6675262451172, -88.97038269042969,
+					11.714089393615723
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					423.97430419921875, -55.67240905761719,
+					71.56712341308594
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_3F001",
+				"isShow": false
+			}]
+		},
+		"会议系统": {
+			"2F": [{
+				"location": [
+					162.6675262451172, -88.97038269042969,
+					11.714089393615723
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					423.97430419921875, -55.67240905761719,
+					71.56712341308594
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_3F001",
+				"isShow": false
+			}]
+		},
+		"物业管理系统": {
+			"2F": [{
+				"location": [
+					162.6675262451172, -88.97038269042969,
+					11.714089393615723
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					423.97430419921875, -55.67240905761719,
+					71.56712341308594
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_3F001",
+				"isShow": false
+			}]
+		},
+		"电气火灾监控系统": {
+			"2F": [{
+				"location": [
+					162.6675262451172, -88.97038269042969,
+					11.714089393615723
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					423.97430419921875, -55.67240905761719,
+					71.56712341308594
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_3F001",
+				"isShow": false
+			}]
+		},
+		"消防电源管理系统": {
+			"2F": [{
+				"location": [
+					162.6675262451172, -88.97038269042969,
+					11.714089393615723
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					423.97430419921875, -55.67240905761719,
+					71.56712341308594
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_3F001",
+				"isShow": false
+			}]
+		},
+		"智能末端试水系统": {
+			"2F": [{
+				"location": [
+					162.6675262451172, -88.97038269042969,
+					11.714089393615723
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					423.97430419921875, -55.67240905761719,
+					71.56712341308594
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_3F001",
+				"isShow": false
+			}]
+		},
+		"智能水炮控制系统": {
+			"2F": [{
+				"location": [
+					162.6675262451172, -88.97038269042969,
+					11.714089393615723
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					423.97430419921875, -55.67240905761719,
+					71.56712341308594
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_3F001",
+				"isShow": false
+			}]
+		},
+		"IPTV系统": {
+			"2F": [{
+				"location": [
+					162.6675262451172, -88.97038269042969,
+					11.714089393615723
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					423.97430419921875, -55.67240905761719,
+					71.56712341308594
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_3F001",
+				"isShow": false
+			}]
+		},
+		"时钟系统": {
+			"2F": [{
+				"location": [
+					162.6675262451172, -88.97038269042969,
+					11.714089393615723
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					423.97430419921875, -55.67240905761719,
+					71.56712341308594
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_3F001",
+				"isShow": false
+			}]
+		},
+		"卫星有线电视系统": {
+			"2F": [{
+				"location": [
+					162.6675262451172, -88.97038269042969,
+					11.714089393615723
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					423.97430419921875, -55.67240905761719,
+					71.56712341308594
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_3F001",
+				"isShow": false
+			}]
+		},
+		"酒店客房控制系统": {
+			"2F": [{
+				"location": [
+					162.6675262451172, -88.97038269042969,
+					11.714089393615723
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					423.97430419921875, -55.67240905761719,
+					71.56712341308594
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_3F001",
+				"isShow": false
+			}]
+		},
+		"水质监测系统": {
+			"2F": [{
+				"location": [
+					162.6675262451172, -88.97038269042969,
+					11.714089393615723
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_2F001",
+				"isShow": false
+			}],
+			"3F": [{
+				"location": [
+					423.97430419921875, -55.67240905761719,
+					71.56712341308594
+				],
+				"img": "子系统图标/周界报警系统/zhoujiebaojingzx.png",
+				"elementId": "Self_RQ_3F001",
+				"isShow": false
+			}]
+		}
+	}
+}

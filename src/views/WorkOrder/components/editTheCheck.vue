@@ -35,7 +35,7 @@
               >
                 <template
                   class="custom-tree-node"
-                  slot-scope="{ node, data }"
+                  v-slot="{ node, data }"
                 >
                   <span :class="[equipmentActiveNo== data.itemNo?'aqua':'']">{{ data.label || data.itemName }}</span>
                 </template>

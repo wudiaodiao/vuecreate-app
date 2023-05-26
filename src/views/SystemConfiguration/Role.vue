@@ -24,7 +24,7 @@
                     label="编辑"
                     width="100px"
                   >
-                    <template slot-scope="scope">
+                    <template v-slot="scope">
                       <span class="editing_green" @click="onEditClick(scope.row)">编辑</span>
                     </template>
                   </el-table-column>

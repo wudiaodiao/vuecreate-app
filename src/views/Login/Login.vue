@@ -225,12 +225,12 @@ export default {
       }
     },
   },
-  beforeDestroy() {
+  beforeUnmount() {
     if (this.timer) {
       clearInterval(this.timer) // 在Vue实例销毁前，清除我们的定时器
     }
   },
-  destroyed() {
+  unmounted() {
     window.removeEventListener('keydown', this.keyDown, false)
   },
 }

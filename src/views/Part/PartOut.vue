@@ -145,7 +145,7 @@
                 label="申请数量"
                 show-overflow-tooltip
               >
-              <template slot-scope="scope">
+              <template v-slot="scope">
                     <span>
                       {{Math.abs(scope.row.count) }}
                     </span>
@@ -174,7 +174,7 @@
                 width="180"
                 label="申请时间"
               >
-              <template scope="scope">
+              <template v-slot="scope">
                       <span>
                         {{ $Convert.getTime(scope.row.applyTime) }}
                       </span>
@@ -196,7 +196,7 @@
                   )
                 "
               >
-                <template slot-scope="scope">
+                <template v-slot="scope">
                   <span
                     class="editing_green"
                     @click="addTc('approval', scope.row)"

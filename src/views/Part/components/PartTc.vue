@@ -57,7 +57,7 @@
             prop="name"
             label="名称"
           >
-            <template slot-scope="scope">
+            <template v-slot="scope">
               <span>
                 <a
                   href="#"
@@ -104,7 +104,7 @@
             label="选择"
             width="50px"
           >
-            <template slot-scope="scope">
+            <template v-slot="scope">
               <span
                 class="editing_green"
                 @click="addTc(partType,scope.row )"

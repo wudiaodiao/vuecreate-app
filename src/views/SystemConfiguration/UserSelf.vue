@@ -213,7 +213,7 @@
                             @change="sDepartmentChane(formValidator.schedulingDepartment)"
                             :placeholder="formValidator.schedulingDepartment||'请选择'"
                           >
-                            <template slot-scope="{ node, data }">
+                            <template v-slot="{ node, data }">
                               <span v-if="data.children.length==0">({{ data.model.code}})</span>
                               <span disabled>{{ data.model.name }}</span>
                               <span v-if="!node.isLeaf">({{ data.children.length }})</span>
