@@ -3,12 +3,38 @@
   <head>
     <meta charset="UTF-8">
     <link rel="icon" href="/favicon.ico">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="/src/main.ts"></script>
-    <script src="/Scripts/jquery-1.11.1.min.js"></script>
-    <script src="/Scripts/jquery.api.js"></script>
-    <script src="/Scripts/jquery.scada.min.js"></script>
-    <title>Vite App</title>
+    <script type="module" src="/src/main.ts"></script>  
+    <script src="/src/js/api/config.ts"></script>
+    <script  src="./Scripts/jquery-1.11.1.min.js"></script>
+    <script  src="./Scripts/jquery.api.js"></script>
+    <script  src="./Scripts/jquery.scada.min.js"></script>
+
+    <link rel="stylesheet"
+        href="https://s3.cn-north-1.amazonaws.com.cn/api-release.modeloapp.com/prod/modeloapiui-2.2-lts.css"
+        type="text/css" />
+    <link rel="stylesheet" href="/Modelo/css/index.css">
+    <link href="/Styles/jquery.scada.min.css" rel="stylesheet" />
+    <script src="https://s3.cn-north-1.amazonaws.com.cn/api-release.modeloapp.com/prod/modeloapi-2.8-lts.js"></script>
+    <script src="https://s3.cn-north-1.amazonaws.com.cn/api-release.modeloapp.com/prod/modeloapiui-2.2-lts.js"></script>
+
+    <title>IBMS</title>
+    <script>
+      $.scada.handler = window.ApiBaseURL + 'api/Scada/Handle'
+      $.scada.imageData = window.ApiBaseURL + 'api/MonitorImage/GetImage'
+      $.scada.noImageData = 'static/Images/noimage.jpg'
+    </script>
+    <style>
+      .el-loading-spinner {
+        font-size: 40px;
+        /* font-weight: bold; */
+      }
+
+      .el-loading-mask .el-loading-spinner .el-loading-text {
+        font-size: 18px;
+      }
+    </style>
   </head>
   <body>
     <div id="app"></div>

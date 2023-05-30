@@ -3,8 +3,9 @@
 // import persistedState from "vuex-persistedstate";
 // import axios from 'axios'
 // Vue.use(Vuex)
-
+import "../js/api/config"
 import { defineStore } from 'pinia'
+
 interface CopyIdName {
   id: string;
   layername: string;

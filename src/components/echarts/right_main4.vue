@@ -9,13 +9,13 @@
         <div class="div">
           <div class="kuai" style="background: #00FF96;"></div> <span>已完成</span>
         </div>
-        <span class="weight">{{complete}}</span><soan class="weight" style="color: #00FF96;">{{ completelv }}</soan>
+        <span class="weight">{{complete}}</span><span class="weight" style="color: #00FF96;">{{ completelv }}</span>
       </div>
       <div class="main4-right-bottom">
          <div class="div">
             <div class="kuai" style="background: #8FEBFF;"></div> <span>未完成</span>
           </div>
-          <span class="weight">{{uncomplete }}</span><soan class="weight" style="color: #8FEBFF;">{{ uncompletelv }}</soan>
+          <span class="weight">{{uncomplete }}</span><span class="weight" style="color: #8FEBFF;">{{ uncompletelv }}</span>
         </div>
     </div>
   </div>
@@ -137,9 +137,9 @@ export default {
 
           ]
           rightMain4.setOption(this.optionrightMain4)
-          window.addEventListener('resize', () => {
-            rightMain3.resize()
-          })
+          // window.addEventListener('resize', () => {
+          //   rightMain3.resize()
+          // })
         }
       })
    

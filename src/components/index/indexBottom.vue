@@ -281,13 +281,13 @@
   </div>
 </template>
 <script></script>
-<script>
+<script lang="ts">
 import axios from 'axios'
 import { storeToRefs } from 'pinia'
-import { useAuthStore } from '~@/stores/index'
+import { useAuthStore } from '@/stores/index'
 import earthcomponent from '@/views/Index/components/earth/earthcomponent.vue'
 
-const authStore = useAuthStore()
+let authStore = useAuthStore()
 var time = null
 export default {
   components: {
@@ -368,13 +368,13 @@ export default {
   // 监听其他发生变化，语音播报
   watch: {
     alarmbaojin: function () {},
-    '$store.state.Menu': function () {
+    'authStore.Menu': function () {
       this.getTree()
     },
-    '$store.state.token': function () {
+    'authStore.token': function () {
       this.getTree()
     },
-    '$store.state.indexItemShow': function (value) {
+    'authStore.indexItemShow': function (value) {
       this.indexItemShow = value
     },
   },
@@ -454,7 +454,7 @@ export default {
       authStore.setModelMode = type
     },
     // twoRight(type) {
-    //   this.$store.commit('setModelMode', type)
+    //   authStore.setModelMode = type
     // },
     addleft() {
       if (this.end == 9) {
@@ -462,15 +462,15 @@ export default {
       } else {
         this.Start--
         this.end--
-        let as = []
+        let asmenu = []
         let index = null
         // JSON.parse(JSON.stringify())
-        as = this.menu
+        asmenu = this.menu
 
         let menuArr = []
-        for (let i in as) {
-          if (as[i] && as[i].model.name != '首页') {
-            menuArr.push(as[i])
+        for (let i in asmenu) {
+          if (asmenu[i] && asmenu[i].model.name != '首页') {
+            menuArr.push(asmenu[i])
           } else {
             index = i
           }
@@ -506,15 +506,15 @@ export default {
       } else {
         this.Start++
         this.end++
-        let as = []
+        let asmenu = []
         let index = null
         // JSON.parse(JSON.stringify())
-        as = this.menu
+        asmenu = this.menu
 
         let menuArr = []
-        for (let i in as) {
-          if (as[i] && as[i].model.name != '首页') {
-            menuArr.push(as[i])
+        for (let i in asmenu) {
+          if (asmenu[i] && asmenu[i].model.name != '首页') {
+            menuArr.push(asmenu[i])
           } else {
             index = i
           }
@@ -633,7 +633,7 @@ export default {
                 return v.model.name
               }
             })
-            this.$store.commit('setEnergyClick', ...nenghao)
+            authStore = setEnergyClick
           }
         }
       } else {
@@ -689,7 +689,7 @@ export default {
 
       const resUserRole = await this.$api.MMS.User.GetUserRole({})
       if (resUserRole.ok) {
-        this.$store.commit('setUserGetUserRole', resUserRole.data)
+        authStore.setUserGetUserRole = resUserRole.data
         this.getTree_Ext(res, resUserRole.data.menuPrivilege)
       } else {
         if (resUserRole.data.code == 401) {
@@ -792,7 +792,7 @@ for (let index = 0; index < res.length; index++) {
       if (element2.model.name=='巡检管理') {
         console.log(element2.children);
     
-         this.$store.commit('PatrolTask', element2)
+        authStore.PatrolTask  = element2
       }
     });
   }

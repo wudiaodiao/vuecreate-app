@@ -1,86 +1,55 @@
 <template>
   <div :class="['index', $route.name == '2d' ? 'index_shouye' : 'index_qita']">
-    <div
-      id="canvas1"
-      class="canvas_w100"
-      v-show="$route.name != 'Monitor' && showCanvas"
-    ></div>
+    <div id="canvas1" class="canvas_w100" v-show="$route.name != 'Monitor' && showCanvas"></div>
     <!-- <backgroundbg> -->
     <div class="index_box">
-      <div
-        :class="['index_left',authStore.indexItemShow? 'index_left_l_de' : 'index_left_l']"
-        v-if="$route.name == '2d'"
-      >
-        <!-- <indexLeft></indexLeft> -->
+      <div :class="['index_left', authStore.indexItemShow ? 'index_left_l_de' : 'index_left_l']" v-if="$route.name == '2d'">
+        <indexLeft></indexLeft>
       </div>
 
-      <div
-        v-if="$route.name == '2d'"
-      >
+      <div v-if="$route.name == '2d'">
         {{ authStore.indexItemShow }}
-        <div
-          v-if="false && $route.name == '2d'"
-          @click="IOTVisible = !IOTVisible"
-          style="position: absolute; bottom: 25px; left: -55px; z-index: 999"
-        >
+        <div v-if="false && $route.name == '2d'" @click="IOTVisible = !IOTVisible"
+          style="position: absolute; bottom: 25px; left: -55px; z-index: 999">
           <!-- <img style="cursor: pointer" src="~@/assets/image/index/IOT_Btn.png" /> -->
-          <div
-            v-show="IOTVisible"
-            style="position: absolute; bottom: -24px; left: -90px"
-          >
+          <div v-show="IOTVisible" style="position: absolute; bottom: -24px; left: -90px">
             <!-- <img src="~@/assets/image/index/IOT_Message.png" /> -->
-            <span
-              @mouseenter="lightgreen = 1"
-              @mouseover="lightgreen = 0"
-              :class="lightgreen == 1 ? 'lightgreen' : ''"
+            <span @mouseenter="lightgreen = 1" @mouseover="lightgreen = 0" :class="lightgreen == 1 ? 'lightgreen' : ''"
               style="
                   cursor: pointer;
                   font-size: 16px;
                   top: 13px;
                   position: absolute;
                   left: 14px;
-                "
-              @click="runIOT"
-              >运行</span
-            >
-            <span
-              @mouseenter="lightgreen = 2"
-              @mouseover="lightgreen = 0"
-              :class="lightgreen == 2 ? 'lightgreen' : ''"
+                " @click="runIOT">运行</span>
+            <span @mouseenter="lightgreen = 2" @mouseover="lightgreen = 0" :class="lightgreen == 2 ? 'lightgreen' : ''"
               style="
                   cursor: pointer;
                   font-size: 16px;
                   top: 51px;
                   position: absolute;
                   left: 14px;
-                "
-              @click="download"
-              >下载</span
-            >
+                " @click="download">下载</span>
           </div>
         </div>
         <indexRight></indexRight>
       </div>
 
-      <div
-        :class="[
-          meunlength % 2 == 0 && meunlength < 10
-            ? 'index_bottom' + meunlength
-            : 'index_bottom50',
-          'index_bottom'
-        ]"
-      >
-        <indexBottom
-          v-on:indexItemShow="getValue"
-          v-on:meunLength="getMeunLength"
-        ></indexBottom>
+      <div :class="[
+        meunlength % 2 == 0 && meunlength < 10
+          ? 'index_bottom' + meunlength
+          : 'index_bottom50',
+        'index_bottom'
+      ]">
+        <indexBottom v-on:indexItemShow="getValue" v-on:meunLength="getMeunLength"></indexBottom>
       </div>
     </div>
 
     <div class="Sub_route">
-      <el-badge :value="datanum" class="lingdang" v-if="$route.name != '2d' && datanum!=0" @click="notice_show=true">
+      <el-badge :value="datanum" class="lingdang" v-if="$route.name != '2d' && datanum != 0" @click="notice_show = true">
         <!-- $route.name != '2d' -->
-        <img src="../../assets/image/lingdang.png" alt="" style="width: 50px;height: 50px;opacity: 0.8;" @click="notice_show=true">
+        <img src="../../assets/image/lingdang.png" alt="" style="width: 50px;height: 50px;opacity: 0.8;"
+          @click="notice_show = true">
       </el-badge>
       <noticeList v-show="notice_show" @callBack="callBack" :datalist="datalist"></noticeList>
       <router-view></router-view>
@@ -89,18 +58,17 @@
   </div>
 </template>
 <script setup lang="ts">
-import '@/js/Scripts/jquery-1.11.1.min.js'
-import '@/js/Scripts/jquery.api.js'
-import '@/js/Scripts/jquery.scada.min.js'
+// import '../../js/Scripts/jquery-1.11.1.min.js'
+// import '../../js/Scripts/jquery.api.js'
+// import '../../js/Scripts/jquery.scada.min.js'
 
 import { useAuthStore } from '@/stores/index'
-import noticeList from '../../components/index/noticeList.vue'
+import noticeList from '@/components/index/noticeList.vue'
 import indexLeft from '@/components/index/indexLeft.vue'
 import indexRight from '@/components/index/indexRight.vue'
 import indexBottom from '@/components/index/indexBottom.vue'
 const authStore = useAuthStore()
 </script>
-<link href="static/Styles/jquery.scada.min.css" rel="stylesheet" /> 
 <script lang="ts">
 // function resize() {
 //   var height1 = $(window).height()
@@ -126,9 +94,9 @@ const authStore = useAuthStore()
 export default {
   data() {
     return {
-      datalist:'' as string | any,
-      datanum:0,
-      notice_show:false,
+      datalist: '' as string | any,
+      datanum: 0,
+      notice_show: false,
       faval: true,
       informationShow: true,
       menu: [],
@@ -159,7 +127,7 @@ export default {
       }
     }
   },
-  
+
   mounted() {
     this.getnoticelist()
     setInterval(() => {
@@ -168,25 +136,25 @@ export default {
   },
 
   methods: {
-    getnoticelist(){
-      (this as any).$api.MMS.InfoNotice.Get().then((res: { data: string | any[] })=>{
+    getnoticelist() {
+      (this as any).$api.MMS.InfoNotice.Get().then((res: { data: string | any[] }) => {
         console.log(res);
-        let num=0
+        let num = 0
         for (let index = 0; index < res.data.length; index++) {
-         num=num+ res.data[index].value
-          
+          num = num + res.data[index].value
+
         }
-        this.datanum= num
-        this.datalist=res.data
-      }).catch( (eer: any) =>{
+        this.datanum = num
+        this.datalist = res.data
+      }).catch((eer: any) => {
         console.log("错误！")
       })
     },
-    callBack(val: boolean){
-     
+    callBack(val: boolean) {
+
       // console.log(val);
       console.log(this.datalist);
-      this.notice_show=val;
+      this.notice_show = val;
     },
     getValue(data: boolean) {
       this.faval = data
@@ -232,7 +200,7 @@ export default {
               height *= scale
               var left = (mainWidth - width) / 2
               var top = (mainHeight - height) / 4
-              this.form.setScale(scale)
+              this.form.setScale(scale as any)
               this.form.set('left', left)
               this.form.set('top', top)
               this.form.start(2000)
@@ -249,32 +217,31 @@ export default {
       }
       $('#canvas1').empty()
     }
-  },
-  unmounted() {}
+  }
 }
 </script>
 <style>
 .lingdang .el-badge__content {
-    border-radius: 0.625rem;
-    color: #FFF;
- 
-    display: inline-block;
-    font-size: 16px;
-    height: 1.225rem;
-    background: red;
-    line-height: 1.225rem;
-    padding: 0 0.375rem;
-    text-align: center;
-    white-space: nowrap;
-    border:none;
+  border-radius: 0.625rem;
+  color: #FFF;
+
+  display: inline-block;
+  font-size: 16px;
+  height: 1.225rem;
+  background: red;
+  line-height: 1.225rem;
+  padding: 0 0.375rem;
+  text-align: center;
+  white-space: nowrap;
+  border: none;
 }
 </style>
 <style lang="scss" scoped>
-
-.lingdang{
+.lingdang {
   // float: right;
   cursor: pointer;
-  position: relative;;
+  position: relative;
+  ;
   left: 90vw;
   top: 13.5vh;
 }
@@ -282,20 +249,24 @@ export default {
 .lightgreen {
   color: lightgreen;
 }
+
 .index_shouye {
   background: url(~@/assets/image/index/erbao_bg.jpg);
   background-size: 100% 100%;
 }
+
 .index_qita {
   background: url(~@/assets/image/index/shouye_qita.png);
 
   background-size: 100% 100%;
 }
+
 .index {
   height: 100vh;
   width: 100vw;
   background-repeat: no-repeat;
   background-position-x: center;
+
   .index_box {
     user-select: none;
 
@@ -304,6 +275,7 @@ export default {
       transform: translateY(-50%);
       transition: 1.5s all;
     }
+
     .index_left_l_de {
       top: 2.78%;
       transition: 2s all;
@@ -321,6 +293,7 @@ export default {
       border-radius: 7px;
       z-index: 100;
     }
+
     .index_center {
       float: left;
       height: 100vh;
@@ -333,11 +306,13 @@ export default {
       align-items: center;
       font-size: 30px;
       color: skyblue;
+
       .model3d {
         height: 100%;
         width: 100%;
       }
     }
+
     .index_right {
       width: 420px;
       height: 820px;
@@ -351,9 +326,11 @@ export default {
     .index_bottom8 {
       transform: translateX(-56%) !important;
     }
+
     .index_bottom6 {
       transform: translateX(-57.8%) !important;
     }
+
     .index_bottom4 {
       transform: translateX(-61%) !important;
     }
@@ -361,6 +338,7 @@ export default {
     .index_bottom50 {
       transform: translateX(-50%) !important;
     }
+
     .index_bottom {
       position: absolute;
       left: 50%;
@@ -379,6 +357,7 @@ export default {
     z-index: 100;
   }
 }
+
 // 二维电子地图
 #canvas1 {
   position: absolute;
@@ -387,6 +366,7 @@ export default {
   right: 0;
   top: 5.3vh;
 }
+
 .canvas_w100 {
   width: 100%;
   height: 95%;

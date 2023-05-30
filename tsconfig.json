@@ -2,7 +2,10 @@
   "compilerOptions": {
     "noImplicitAny": false,
     // "allowJs": true,
-    // "allowSyntheticDefaultImports":true
+    // "allowSyntheticDefaultImports":true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "files": [],
   "references": [
@@ -13,6 +16,6 @@
       "path": "./tsconfig.app.json"
     }
   ],
-  "include": ["src/**/*.ts","src/**/*.d.ts","src/**/*.js",]
+  "include": ["src/**/*.ts","src/**/*.d.ts","src/**/*",]
 }
 //@/js/Scripts/jquery-1.11.1.min.js

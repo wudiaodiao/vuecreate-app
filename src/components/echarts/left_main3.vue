@@ -143,7 +143,6 @@ export default {
     methods: {
         initLeftMain3(val) {
             //左边波浪图
-            console.log(document.getElementById('left_main3'))
             this.active=val
             var leftMain3 = this.$echarts.init(document.getElementById('left_main3'))
                 
