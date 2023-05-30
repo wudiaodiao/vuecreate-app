@@ -290,6 +290,9 @@ import earthcomponent from '@/views/Index/components/earth/earthcomponent.vue'
 const authStore = useAuthStore()
 var time = null
 export default {
+  components: {
+    earthcomponent
+  },
   data() {
     return {
       indexItemShow: true,
@@ -435,7 +438,7 @@ export default {
 
       this.indexItemShow = true
       this.$emit('setindexItemShow', this.indexItemShow)
-      this.$store.commit('setindexItemShow', this.indexItemShow)
+      authStore.setindexItemShow = this.indexItemShow
       this.getTree()
     },
     threedLeft(type) {
