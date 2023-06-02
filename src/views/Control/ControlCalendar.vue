@@ -13,7 +13,7 @@
       <div :class="[
         'schematicRestraint_center',
           'public_page',
-          $store.state.dtab ? 'index_off' : 'index_no'
+          authStore.dtab ? 'index_off' : 'index_no'
         ]">
         <!-- 日历 -->
         <div class="kongz_rili">
@@ -35,8 +35,8 @@
                   <span
                     class="pilian"
                     v-if="
-                      $Tools.accessControl(
-                        this.$store.state.userGetUserRole.resList,
+                      this.$Tools.accessControl(
+                        authStore.userGetUserRole.resList,
                         'EditControlCalendar'
                       )
                     "
@@ -124,8 +124,8 @@
             <div
               class="tanchuang_center"
               v-if="
-                $Tools.accessControl(
-                  this.$store.state.userGetUserRole.resList,
+                this.$Tools.accessControl(
+                  authStore.userGetUserRole.resList,
                   'EditControlCalendar'
                 )
               "
@@ -228,6 +228,10 @@
     </div>
   </div>
 </template>
+<script setup>
+import { useAuthStore } from '@/stores/index'
+const authStore = useAuthStore()
+</script>
 <script>
 import DateTime from '@/js/datetime'
 

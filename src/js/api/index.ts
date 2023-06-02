@@ -29,6 +29,7 @@ if (start !== 0) {
 }
 
 function seturlParameter(val: string) {
+  console.log(window.ApiBaseURL)
   axios
     .get(window.ApiBaseURL + 'api/Auth/LoginByTicket?ticket=' + val)
     .then(function(response) {

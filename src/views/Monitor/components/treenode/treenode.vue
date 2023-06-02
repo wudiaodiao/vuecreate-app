@@ -59,14 +59,15 @@
   </div>
 </template>
 <script>
-import { log } from 'console'
+import { useAuthStore } from '@/stores/index'
+const authStore = useAuthStore()
 
 export default {
   name: 'treeNode',
   props: ['systemTreeList'],
   data() {
     return {
-      open: [this.$store.state.nodePNo],
+      open: [authStore.nodePNo],
     }
   },
   activated: function () {},

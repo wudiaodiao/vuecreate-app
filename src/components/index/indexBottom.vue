@@ -355,10 +355,10 @@ export default {
       this.getTree()
     }, 300)
 
-    this.guiTimer = setInterval(() => {
-      this.GetAlarmAndUnConfirmedCount();
-      this.GuiLinkageGetList();
-    }, 3000);
+    // this.guiTimer = setInterval(() => {
+    //   this.GetAlarmAndUnConfirmedCount();
+    //   this.GuiLinkageGetList();
+    // }, 3000);
   },
   destroyed() {
     clearInterval(this.guiTimer)
@@ -689,7 +689,7 @@ export default {
 
       const resUserRole = await this.$api.MMS.User.GetUserRole({})
       if (resUserRole.ok) {
-        authStore.setUserGetUserRole = resUserRole.data
+        authStore.setUserGetUserRole(authStore, resUserRole.data)
         this.getTree_Ext(res, resUserRole.data.menuPrivilege)
       } else {
         if (resUserRole.data.code == 401) {
@@ -1269,7 +1269,7 @@ for (let index = 0; index < res.length; index++) {
     width: 11px;
     height: 12px;
     vertical-align: middle;
-    background: url('../../assets/image/index/left.png') no-repeat;
+    background: url('@/assets/image/index/left.png') no-repeat;
     background-size: 100% 100%;
     transform: translateY(-50%);
   }
@@ -1282,7 +1282,7 @@ for (let index = 0; index < res.length; index++) {
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
-    background: url('../../assets/image/index/right.png') no-repeat;
+    background: url('@/assets/image/index/right.png') no-repeat;
     background-size: 100% 100%;
   }
 }

@@ -9,11 +9,11 @@
 <template>
   <div class="Equipment  public_body">
     <div class="Equipment_cneter">
-      <div :class="['EquipmentType','public_page',$store.state.dtab?'index_off':'index_no']">
+      <div :class="['EquipmentType','public_page',authStore.dtab?'index_off':'index_no']">
         <div class="content">
           <div
             class="EquipmentType_top"
-            v-if="$Tools.accessControl( this.$store.state.userGetUserRole.resList,'EditEquipmentType')"
+            v-if="this.$Tools.accessControl( authStore.userGetUserRole.resList,'EditEquipmentType')"
           >
             <ul>
               <li
@@ -23,13 +23,13 @@
                 <span>添加根节点</span>
               </li>
               <li
-                v-if="equipmentActiveId==$store.state.equipmentActiveId"
+                v-if="equipmentActiveId==authStore.equipmentActiveId"
                 @click="addNode('addChildrenNode')"
               >
                 <span>添加子节点</span>
               </li>
               <li
-                v-if="equipmentActiveId==$store.state.equipmentActiveId"
+                v-if="equipmentActiveId==authStore.equipmentActiveId"
                 @click="addNode('edChildrenNode')"
               >
                 <span>编辑节点</span>
@@ -37,7 +37,7 @@
               <li
                 class="del_red"
                 @click="addNodeDel()"
-                v-if="equipmentActiveId==$store.state.equipmentActiveId"
+                v-if="equipmentActiveId==authStore.equipmentActiveId"
               >
                 <span class="del_red">删除节点</span>
               </li>
@@ -141,6 +141,10 @@
     <import-table :table="table"></import-table>
   </div>
 </template>
+<script setup>
+import { useAuthStore } from '@/stores/index'
+const authStore = useAuthStore()
+</script>
 <script>
 import importTable from '../../components/index/importTable.vue'
 export default {

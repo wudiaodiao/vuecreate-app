@@ -4,10 +4,10 @@
       <tr>
         <td></td>
         <td class="tool">
-          <a href="javascript:void(0)" class="toolbutton" @click="onImportClick()" v-if="this.$store.state.userGetUserRole.resList.indexOf('EditElectricityEnergyMeter') != -1">导入</a>
+          <a href="javascript:void(0)" class="toolbutton" @click="onImportClick()" v-if="authStore.userGetUserRole.resList.indexOf('EditElectricityEnergyMeter') != -1">导入</a>
         </td>
         <td class="tool">
-          <a href="javascript:void(0)" class="toolbutton" @click="onAddClick()" v-if="this.$store.state.userGetUserRole.resList.indexOf('EditElectricityEnergyMeter') != -1">添加</a>
+          <a href="javascript:void(0)" class="toolbutton" @click="onAddClick()" v-if="authStore.userGetUserRole.resList.indexOf('EditElectricityEnergyMeter') != -1">添加</a>
         </td>
       </tr>
     </table>
@@ -20,12 +20,12 @@
       <el-table-column prop="position" label="安装位置"  show-overflow-tooltip/>
       <el-table-column prop="areaName" label="计量区域"   show-overflow-tooltip/>
       <el-table-column prop="categoryName" label="分项"  show-overflow-tooltip />
-      <el-table-column label="编辑" v-if="this.$store.state.userGetUserRole.resList.indexOf('EditElectricityEnergyMeter') != -1" width="50">
+      <el-table-column label="编辑" v-if="authStore.userGetUserRole.resList.indexOf('EditElectricityEnergyMeter') != -1" width="50">
         <template v-slot="scope">
           <a href="javascript:void(0)" class="greenbutton" @click="onEditClick(scope.row)">编辑</a>
         </template>
       </el-table-column>
-      <el-table-column label="删除" v-if="this.$store.state.userGetUserRole.resList.indexOf('EditElectricityEnergyMeter') != -1" width="50">
+      <el-table-column label="删除" v-if="authStore.userGetUserRole.resList.indexOf('EditElectricityEnergyMeter') != -1" width="50">
         <template v-slot="scope">
           <a href="javascript:void(0)" class="redbutton" @click="onDeleteClick(scope.row.no)">删除</a>
         </template>
@@ -110,7 +110,13 @@
     </div>
   </div>
 </template>
+<script setup>
+import { useAuthStore } from '@/stores/index'
+const authStore = useAuthStore()
+</script>
 <script>
+import { useAuthStore } from '@/stores/index'
+const authStore = useAuthStore()
 
 export default {
   data() {
@@ -155,7 +161,7 @@ export default {
   methods: {
     onImportClick() {
       this.uploader = {
-        headers: { token: this.$store.state.token },
+        headers: { token: authStore.token },
         action: this.$api.MMS.EnergyMeter.GetImportUrl({
           type: 1
         }),

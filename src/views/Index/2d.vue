@@ -7,13 +7,15 @@
         <indexLeft></indexLeft>
       </div>
 
-      <div v-if="$route.name == '2d'">
-        {{ authStore.indexItemShow }}
+      <div :class="[
+          'index_right',
+          authStore.indexItemShow ? 'index_left_l_de' : 'index_left_l'
+        ]" v-if="$route.name == '2d'">
         <div v-if="false && $route.name == '2d'" @click="IOTVisible = !IOTVisible"
           style="position: absolute; bottom: 25px; left: -55px; z-index: 999">
-          <!-- <img style="cursor: pointer" src="~@/assets/image/index/IOT_Btn.png" /> -->
+          <img style="cursor: pointer" src="~@/assets/image/index/IOT_Btn.png" />
           <div v-show="IOTVisible" style="position: absolute; bottom: -24px; left: -90px">
-            <!-- <img src="~@/assets/image/index/IOT_Message.png" /> -->
+            <img src="~@/assets/image/index/IOT_Message.png" />
             <span @mouseenter="lightgreen = 1" @mouseover="lightgreen = 0" :class="lightgreen == 1 ? 'lightgreen' : ''"
               style="
                   cursor: pointer;
@@ -62,30 +64,31 @@ import noticeList from '@/components/index/noticeList.vue'
 import indexLeft from '@/components/index/indexLeft.vue'
 import indexRight from '@/components/index/indexRight.vue'
 import indexBottom from '@/components/index/indexBottom.vue'
+import { useAuthStore } from '@/stores/index'
 const authStore = useAuthStore()
 </script>
 <script lang="ts">
-// function resize() {
-//   var height1 = $(window).height()
-//   var h = $('.index_left').height()
-//   var zoom = height1 / h
-//   $('.index_left').animate({
-//     zoom: zoom / 1.15,
-//   })
+function resize() {
+  var height1 = $(window).height()
+  var h = $('.index_left').height()
+  var zoom = height1 / h
+  $('.index_left').animate({
+    zoom: zoom / 1.15,
+  })
 
-//   h = $('.index_right').height()
-//   zoom = height1 / h
-//   $('.index_right').animate({
-//     zoom: zoom / 1.15,
-//   })
-// }
+  h = $('.index_right').height()
+  zoom = height1 / h
+  $('.index_right').animate({
+    zoom: zoom / 1.15,
+  })
+}
 
-// $(document).ready(function () {
-//   resize()
-//   $(window).resize(function () {
-//     resize()
-//   })
-// })
+$(function () {
+  resize()
+  $(window).resize(function () {
+    resize()
+  })
+})
 export default {
   data() {
     return {
@@ -124,15 +127,15 @@ export default {
   },
 
   mounted() {
-    this.getnoticelist()
-    setInterval(() => {
-      this.getnoticelist()
-    }, 3000);
+    // this.getnoticelist()
+    // setInterval(() => {
+    //   this.getnoticelist()
+    // }, 3000);
   },
 
   methods: {
     getnoticelist() {
-      (this as any).$api.MMS.InfoNotice.Get().then((res: { data: string | any[] }) => {
+      this.$api.MMS.InfoNotice.Get().then((res: { data: string | any[] }) => {
         console.log(res);
         let num = 0
         for (let index = 0; index < res.data.length; index++) {

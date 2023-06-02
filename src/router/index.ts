@@ -189,9 +189,7 @@ const router = createRouter({
                       path: 'DutyLog', //值班日志
                       name: 'DutyLog',
                       component: () =>
-                          require(
-                              '@/views/Assistance/components/OnDuty/DutyLog.vue'
-                          ),
+                      import('@/views/Assistance/components/OnDuty/DutyLog.vue'),
                       meta: {
                           keepAlive: false,
                           notAuth: true
@@ -201,9 +199,7 @@ const router = createRouter({
                       path: 'ShiftClass', //班次管理
                       name: 'ShiftClass',
                       component: () =>
-                          require(
-                              '@/views/Assistance/components/OnDuty/ShiftClass.vue'
-                          ),
+                          import('@/views/Assistance/components/OnDuty/ShiftClass.vue'),
                       meta: {
                           keepAlive: false,
                           notAuth: true
@@ -223,7 +219,7 @@ const router = createRouter({
                       path: 'Shiftrecord', //调班记录
                       name: 'Shiftrecord',
                       component: () =>
-                          require('@/views/Assistance/components/Shiftrecord/index.vue'),
+                          import('@/views/Assistance/components/Shiftrecord/index.vue'),
                       meta: {
                           keepAlive: false,
                           notAuth: true
@@ -233,7 +229,7 @@ const router = createRouter({
                       path: 'Shiftmanage', //调班管理
                       name: 'Shiftmanage',
                       component: () =>
-                          require('@/views/Assistance/components/Shiftmanage/index.vue'),
+                      import('@/views/Assistance/components/Shiftmanage/index.vue'),
                       meta: {
                           keepAlive: false,
                           notAuth: true
@@ -243,9 +239,7 @@ const router = createRouter({
                       path: 'ShiftCheck', //考勤统计
                       name: 'ShiftCheck',
                       component: () =>
-                          require(
-                              '@/views/Assistance/components/OnDuty/ShiftCheck.vue'
-                          ),
+                      import('@/views/Assistance/components/OnDuty/ShiftCheck.vue'),
                       meta: {
                           keepAlive: false,
                           notAuth: true
@@ -552,7 +546,7 @@ const router = createRouter({
               path: 'MonitorChart', //设备运行曲线
               name: 'MonitorChart',
               component: () =>
-                  require('@/views/ReportManagement/MonitorChart.vue'),
+                  import('@/views/ReportManagement/MonitorChart.vue'),
               meta: {
                   keepAlive: false,
                   notAuth: true
@@ -562,9 +556,7 @@ const router = createRouter({
               path: 'PerfectRatioOfEquipment', //设备完好率报表
               name: 'PerfectRatioOfEquipment',
               component: () =>
-                  require(
-                      '@/views/ReportManagement/PerfectRatioOfEquipment.vue'
-                  ),
+                  import('@/views/ReportManagement/PerfectRatioOfEquipment.vue'),
               meta: {
                   keepAlive: false,
                   notAuth: true
@@ -574,7 +566,7 @@ const router = createRouter({
               path: 'RepairTimeliness', //设备维修及时率
               name: 'RepairTimeliness',
               component: () =>
-                  require('@/views/ReportManagement/RepairTimeliness.vue'),
+              import('@/views/ReportManagement/RepairTimeliness.vue'),
               meta: {
                   keepAlive: false,
                   notAuth: true
@@ -584,7 +576,7 @@ const router = createRouter({
               path: 'EquipmentAvailabilityReport', //设备可用率报表
               name: 'EquipmentAvailabilityReport',
               component: () =>
-                  require('@/views/ReportManagement/EquipmentAvailabilityReport.vue'),
+              import('@/views/ReportManagement/EquipmentAvailabilityReport.vue'),
               meta: {
                   keepAlive: false,
                   notAuth: true
@@ -594,7 +586,7 @@ const router = createRouter({
               path: 'Performance', //人员绩效报表
               name: 'Performance',
               component: () =>
-                  require('@/views/ReportManagement/Performance.vue'),
+              import('@/views/ReportManagement/Performance.vue'),
               meta: {
                   keepAlive: false,
                   notAuth: true
@@ -604,7 +596,7 @@ const router = createRouter({
               path: 'ControlReport', //设备控制报表
               name: 'ControlReport',
               component: () =>
-                  require('@/views/ReportManagement/ControlReport.vue'),
+              import('@/views/ReportManagement/ControlReport.vue'),
               meta: {
                   keepAlive: false,
                   notAuth: true
@@ -616,7 +608,7 @@ const router = createRouter({
               path: 'UserSelf', //个人信息
               name: 'UserSelf',
               component: () =>
-                  require('@/views/SystemConfiguration/UserSelf.vue'),
+              import('@/views/SystemConfiguration/UserSelf.vue'),
               meta: {
                   keepAlive: false,
                   notAuth: true
@@ -626,7 +618,7 @@ const router = createRouter({
               path: 'Project', //项目信息
               name: 'Project',
               component: () =>
-                  require('@/views/SystemConfiguration/Project.vue'),
+              import('@/views/SystemConfiguration/Project.vue'),
               meta: {
                   keepAlive: false,
                   notAuth: true
@@ -636,7 +628,7 @@ const router = createRouter({
               path: 'Operation', //操作日志
               name: 'Operation',
               component: () =>
-                  require('@/views/SystemConfiguration/Operation.vue'),
+              import('@/views/SystemConfiguration/Operation.vue'),
               meta: {
                   keepAlive: false,
                   notAuth: true
@@ -646,7 +638,7 @@ const router = createRouter({
               path: 'MonitorEdit', //运行监控配置
               name: 'MonitorEdit',
               component: () =>
-                  require('@/views/SystemConfiguration/MonitorEdit.vue'),
+              import('@/views/SystemConfiguration/MonitorEdit.vue'),
               meta: {
                   keepAlive: false,
                   notAuth: true
@@ -656,7 +648,7 @@ const router = createRouter({
               path: 'Department', //部门管理
               name: 'Department',
               component: () =>
-                  require('@/views/SystemConfiguration/Department.vue'),
+              import('@/views/SystemConfiguration/Department.vue'),
               meta: {
                   keepAlive: false,
                   notAuth: true
@@ -666,7 +658,7 @@ const router = createRouter({
               path: 'Area', //地点管理
               name: 'Area',
               component: () =>
-                  require('@/views/SystemConfiguration/Area.vue'),
+              import('@/views/SystemConfiguration/Area.vue'),
               meta: {
                   keepAlive: false,
                   notAuth: true
@@ -676,7 +668,7 @@ const router = createRouter({
               path: 'Role', //角色管理
               name: 'Role',
               component: () =>
-                  require('@/views/SystemConfiguration/Role.vue'),
+              import('@/views/SystemConfiguration/Role.vue'),
               meta: {
                   keepAlive: false,
                   notAuth: true
@@ -686,7 +678,7 @@ const router = createRouter({
               path: 'User', //用户管理
               name: 'User',
               component: () =>
-                  require('@/views/SystemConfiguration/User.vue'),
+              import('@/views/SystemConfiguration/User.vue'),
               meta: {
                   keepAlive: false,
                   notAuth: true
@@ -696,7 +688,7 @@ const router = createRouter({
               redirect: "Electricity/ElectricityReport", //默认到子路由的第一个路由
               path: "Electricity", //用电管理
               name: "Electricity",
-              component: () => require("@/views/Energy/Electricity/Electricity.vue"),
+              component: () => import("@/views/Energy/Electricity/Electricity.vue"),
               meta: {
                   keepAlive: false,
                   notAuth: true
@@ -705,7 +697,7 @@ const router = createRouter({
                   {
                       path: "ElectricityReport", //电表报表
                       name: "ElectricityReport",
-                      component: () => require("@/views/Energy/Electricity/ElectricityReport.vue"),
+                      component: () => import("@/views/Energy/Electricity/ElectricityReport.vue"),
                       meta: {
                           keepAlive: false,
                           notAuth: true
@@ -714,7 +706,7 @@ const router = createRouter({
                   {
                       path: "ElectricityAreaReport", //区域用电报表
                       name: "ElectricityAreaReport",
-                      component: () => require("@/views/Energy/Electricity/ElectricityAreaReport.vue"),
+                      component: () => import("@/views/Energy/Electricity/ElectricityAreaReport.vue"),
                       meta: {
                           keepAlive: false,
                           notAuth: true
@@ -723,7 +715,7 @@ const router = createRouter({
                   {
                       path: "ElectricityEnergyCategory", //用电分项
                       name: "ElectricityEnergyCategory",
-                      component: () => require("@/views/Energy/Electricity/ElectricityCategory.vue"),
+                      component: () => import("@/views/Energy/Electricity/ElectricityCategory.vue"),
                       meta: {
                           keepAlive: false,
                           notAuth: true
@@ -731,7 +723,7 @@ const router = createRouter({
                   }, {
                       path: "ElectricityEnergyMeter", //电表管理
                       name: "ElectricityEnergyMeter",
-                      component: () => require("@/views/Energy/Electricity/ElectricityMeter.vue"),
+                      component: () => import("@/views/Energy/Electricity/ElectricityMeter.vue"),
                       meta: {
                           keepAlive: false,
                           notAuth: true
@@ -744,7 +736,7 @@ const router = createRouter({
               path: "Water", //用水管理
               name: "Water",
               redirect: "Water/WaterReport", //默认到子路由的第一个路由
-              component: () => require("@/views/Energy/Water/Water.vue"),
+              component: () => import("@/views/Energy/Water/Water.vue"),
               meta: {
                   keepAlive: false,
                   notAuth: true
@@ -753,7 +745,7 @@ const router = createRouter({
                   {
                       path: "WaterReport", //水表报表
                       name: "WaterReport",
-                      component: () => require("@/views/Energy/Water/WaterReport.vue"),
+                      component: () => import("@/views/Energy/Water/WaterReport.vue"),
                       meta: {
                           keepAlive: false,
                           notAuth: true
@@ -762,7 +754,7 @@ const router = createRouter({
                   {
                       path: "WaterAreaReport", //区域用水报表
                       name: "WaterAreaReport",
-                      component: () => require("@/views/Energy/Water/WaterAreaReport.vue"),
+                      component: () => import("@/views/Energy/Water/WaterAreaReport.vue"),
                       meta: {
                           keepAlive: false,
                           notAuth: true
@@ -771,7 +763,7 @@ const router = createRouter({
                   {
                       path: "WaterEnergyCategory", //用水分项
                       name: "WaterEnergyCategory",
-                      component: () => require("@/views/Energy/Water/WaterCategory.vue"),
+                      component: () => import("@/views/Energy/Water/WaterCategory.vue"),
                       meta: {
                           keepAlive: false,
                           notAuth: true
@@ -780,7 +772,7 @@ const router = createRouter({
                   {
                       path: "WaterEnergyMeter", //水表管理
                       name: "WaterEnergyMeter",
-                      component: () => require("@/views/Energy/Water/WaterMeter.vue"),
+                      component: () => import("@/views/Energy/Water/WaterMeter.vue"),
                       meta: {
                           keepAlive: false,
                           notAuth: true
@@ -793,7 +785,7 @@ const router = createRouter({
               path: "Gas", //用气管理
               name: "Gas",
               redirect: "Gas/GasReport", //默认到子路由的第一个路由
-              component: () => require("@/views/Energy/Gas/Gas.vue"),
+              component: () => import("@/views/Energy/Gas/Gas.vue"),
               meta: {
                   keepAlive: false,
                   notAuth: true

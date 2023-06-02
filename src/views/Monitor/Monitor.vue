@@ -300,6 +300,13 @@
 </template>
 <script>
 import treeNode from './components/treenode/treenode.vue'
+import { useAuthStore } from '@/stores/index'
+import noticeList from '@/components/index/noticeList.vue'
+import indexLeft from '@/components/index/indexLeft.vue'
+import indexRight from '@/components/index/indexRight.vue'
+import indexBottom from '@/components/index/indexBottom.vue'
+const authStore = useAuthStore()
+
 export default {
   components: {
     treeNode,
@@ -357,16 +364,16 @@ export default {
   },
   computed: {
     monitorNo() {
-      return this.$store.state.monitorNo
+      return authStore.monitorNo
     },
   },
   mounted() {
    
     setTimeout(async () => {
       // const resUserRole = await this.$api.MMS.User.GetUserRole({})
-      // this.$store.commit('setUserGetUserRole', resUserRole.data) //权限
+      // authStore.setUserGetUserRole = resUserRole.data //权限
       $.scada.handler = window.ApiBaseURL + 'api/Scada/Handle'
-      this.$store.commit('setMonitorNo', -1)
+      authStore.setMonitorNo = -1
       this.showTree()
     }, 300)
 
@@ -452,7 +459,7 @@ export default {
     ) {
       if (
         !that.$Tools.accessControl(
-          that.$store.state.userGetUserRole.resList,
+          authStore.userGetUserRole.resList,
           'ControlMonitor'
         )
       ) {
@@ -606,8 +613,7 @@ export default {
         let threeCl = []
         treeDataClone = JSON.parse(JSON.stringify(res.data)) //深拷贝数据给弹窗
         for (let i in treeDataClone) {
-          let targetModel =
-            this.$store.state.userGetUserRole.resMonitors[0].children.find(
+          let targetModel = authStore.userGetUserRole.resMonitors[0].children.find(
               (a) => a.model.no == treeDataClone[i].no
             )
           if (targetModel && targetModel.selected == true) {
@@ -639,8 +645,8 @@ export default {
         if (i == 0 && resin) {
           if (resin.children.length == 0) {
             return (
-              this.$store.commit('setNodeno', resin.no),
-              this.$store.commit('setNodePno', resin.parentNo)
+              authStore.setNodeno = resin.no,
+              authStore.setNodePno = resin.parentNo
             )
           } else {
             return this.recursice(resin.children)

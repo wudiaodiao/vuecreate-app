@@ -87,7 +87,7 @@ export default {
   left: -360px;
   -webkit-animation: rotation 10s linear infinite;
   animation: rotation 10s linear infinite;
-  content: url('./img/earth_copy.jpg');
+  content: url('@/views/Index/components/earth/img/earth_copy.jpg');
   height: 70px;
   background-size: cover;
 }

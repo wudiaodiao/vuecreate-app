@@ -9,16 +9,13 @@
 <template>
   <div class="public_body">
     <div class="Part_cneter">
-      <div :class="['public_page', $store.state.dtab ? 'index_off' : 'index_no']">
+      <div :class="['public_page', authStore.dtab ? 'index_off' : 'index_no']">
         <div class="Partlist_main">
           <div class="WorkOrder_add">
             <button @click="addTc('add', '');AreaGetAllList();areaId='',areaName='',floor='<--无-->'">
               报单
             </button>
-            <button @click="
-                pageIndex = 1
-                queryData()
-              ">
+            <button @click="queryData()">
               刷新
             </button>
           </div>
@@ -139,7 +136,7 @@
                 label="操作"
                 width="140px"
               >
-                <template v-slot="scope">
+                <!-- <template v-slot="scope">
                   <span
                     v-if="scope.row.state == 1"
                     class="changkan"
@@ -155,7 +152,7 @@
                     class="changkan"
                     @click="addTc('unconfirmlog', scope.row.no)"
                   >不通过</span>
-                </template>
+                </template> -->
               </el-table-column>
             </el-table>
           </div>
@@ -357,10 +354,7 @@
                                   formValidator.equipmentName != undefined &&
                                     formValidator.equipmentName != ''
                                 "
-                                @click="
-                                  formValidator.equipmentName = ''
-                                  formValidator.equipmentNo = ''
-                                "
+                                @click="handleClear()"
                               >X</a>
                               <a
                                 href="javascript:;"
@@ -611,10 +605,14 @@
     </div>
   </div>
 </template>
+<script setup>
+import { useAuthStore } from '@/stores/index'
+const authStore = useAuthStore()
+</script>
 <script>
-import contractGetModel from '../../components/index/contractGetModel.vue'
-import userFormDep from '../../components/index/userFormDep'
-import wxUserGetModel from '../../components/index/wxUserGetModel.vue'
+import contractGetModel from '@/components/index/contractGetModel.vue'
+import userFormDep from '@/components/index/userFormDep.vue'
+import wxUserGetModel from '@/components/index/wxUserGetModel.vue'
 import DateTime from '@/js/datetime'
 export default {
   components: {
@@ -754,6 +752,10 @@ export default {
     clearInterval(this.Interval)
   },
   methods: {
+    // handleClear() {
+    //   this.formValidator.equipmentName = ''
+    //   this.formValidator.equipmentNo = ''
+    // }
     async WorkSubTypeGet() {
       const res = await this.$api.MMS.WorkSubType.Get({})
       if (res.ok) {
@@ -1038,6 +1040,7 @@ export default {
     },
     queryData() {
       this.list = []
+      this.pageIndex = 1
       this.$api.MMS.WorkOrder.GetMyPagedList({
         pageIndex: this.pageIndex - 1,
         pageSize: this.pageSize,

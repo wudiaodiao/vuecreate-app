@@ -4,7 +4,7 @@
       <div
         :class="[
           'energyConsumption_zong_left',
-          $store.state.dtab ? 'index_off' : 'index_no'
+          authStore.dtab ? 'index_off' : 'index_no'
         ]"
       >
         <div class="left_tot">
@@ -16,10 +16,10 @@
           </div>
           <ul class="left_tot_list">
             <li
-              v-for="(item, itemkey) in $store.state.subitemData.children"
+              v-for="(item, itemkey) in authStore.subitemData.children"
               :key="itemkey"
               :class="[
-                item.model.name === $store.state.EnergyClick ? 'aqua' : ''
+                item.model.name === authStore.EnergyClick ? 'aqua' : ''
               ]"
               @click="energyClick(item)"
             >
@@ -31,7 +31,7 @@
       <div
         :class="[
           'energyConsumption_zong_right',
-          $store.state.dtab ? 'index_off' : 'index_no'
+          authStore.dtab ? 'index_off' : 'index_no'
         ]"
       >
         <router-view></router-view>
@@ -40,7 +40,13 @@
     </div>
   </div>
 </template>
+<script setup>
+import { useAuthStore } from '@/stores/index'
+const authStore = useAuthStore()
+</script>
 <script>
+import { useAuthStore } from '@/stores/index'
+const authStore = useAuthStore()
 export default {
   data() {
     return {
@@ -52,8 +58,7 @@ export default {
     energyClick(item) {
       //点击子菜单列表
       console.log(item)
-
-      this.$store.commit('setEnergyClick', item.model.name)
+      authStore.setEnergyClick = item.model.name
       // this.energyItem = item.model.name
       if (!item.model.route) {
         return this.$Tools.LayerMsgErr('功能待开发')

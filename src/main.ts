@@ -18,6 +18,11 @@ app.use(ElementPlus)
 import htmlToPdf from '@/js/htmlToPdf'
 app.use(htmlToPdf)
 import api from '@/js/api/list'
+import Convert from '@/js/convert'
+import Tools from '@/js/Tools'
+import '@/js/rem' //导入等比适配配置文件
+app.config.globalProperties.$Tools = Tools
+app.config.globalProperties.$Convert = Convert
 app.config.globalProperties.$api = api
 app.config.globalProperties.$echarts = echarts
 app.mount('#app')

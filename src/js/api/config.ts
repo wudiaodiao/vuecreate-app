@@ -8,11 +8,11 @@
  */
 
 // 本地
-// window.ApiBaseURL = "http://192.168.1.6/ZEYY_MMS/";
+window.ApiBaseURL = "http://192.168.0.178/IBMSV3_MMS/";
 // window.ApiFileURL = "http://192.168.1.6/ZEYY_FS/";
 
 // 测试环境
-window.ApiBaseURL = "http://116.62.58.28/EB_MMS/";
+// window.ApiBaseURL = "http://116.62.58.28/EB_MMS/";
 // window.ApiBaseURL = "https://60.191.103.119:8898/MMS/";
 window.ApiFileURL = "http://116.62.58.28/ZEYY_FS/";
 window.ImgFileURL = 'http://116.62.58.28/ZEYY_SSO/scan.html';
