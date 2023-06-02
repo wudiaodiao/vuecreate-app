@@ -58,11 +58,6 @@
   </div>
 </template>
 <script setup lang="ts">
-// import '../../js/Scripts/jquery-1.11.1.min.js'
-// import '../../js/Scripts/jquery.api.js'
-// import '../../js/Scripts/jquery.scada.min.js'
-
-import { useAuthStore } from '@/stores/index'
 import noticeList from '@/components/index/noticeList.vue'
 import indexLeft from '@/components/index/indexLeft.vue'
 import indexRight from '@/components/index/indexRight.vue'
